@@ -1,0 +1,32 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+
+code {
+  background-color: rgb(var(--v-theme-code));
+  color: rgb(var(--v-theme-on-code));
+  border-radius: 4px;
+  line-height: 1.8;
+  font-size: 0.9em;
+  font-weight: normal;
+  padding: 0.2em 0.4em;
+}
+
+.progress-bar__label {
+  color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+}
+
+.snackbar .v-snackbar__content {
+  padding: 0;
+}
+.snackbar .v-snackbar--variant-elevated {
+  padding: 0;
+  background: rgb(var(--v-theme-background));
+}

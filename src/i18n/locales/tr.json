@@ -1,0 +1,86 @@
+{
+  "buttons": {
+    "save": "kaydet",
+    "close": "kapat",
+    "cancel": "iptal"
+  },
+  "app_bar": {
+    "progress": "ilerleme",
+    "essays": "denemeler",
+    "dictionary": "sözlük",
+    "new_essay": "yeni deneme",
+    "switch_languages": "Dilleri Değiştir",
+    "light_theme": "Karanlık temasını aç",
+    "dark_theme": "Açık temasını aç"
+  },
+  "change_langs_dialog": {
+    "header": "Diller Değişiyor",
+    "select_current_lang_label": "Konuştuğunuz dili seçin",
+    "select_target_lang_label": "Öğrenmekte olduğunuz dili seçin",
+    "langs": {
+      "en": "İngilizce",
+      "ru": "Rusça",
+      "pl": "Lehçe",
+      "be": "Beyaz Rusça",
+      "lt": "Litvanca",
+      "tr": "Türkçe",
+      "es": "İspanyolca"
+    }
+  },
+  "new_essay": {
+    "nn_recommendation": {
+      "header": "Google Gemini veya Qwen'i Kullanın",
+      "text": "Üretken yapay zeka, dil becerilerinizi test etmek ve öğrenme için bilgi sağlamak için kullanılmalıdır. Henüz önerilen sistemlerden en az birine kayıt olmadıysanız, lütfen kaydolun."
+    },
+    "translate_recommendation": {
+      "header": "Google Çeviri'yi Kullanın",
+      "text": "Öğrenmekte olduğunuz dili henüz iyi bilmiyorsanız, bir çevirmen kullanın. Sadece kullandığınızı not etmeyi unutmayın — bu, ilerlemenizi hesaplamak için gereklidir!"
+    },
+    "textarea_placeholder": "Öğrenmekte olduğunuz dilde yeni denemeniz",
+    "checkbox_label": "Çevirmen ve/veya ek materyaller kullanıldı",
+    "letters_remaining": "Minimum deneme hacmine kadar: {n} harf | Minimum deneme hacmine kadar: {n} harf | Minimum deneme hacmine kadar: {n} harf",
+    "min_requirements_met": "Minimum hacme ulaşıldı",
+    "buttons": {
+      "handle": "işle"
+    }
+  },
+  "progress": {
+    "no_data": "Henüz ilerleme verisi yok",
+    "points_label": "puan | puan | puan",
+    "info_text": "Dil yeterliliğine giden yolculuğunuz kazanılan puanlara yansır. Hatasız her cümle sizi mükemmelliğe bir adım daha yaklaştırır ve <b>2 puan</b> kazandırır. Hatalar bize öğretir ama <b>1 puan</b> eksiltir. Her puanın ustalığa doğru bir adımı simgelediği zirveyi — <b>100 puanı</b> hedefleyin.",
+    "essays_without_mistakes_title": "Hatasız cümleler",
+    "grammar_improvement_recommendation": "Gramerinizin geliştirilmesi gerekiyor. Temel kuralları gözden geçirmeniz ve basit cümleler yazma alıştırması yapmanız önerilir.",
+    "essays_without_translator_title": "Çevirmensiz denemeler",
+    "average_grammar_estimation_title": "Ortalama gramer değerlendirmesi",
+    "buttons": {
+      "share": "paylaş",
+      "export": "dışa aktar",
+      "reset": "sıfırla"
+    }
+  },
+  "essays": {
+    "no_data": "Deneme listeniz şu anda boş",
+    "grammar_estimation_label": "gramer değerlendirmesi",
+    "sentences_with_mistakes_label": "hatalı cümle | hatalı cümle | hatalı cümle",
+    "translator_used_label": "Bir çevirmenle yazıldı",
+    "translation_title": "Çeviri",
+    "corrected_sentence_title": "Düzeltilmiş cümle",
+    "sentences_label": "cümle | cümle | cümle",
+    "words_label": "kelime | kelime | kelime",
+    "out_of_10": "/ 10"
+  },
+  "dictionary": {
+    "no_data": "Sözlüğünüz şu anda boş"
+  },
+  "essay_analysis_dialog": {
+    "success_title": "Analiz başarıyla tamamlandı",
+    "success_text": "Deneme analiz edildi ve kaydedildi",
+    "grammar_analysis_title": "Gramer analizi",
+    "grammar_estimation_title": "Gramer değerlendirmesi",
+    "dictionary_title": "Sözlük",
+    "buttons": {
+      "back": "geri",
+      "next": "ileri"
+    }
+  }
+}

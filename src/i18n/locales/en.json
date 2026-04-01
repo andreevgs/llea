@@ -1,0 +1,86 @@
+{
+  "buttons": {
+    "save": "save",
+    "close": "close",
+    "cancel": "cancel"
+  },
+  "app_bar": {
+    "progress": "progress",
+    "essays": "essays",
+    "dictionary": "dictionary",
+    "new_essay": "new essay",
+    "switch_languages": "Switch languages",
+    "light_theme": "Turn on dark theme",
+    "dark_theme": "Turn on light theme"
+  },
+  "change_langs_dialog": {
+    "header": "Switching languages",
+    "select_current_lang_label": "Choose the language you speak",
+    "select_target_lang_label": "Choose the language you are studying",
+    "langs": {
+      "en": "English",
+      "ru": "Russian",
+      "pl": "Polish",
+      "be": "Belarusian",
+      "lt": "Lithuanian",
+      "tr": "Turkish",
+      "es": "Spanish"
+    }
+  },
+  "new_essay": {
+    "nn_recommendation": {
+      "header": "Use Google Gemini or Qwen",
+      "text": "Generative AI must be used to test your language proficiency and provide information for learning. If you are not yet registered in at least one of the proposed systems, please register."
+    },
+    "translate_recommendation": {
+      "header": "Use Google Translate",
+      "text": "If you are not yet that good at the language you are studying, use a translator. Just don’t forget to note that you used it — this is necessary to calculate your progress!"
+    },
+    "textarea_placeholder": "Your new essay in the language you are studying",
+    "checkbox_label": "A translator and/or additional materials were used",
+    "letters_remaining": "Until the minimum essay volume: {n} letters | Until the minimum essay volume: {n} letter | Until the minimum essay volume: {n} letters",
+    "min_requirements_met": "Minimum volume reached",
+    "buttons": {
+      "handle": "handle"
+    }
+  },
+  "progress": {
+    "no_data": "No progress data yet",
+    "points_label": "points | point | points",
+    "info_text": "Your journey to language proficiency is reflected in the points earned. Every sentence without mistakes brings you closer to perfection, earning <b>2 points</b>. Mistakes teach us, but subtract <b>1 point</b>. Aim for the top — <b>100 points</b>, where every point symbolizes a step towards mastery.",
+    "essays_without_mistakes_title": "Sentences without mistakes",
+    "grammar_improvement_recommendation": "Your grammar needs improvement. It is recommended to review the basic rules and practice writing simple sentences.",
+    "essays_without_translator_title": "Essays without translator",
+    "average_grammar_estimation_title": "Average grammar estimation",
+    "buttons": {
+      "share": "share",
+      "export": "export",
+      "reset": "reset"
+    }
+  },
+  "essays": {
+    "no_data": "Your essay list is currently empty",
+    "grammar_estimation_label": "grammar estimation",
+    "sentences_with_mistakes_label": "sentences with mistakes | sentence with mistakes | sentences with mistakes",
+    "translator_used_label": "Written with a translator",
+    "translation_title": "Translation",
+    "corrected_sentence_title": "Corrected sentence",
+    "sentences_label": "sentences | sentence | sentences",
+    "words_label": "words | word | words",
+    "out_of_10": "out of 10"
+  },
+  "dictionary": {
+    "no_data": "Your dictionary is currently empty"
+  },
+  "essay_analysis_dialog": {
+    "success_title": "Analysis successfully completed",
+    "success_text": "Essay analyzed and saved",
+    "grammar_analysis_title": "Grammar analysis",
+    "grammar_estimation_title": "Grammar estimation",
+    "dictionary_title": "Dictionary",
+    "buttons": {
+      "back": "back",
+      "next": "next"
+    }
+  }
+}

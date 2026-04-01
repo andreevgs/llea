@@ -1,0 +1,86 @@
+{
+  "buttons": {
+    "save": "guardar",
+    "close": "cerrar",
+    "cancel": "cancelar"
+  },
+  "app_bar": {
+    "progress": "progreso",
+    "essays": "ensayos",
+    "dictionary": "diccionario",
+    "new_essay": "nuevo ensayo",
+    "switch_languages": "Cambiar idiomas",
+    "light_theme": "Activar tema oscuro",
+    "dark_theme": "Activar tema claro"
+  },
+  "change_langs_dialog": {
+    "header": "Cambiando idiomas",
+    "select_current_lang_label": "Elige el idioma que hablas",
+    "select_target_lang_label": "Elige el idioma que estás estudiando",
+    "langs": {
+      "en": "Inglés",
+      "ru": "Ruso",
+      "pl": "Polaco",
+      "be": "Bielorruso",
+      "lt": "Lituano",
+      "tr": "Turco",
+      "es": "Español"
+    }
+  },
+  "new_essay": {
+    "nn_recommendation": {
+      "header": "Usa Google Gemini o Qwen",
+      "text": "La inteligencia artificial generativa debe usarse para probar tu competencia lingüística y proporcionar información para el aprendizaje. Si aún no estás registrado en al menos uno de los sistemas propuestos, por favor regístrate."
+    },
+    "translate_recommendation": {
+      "header": "Usa Google Translate",
+      "text": "Si aún no eres tan bueno en el idioma que estás estudiando, usa un traductor. ¡Solo no olvides anotar que lo usaste, esto es necesario para calcular tu progreso!"
+    },
+    "textarea_placeholder": "Tu nuevo ensayo en el idioma que estás estudiando",
+    "checkbox_label": "Se utilizó traductor y/o materiales adicionales",
+    "letters_remaining": "Hasta el volumen mínimo del ensayo: {n} letras | Hasta el volumen mínimo del ensayo: {n} letra | Hasta el volumen mínimo del ensayo: {n} letras",
+    "min_requirements_met": "Volumen mínimo alcanzado",
+    "buttons": {
+      "handle": "manejar"
+    }
+  },
+  "progress": {
+    "no_data": "Aún no hay datos de progreso",
+    "points_label": "puntos | punto | puntos",
+    "info_text": "Tu camino hacia el dominio del idioma se refleja en los puntos acumulados. Cada oración sin errores te acerca a la perfección, sumando <b>2 puntos</b>. Los errores nos enseñan, pero restan <b>1 punto</b>. Aspira a la cima: <b>100 puntos</b>, donde cada punto simboliza un paso hacia la maestría.",
+    "essays_without_mistakes_title": "Oraciones sin errores",
+    "grammar_improvement_recommendation": "Tu gramática necesita mejorar. Se recomienda repasar las reglas básicas y practicar la escritura de oraciones simples.",
+    "essays_without_translator_title": "Ensayos sin traductor",
+    "average_grammar_estimation_title": "Calificación gramatical promedio",
+    "buttons": {
+      "share": "compartir",
+      "export": "exportar",
+      "reset": "reiniciar"
+    }
+  },
+  "essays": {
+    "no_data": "Tu lista de ensayos está actualmente vacía",
+    "grammar_estimation_label": "estimación gramatical",
+    "sentences_with_mistakes_label": "oraciones con errores | oración con errores | oraciones con errores",
+    "translator_used_label": "Escrito con un traductor",
+    "translation_title": "Traducción",
+    "corrected_sentence_title": "Oración corregida",
+    "sentences_label": "oraciones | oración | oraciones",
+    "words_label": "palabras | palabra | palabras",
+    "out_of_10": "de 10"
+  },
+  "dictionary": {
+    "no_data": "Tu diccionario está actualmente vacío"
+  },
+  "essay_analysis_dialog": {
+    "success_title": "Análisis completado con éxito",
+    "success_text": "Ensayo analizado y guardado",
+    "grammar_analysis_title": "Análisis de gramática",
+    "grammar_estimation_title": "Estimación de gramática",
+    "dictionary_title": "Diccionario",
+    "buttons": {
+      "back": "atrás",
+      "next": "siguiente"
+    }
+  }
+}

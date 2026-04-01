@@ -1,0 +1,86 @@
+{
+  "buttons": {
+    "save": "zapisz",
+    "close": "zamknij",
+    "cancel": "anuluj"
+  },
+  "app_bar": {
+    "progress": "postęp",
+    "essays": "eseje",
+    "dictionary": "słownik",
+    "new_essay": "nowy esej",
+    "switch_languages": "Zmień języki",
+    "light_theme": "Włącz ciemny motyw",
+    "dark_theme": "Włącz jasny motyw"
+  },
+  "change_langs_dialog": {
+    "header": "Przełączanie języków",
+    "select_current_lang_label": "Wybierz język, którym mówisz",
+    "select_target_lang_label": "Wybierz język, którego się uczysz",
+    "langs": {
+      "en": "Angielski",
+      "ru": "Rosyjski",
+      "pl": "Polski",
+      "be": "Białoruski",
+      "lt": "Litewski",
+      "tr": "Turecki",
+      "es": "Hiszpański"
+    }
+  },
+  "new_essay": {
+    "nn_recommendation": {
+      "header": "Użyj Google Gemini lub Qwen",
+      "text": "Do sprawdzenia znajomości języka i dostarczenia informacji potrzebnych do nauki należy zastosować generatywną sztuczną inteligencję. Jeśli nie jesteś jeszcze zarejestrowany w przynajmniej jednym z proponowanych systemów, prosimy o rejestrację."
+    },
+    "translate_recommendation": {
+      "header": "Użyj Google Translate",
+      "text": "Jeśli nie jesteś jeszcze zbyt dobry w języku, którego się uczysz, skorzystaj z tłumacza. Tylko nie zapomnij zauważyć, że go użyłeś – jest to konieczne do obliczenia Twoich postępów!"
+    },
+    "textarea_placeholder": "Twój nowy esej w języku, którego się uczysz",
+    "checkbox_label": "Użyto tłumacza i/lub dodatkowych materiałów",
+    "letters_remaining": "Do minimalnej objętości eseju: {n} liter | Do minimalnej objętości eseju: {n} litera | Do minimalnej objętości eseju: {n} litery | Do minimalnej objętości eseju: {n} liter",
+    "min_requirements_met": "Minimalna objętość osiągnięta",
+    "buttons": {
+      "handle": "uchwyt"
+    }
+  },
+  "progress": {
+    "no_data": "Nie ma jeszcze danych o postępie",
+    "points_label": "punktów | punkt | punkty | punktów",
+    "info_text": "Twoja droga do biegłości językowej odzwierciedla się w zdobytych punktach. Każde zdanie bez błędów przybliża Cię do doskonałości, dając <b>2 punkty</b>. Błędy nas uczą, ale odejmują <b>1 punkt</b>. Dąż do szczytu — <b>100 punktów</b>, gdzie każdy punkt symbolizuje krok ku mistrzostwu.",
+    "essays_without_mistakes_title": "Zdania bez błędów",
+    "grammar_improvement_recommendation": "Twoja gramatyka wymaga poprawy. Zaleca się powtórzenie podstawowych zasad i ćwiczenie pisania prostych zdań.",
+    "essays_without_translator_title": "Eseje bez tłumacza",
+    "average_grammar_estimation_title": "Średnia ocena gramatyki",
+    "buttons": {
+      "share": "udostępnij",
+      "export": "eksportuj",
+      "reset": "resetuj"
+    }
+  },
+  "essays": {
+    "no_data": "Twoja lista esejów jest obecnie pusta",
+    "grammar_estimation_label": "ocena gramatyki",
+    "sentences_with_mistakes_label": "zdań z błędami | zdanie z błędami | zdania z błędami | zdań z błędami",
+    "translator_used_label": "Napisane z pomocą tłumacza",
+    "translation_title": "Tłumaczenie",
+    "corrected_sentence_title": "Poprawione zdanie",
+    "sentences_label": "zdań | zdanie | zdania | zdań",
+    "words_label": "słów | słowo | słowa | słów",
+    "out_of_10": "z 10"
+  },
+  "dictionary": {
+    "no_data": "Twój słownik jest obecnie pusty"
+  },
+  "essay_analysis_dialog": {
+    "success_title": "Analiza zakończona pomyślnie",
+    "success_text": "Esej przeanalizowany i zapisany",
+    "grammar_analysis_title": "Analiza gramatyki",
+    "grammar_estimation_title": "Ocena gramatyki",
+    "dictionary_title": "Słownik",
+    "buttons": {
+      "back": "wstecz",
+      "next": "dalej"
+    }
+  }
+}
