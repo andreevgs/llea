@@ -1,19 +1,11 @@
-/**
- * plugins/vuetify.ts
- *
- * Framework documentation: https://vuetifyjs.com`
- */
+import { createVuetify } from "vuetify";
+import { mdi } from "vuetify/iconsets/mdi";
 
-// Styles
+import { aliases, flagsIcons } from "@/flags";
+
 import "@mdi/font/css/materialdesignicons.css";
 import "vuetify/styles";
 
-// Composables
-import { createVuetify } from "vuetify";
-import { mdi } from "vuetify/iconsets/mdi";
-import { aliases, flagsIcons } from "@/flags";
-
-// https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
   theme: {
     defaultTheme: "dark",

@@ -1,8 +1,8 @@
+import { calculateAverage } from "@/utils/arrays";
 import {
   areObjectsValuesEqual,
   getValueByDotNotationPath,
 } from "@/utils/objects";
-import { calculateAverage } from "@/utils/arrays";
 
 export type CountResult = {
   count: number;

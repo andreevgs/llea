@@ -1,17 +1,12 @@
-// Plugins
-import Components from "unplugin-vue-components/vite";
-import Vue from "@vitejs/plugin-vue";
-import Vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
-import ViteFonts from "unplugin-fonts/vite";
-import VueRouter from "unplugin-vue-router/vite";
-
-// Utilities
-import { defineConfig } from "vite";
 import { fileURLToPath, URL } from "node:url";
+import Vue from "@vitejs/plugin-vue";
+import Fonts from "unplugin-fonts/vite";
+import { defineConfig } from "vite";
+import Vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
+import VueRouter from "vue-router/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/llea/",
   plugins: [
     VueRouter(),
     Vue({
@@ -24,13 +19,13 @@ export default defineConfig({
         configFile: "src/styles/settings.scss",
       },
     }),
-    Components(),
-    ViteFonts({
-      google: {
+    Fonts({
+      fontsource: {
         families: [
           {
             name: "Roboto",
-            styles: "wght@100;300;400;500;700;900",
+            weights: [100, 300, 400, 500, 700, 900],
+            styles: ["normal", "italic"],
           },
         ],
       },
@@ -39,11 +34,11 @@ export default defineConfig({
   define: { "process.env": {} },
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@": fileURLToPath(new URL("src", import.meta.url)),
     },
     extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
   },
   server: {
-    port: 3001,
+    port: 3000,
   },
 });

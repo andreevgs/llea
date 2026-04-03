@@ -1,21 +1,22 @@
-import {
-  createRouter,
-  createWebHashHistory,
-  RouteLocationNormalized,
-} from "vue-router/auto";
+import type { RouteLocationNormalized } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
+import { routes } from "vue-router/auto-routes";
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
+  routes,
 });
 
 router.beforeEach((to: RouteLocationNormalized) => {
-  if (to.name === "/" && localStorage.getItem("visitedBefore") === "true") {
-    return { name: "/progress" };
-  } else if (
-    to.name !== "/" &&
-    localStorage.getItem("visitedBefore") !== "true"
-  ) {
-    return { name: "/" };
+  const visitedBefore = localStorage.getItem("visitedBefore") === "true";
+
+  if (to.path === "/" && visitedBefore) {
+    return { path: "/progress" };
+  }
+
+  if (to.path !== "/" && !visitedBefore) {
+    return { path: "/" };
   }
 });
+
 export default router;

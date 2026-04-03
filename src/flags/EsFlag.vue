@@ -1,108 +1,132 @@
 <template>
   <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
     <g id="color">
-      <rect x="5" y="17" width="62" height="38" fill="#f1b31c" />
-      <path
-        fill="#d22f27"
-        d="M23,33v7a2.0059,2.0059,0,0,1-2,2H17a2.0059,2.0059,0,0,1-2-2V33"
+      <rect
+        fill="#f1b31c"
+        height="38"
+        width="62"
+        x="5"
+        y="17"
       />
-      <rect x="5" y="17" width="62" height="9" fill="#d22f27" />
-      <rect x="5" y="46" width="62" height="9" fill="#d22f27" />
-      <rect x="19" y="33" width="4" height="4" fill="#f1b31c" />
-      <circle cx="19" cy="37" r="1.5" fill="#6a462f" />
+      <path
+        d="M23,33v7a2.0059,2.0059,0,0,1-2,2H17a2.0059,2.0059,0,0,1-2-2V33"
+        fill="#d22f27"
+      />
+      <rect
+        fill="#d22f27"
+        height="9"
+        width="62"
+        x="5"
+        y="17"
+      />
+      <rect
+        fill="#d22f27"
+        height="9"
+        width="62"
+        x="5"
+        y="46"
+      />
+      <rect
+        fill="#f1b31c"
+        height="4"
+        width="4"
+        x="19"
+        y="33"
+      />
+      <circle cx="19" cy="37" fill="#6a462f" r="1.5" />
       <g>
         <line
+          fill="none"
+          stroke="#6a462f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
           x1="27"
           x2="27"
           y1="33"
           y2="42"
+        />
+        <line
           fill="none"
           stroke="#6a462f"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
-        />
-        <line
           x1="11"
           x2="11"
           y1="33"
           y2="42"
-          fill="none"
-          stroke="#6a462f"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
         />
         <path
-          fill="none"
-          stroke="#6a462f"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
           d="M15,30a8.5678,8.5678,0,0,1,4-1"
-        />
-        <path
           fill="none"
           stroke="#6a462f"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
+        />
+        <path
           d="M23,30a8.5678,8.5678,0,0,0-4-1"
+          fill="none"
+          stroke="#6a462f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
         />
         <line
+          fill="none"
+          stroke="#6a462f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
           x1="15"
           x2="23"
           y1="33"
           y2="33"
-          fill="none"
-          stroke="#6a462f"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
         />
         <path
+          d="M23,33v7a2.0059,2.0059,0,0,1-2,2H17a2.0059,2.0059,0,0,1-2-2V33"
           fill="none"
           stroke="#6a462f"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
-          d="M23,33v7a2.0059,2.0059,0,0,1-2,2H17a2.0059,2.0059,0,0,1-2-2V33"
         />
         <line
+          fill="none"
+          stroke="#6a462f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
           x1="10"
           x2="12"
           y1="42"
           y2="42"
+        />
+        <line
           fill="none"
           stroke="#6a462f"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
-        />
-        <line
           x1="26"
           x2="28"
           y1="42"
           y2="42"
-          fill="none"
-          stroke="#6a462f"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
         />
       </g>
     </g>
     <g id="line">
       <rect
-        x="5"
-        y="17"
-        width="62"
-        height="38"
         fill="none"
+        height="38"
         stroke="#000"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
+        width="62"
+        x="5"
+        y="17"
       />
     </g>
   </svg>

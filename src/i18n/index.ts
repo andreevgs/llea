@@ -1,11 +1,11 @@
 import { createI18n } from "vue-i18n";
-import en from "./locales/en.json";
-import ru from "./locales/ru.json";
-import pl from "./locales/pl.json";
 import be from "./locales/be.json";
-import lt from "./locales/lt.json";
-import tr from "./locales/tr.json";
+import en from "./locales/en.json";
 import es from "./locales/es.json";
+import lt from "./locales/lt.json";
+import pl from "./locales/pl.json";
+import ru from "./locales/ru.json";
+import tr from "./locales/tr.json";
 
 const slavicPluralRule = (choice: number, choicesLength: number) => {
   if (choice === 0) {

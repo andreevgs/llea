@@ -1,20 +1,32 @@
 <template>
   <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
     <g id="color">
-      <rect x="5" y="17" width="62" height="38" fill="#fff" />
-      <rect x="5" y="36" width="62" height="19" fill="#d22f27" />
+      <rect
+        fill="#fff"
+        height="38"
+        width="62"
+        x="5"
+        y="17"
+      />
+      <rect
+        fill="#d22f27"
+        height="19"
+        width="62"
+        x="5"
+        y="36"
+      />
     </g>
     <g id="line">
       <rect
-        x="5"
-        y="17"
-        width="62"
-        height="38"
         fill="none"
+        height="38"
         stroke="#000"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
+        width="62"
+        x="5"
+        y="17"
       />
     </g>
   </svg>

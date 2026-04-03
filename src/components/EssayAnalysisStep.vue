@@ -1,12 +1,10 @@
 <template>
-  <v-row dense class="mb-1">
+  <v-row class="mb-1" dense>
     <v-col cols="12">
-      <v-alert type="info" color="primary" variant="tonal" closable>
-        <template v-slot:text>
+      <v-alert closable color="primary" type="info" variant="tonal">
+        <template #text>
           <span>
-            Скопируй промпт и вставь его в генеративную нейросеть (<b
-              >Google Gemini</b
-            >
+            Скопируй промпт и вставь его в генеративную нейросеть (<b>Google Gemini</b>
             или <b>Qwen</b>), затем скопируй полученный результат и
             вставь его сюда.
           </span>
@@ -18,8 +16,8 @@
         block
         :color="copyPromptColor"
         :prepend-icon="copyPromptIcon"
-        @click="handleCopyPrompt"
         variant="tonal"
+        @click="handleCopyPrompt"
       >
         {{ copyPromptText }}
       </v-btn>
@@ -28,9 +26,9 @@
       <v-btn
         block
         :color="pasteResultColor"
+        :disabled="Boolean(model)"
         :prepend-icon="pasteResultIcon"
         variant="tonal"
-        :disabled="Boolean(model)"
         @click="handlePasteResult"
       >
         {{ pasteResultText }}
@@ -38,18 +36,18 @@
     </v-col>
   </v-row>
 
-  <v-sheet rounded border>
+  <v-sheet border rounded>
     <v-toolbar density="compact">
       <span class="text-subtitle-1 ml-4">
         {{ toolbarText }}
       </span>
-      <v-spacer></v-spacer>
+      <v-spacer />
       <v-btn
         v-if="Boolean(model)"
-        prepend-icon="mdi-delete"
         class="text-none"
-        density="comfortable"
         color="error"
+        density="comfortable"
+        prepend-icon="mdi-delete"
         variant="tonal"
         @click="model = null"
       >
@@ -61,62 +59,62 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref } from "vue";
+  import { computed, ref } from "vue";
 
-const model = defineModel<string | null>({ default: null });
+  const model = defineModel<string | null>({ default: null });
 
-const props = defineProps<{
-  prompt: string;
-}>();
+  const props = defineProps<{
+    prompt: string;
+  }>();
 
-const isPromptCopied = ref(false);
+  const isPromptCopied = ref(false);
 
-const copyPromptText = computed(() => {
-  return isPromptCopied.value ? "скопировано" : "скопировать";
-});
-
-const toolbarText = computed(() => {
-  return model.value ? "Результат" : "Промпт";
-});
-
-const copyPromptIcon = computed(() => {
-  return isPromptCopied.value
-    ? "mdi-check"
-    : "mdi-clipboard-text-multiple-outline";
-});
-
-const copyPromptColor = computed(() => {
-  return isPromptCopied.value ? "success" : "inherit";
-});
-
-const pasteResultText = computed(() => {
-  return model.value ? "результат записан" : "вставить результат";
-});
-
-const pasteResultIcon = computed(() => {
-  return model.value ? "mdi-check" : "mdi-clipboard-text-outline";
-});
-
-const pasteResultColor = computed(() => {
-  return model.value ? "success" : "inherit";
-});
-
-const handlePasteResult = async () => {
-  try {
-    const pastedText = await navigator.clipboard.readText();
-    JSON.parse(pastedText);
-    model.value = pastedText;
-  } catch (e) {
-    //
-  }
-};
-
-const handleCopyPrompt = () => {
-  navigator.clipboard.writeText(props.prompt).then(() => {
-    isPromptCopied.value = true;
-    setTimeout(() => (isPromptCopied.value = false), 2000);
+  const copyPromptText = computed(() => {
+    return isPromptCopied.value ? "скопировано" : "скопировать";
   });
-};
+
+  const toolbarText = computed(() => {
+    return model.value ? "Результат" : "Промпт";
+  });
+
+  const copyPromptIcon = computed(() => {
+    return isPromptCopied.value
+      ? "mdi-check"
+      : "mdi-clipboard-text-multiple-outline";
+  });
+
+  const copyPromptColor = computed(() => {
+    return isPromptCopied.value ? "success" : "inherit";
+  });
+
+  const pasteResultText = computed(() => {
+    return model.value ? "результат записан" : "вставить результат";
+  });
+
+  const pasteResultIcon = computed(() => {
+    return model.value ? "mdi-check" : "mdi-clipboard-text-outline";
+  });
+
+  const pasteResultColor = computed(() => {
+    return model.value ? "success" : "inherit";
+  });
+
+  const handlePasteResult = async () => {
+    try {
+      const pastedText = await navigator.clipboard.readText();
+      JSON.parse(pastedText);
+      model.value = pastedText;
+    } catch {
+    //
+    }
+  };
+
+  const handleCopyPrompt = () => {
+    navigator.clipboard.writeText(props.prompt).then(() => {
+      isPromptCopied.value = true;
+      setTimeout(() => (isPromptCopied.value = false), 2000);
+    });
+  };
 </script>
 
 <style scoped>

@@ -1,7 +1,13 @@
 <template>
   <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
     <g id="color">
-      <rect x="5" y="17" width="62" height="38" fill="#1e50a0" />
+      <rect
+        fill="#1e50a0"
+        height="38"
+        width="62"
+        x="5"
+        y="17"
+      />
       <g>
         <polygon
           fill="#fff"
@@ -35,23 +41,47 @@
           fill="#d22f27"
           points="5 17 5 19.347 25.646 32 30.432 32 5.958 17 5 17 5 17"
         />
-        <rect x="5" y="31" width="62" height="10" fill="#fff" />
-        <rect x="31" y="17" width="10" height="38" fill="#fff" />
-        <rect x="5" y="33" width="62" height="6" fill="#d22f27" />
-        <rect x="33" y="17" width="6" height="38" fill="#d22f27" />
+        <rect
+          fill="#fff"
+          height="10"
+          width="62"
+          x="5"
+          y="31"
+        />
+        <rect
+          fill="#fff"
+          height="38"
+          width="10"
+          x="31"
+          y="17"
+        />
+        <rect
+          fill="#d22f27"
+          height="6"
+          width="62"
+          x="5"
+          y="33"
+        />
+        <rect
+          fill="#d22f27"
+          height="38"
+          width="6"
+          x="33"
+          y="17"
+        />
       </g>
     </g>
     <g id="line">
       <rect
-        x="5"
-        y="17"
-        width="62"
-        height="38"
         fill="none"
+        height="38"
         stroke="#000"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
+        width="62"
+        x="5"
+        y="17"
       />
     </g>
   </svg>

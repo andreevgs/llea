@@ -1,12 +1,12 @@
 import { getDB } from "@/db";
 import {
+  idbDelete,
+  idbGet,
+  idbGetAll,
   idbGetAllByIndex,
   idbGetAllByIndexAndCount,
   idbGetAllByIndexAVG,
   idbPut,
-  idbGet,
-  idbGetAll,
-  idbDelete,
   idbReduceByIndex,
 } from "@/utils/db";
 

@@ -1,43 +1,44 @@
 {
-  "name": "llea",
+  "name": "llea-new",
+  "private": true,
+  "type": "module",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "npm run type-check && npm run build-only",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
+    "@fontsource/roboto": "^5.2.10",
     "@mdi/font": "7.4.47",
-    "core-js": "^3.36.0",
-    "date-fns": "^3.6.0",
-    "pinia": "^2.1.7",
-    "roboto-fontface": "*",
-    "vue": "^3.4.21",
-    "vue-i18n": "^9.10.2",
-    "vuetify": "^3.5.9"
+    "date-fns": "^4.1.0",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.30",
+    "vue-i18n": "^11.3.0",
+    "vue-router": "^5.0.3",
+    "vuetify": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/types": "^7.24.0",
-    "@types/node": "^20.11.29",
-    "@vitejs/plugin-vue": "^5.0.4",
-    "@vue/eslint-config-typescript": "^13.0.0",
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-vue": "^9.23.0",
-    "prettier": "^3.2.5",
-    "sass": "^1.72.0",
-    "typescript": "^5.4.2",
-    "unplugin-fonts": "^1.1.1",
-    "unplugin-vue-components": "^0.26.0",
-    "unplugin-vue-router": "^0.8.5",
-    "vite": "^5.1.6",
-    "vite-plugin-vuetify": "^2.0.3",
-    "vue-router": "^4.3.0",
-    "vue-tsc": "^2.0.6"
+    "@tsconfig/node22": "^22.0.5",
+    "@types/node": "^24.12.0",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "@vue/tsconfig": "^0.9.0",
+    "eslint": "^9.39.4",
+    "eslint-config-vuetify": "^4.3.4",
+    "sass-embedded": "^1.98.0",
+    "typescript": "~5.9.3",
+    "unplugin-fonts": "^1.4.0",
+    "vite": "^8.0.0",
+    "vite-plugin-vuetify": "^2.1.3",
+    "vue-tsc": "^3.2.5"
+  },
+  "overrides": {
+    "unplugin-fonts": {
+      "vite": "^8.0.0"
+    }
   }
 }
