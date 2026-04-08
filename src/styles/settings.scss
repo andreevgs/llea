@@ -9,6 +9,11 @@
 //   $color-pack: false
 // );
 
+@use "vuetify/settings" with (
+  $alert-title-font-size: 1.25rem,
+  $alert-title-font-weight: 500
+);
+
 code {
   background-color: rgb(var(--v-theme-code));
   color: rgb(var(--v-theme-on-code));
