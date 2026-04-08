@@ -1,14 +1,14 @@
 {
   "buttons": {
-    "save": "išsaugoti",
-    "close": "uždaryti",
-    "cancel": "atšaukti"
+    "save": "Išsaugoti",
+    "close": "Uždaryti",
+    "cancel": "Atšaukti"
   },
   "app_bar": {
-    "progress": "progresas",
-    "essays": "ese",
-    "dictionary": "žodynas",
-    "new_essay": "nauja esė",
+    "progress": "Progresas",
+    "essays": "Ese",
+    "dictionary": "Žodynas",
+    "new_essay": "Nauja esė",
     "switch_languages": "Keisti kalbas",
     "light_theme": "Įjungti tamsią temą",
     "dark_theme": "Įjungti šviesią temą"
@@ -41,7 +41,7 @@
     "letters_remaining": "Iki minimalios esė apimties: {n} raidžių | Iki minimalios esė apimties: {n} raidė | Iki minimalios esė apimties: {n} raidės | Iki minimalios esė apimties: {n} raidžių",
     "min_requirements_met": "Pasiekta minimali apimtis",
     "buttons": {
-      "handle": "tvarkyti"
+      "handle": "Tvarkyti"
     }
   },
   "progress": {
@@ -53,9 +53,9 @@
     "essays_without_translator_title": "Esė be vertėjo",
     "average_grammar_estimation_title": "Vidutinis gramatikos įvertinimas",
     "buttons": {
-      "share": "dalintis",
-      "export": "eksportuoti",
-      "reset": "atstatyti"
+      "share": "Dalintis",
+      "export": "Eksportuoti",
+      "reset": "Atstatyti"
     }
   },
   "essays": {
@@ -79,8 +79,8 @@
     "grammar_estimation_title": "Gramatikos įvertinimas",
     "dictionary_title": "Žodynas",
     "buttons": {
-      "back": "atgal",
-      "next": "toliau"
+      "back": "Atgal",
+      "next": "Toliau"
     }
   }
 }

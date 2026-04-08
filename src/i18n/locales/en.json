@@ -1,14 +1,14 @@
 {
   "buttons": {
-    "save": "save",
-    "close": "close",
-    "cancel": "cancel"
+    "save": "Save",
+    "close": "Close",
+    "cancel": "Cancel"
   },
   "app_bar": {
-    "progress": "progress",
-    "essays": "essays",
-    "dictionary": "dictionary",
-    "new_essay": "new essay",
+    "progress": "Progress",
+    "essays": "Essays",
+    "dictionary": "Dictionary",
+    "new_essay": "New essay",
     "switch_languages": "Switch languages",
     "light_theme": "Turn on dark theme",
     "dark_theme": "Turn on light theme"
@@ -41,7 +41,7 @@
     "letters_remaining": "Until the minimum essay volume: {n} letters | Until the minimum essay volume: {n} letter | Until the minimum essay volume: {n} letters",
     "min_requirements_met": "Minimum volume reached",
     "buttons": {
-      "handle": "handle"
+      "handle": "Handle"
     }
   },
   "progress": {
@@ -53,9 +53,9 @@
     "essays_without_translator_title": "Essays without translator",
     "average_grammar_estimation_title": "Average grammar estimation",
     "buttons": {
-      "share": "share",
-      "export": "export",
-      "reset": "reset"
+      "share": "Share",
+      "export": "Export",
+      "reset": "Reset"
     }
   },
   "essays": {
@@ -79,8 +79,8 @@
     "grammar_estimation_title": "Grammar estimation",
     "dictionary_title": "Dictionary",
     "buttons": {
-      "back": "back",
-      "next": "next"
+      "back": "Back",
+      "next": "Next"
     }
   }
 }

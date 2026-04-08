@@ -1,14 +1,14 @@
 {
   "buttons": {
-    "save": "guardar",
-    "close": "cerrar",
-    "cancel": "cancelar"
+    "save": "Guardar",
+    "close": "Cerrar",
+    "cancel": "Cancelar"
   },
   "app_bar": {
-    "progress": "progreso",
-    "essays": "ensayos",
-    "dictionary": "diccionario",
-    "new_essay": "nuevo ensayo",
+    "progress": "Progreso",
+    "essays": "Ensayos",
+    "dictionary": "Diccionario",
+    "new_essay": "Nuevo ensayo",
     "switch_languages": "Cambiar idiomas",
     "light_theme": "Activar tema oscuro",
     "dark_theme": "Activar tema claro"
@@ -41,7 +41,7 @@
     "letters_remaining": "Hasta el volumen mínimo del ensayo: {n} letras | Hasta el volumen mínimo del ensayo: {n} letra | Hasta el volumen mínimo del ensayo: {n} letras",
     "min_requirements_met": "Volumen mínimo alcanzado",
     "buttons": {
-      "handle": "manejar"
+      "handle": "Manejar"
     }
   },
   "progress": {
@@ -53,9 +53,9 @@
     "essays_without_translator_title": "Ensayos sin traductor",
     "average_grammar_estimation_title": "Calificación gramatical promedio",
     "buttons": {
-      "share": "compartir",
-      "export": "exportar",
-      "reset": "reiniciar"
+      "share": "Compartir",
+      "export": "Exportar",
+      "reset": "Reiniciar"
     }
   },
   "essays": {
@@ -79,8 +79,8 @@
     "grammar_estimation_title": "Estimación de gramática",
     "dictionary_title": "Diccionario",
     "buttons": {
-      "back": "atrás",
-      "next": "siguiente"
+      "back": "Atrás",
+      "next": "Siguiente"
     }
   }
 }

@@ -1,14 +1,14 @@
 {
   "buttons": {
-    "save": "захаваць",
-    "close": "закрыць",
-    "cancel": "адмяніць"
+    "save": "Захаваць",
+    "close": "Закрыць",
+    "cancel": "Адмяніць"
   },
   "app_bar": {
-    "progress": "прагрэс",
-    "essays": "сачыненні",
-    "dictionary": "слоўнік",
-    "new_essay": "новае сачыненне",
+    "progress": "Прагрэс",
+    "essays": "Сачыненні",
+    "dictionary": "Слоўнік",
+    "new_essay": "Новае сачыненне",
     "switch_languages": "Змяніць мовы",
     "light_theme": "Уключыць цёмную тэму",
     "dark_theme": "Уключыць светлую тэму"
@@ -41,7 +41,7 @@
     "letters_remaining": "Да мінімальнага аб'ёму сачынення: {n} літар | Да мінімальнага аб'ёму сачынення: {n} літара | Да мінімальнага аб'ёму сачынення: {n} літары | Да мінімальнага аб'ёму сачынення: {n} літар",
     "min_requirements_met": "Мінімальны аб'ём дасягнуты",
     "buttons": {
-      "handle": "апрацаваць"
+      "handle": "Апрацаваць"
     }
   },
   "progress": {
@@ -53,9 +53,9 @@
     "essays_without_translator_title": "Сачыненні без перакладчыка",
     "average_grammar_estimation_title": "Сярэдняя ацэнка граматыкі",
     "buttons": {
-      "share": "падзяліцца",
-      "export": "экспартаваць",
-      "reset": "скінуць"
+      "share": "Падзяліцца",
+      "export": "Экспартаваць",
+      "reset": "Скінуць"
     }
   },
   "essays": {
@@ -79,8 +79,8 @@
     "grammar_estimation_title": "Ацэнка граматыкі",
     "dictionary_title": "Слоўнік",
     "buttons": {
-      "back": "назад",
-      "next": "далей"
+      "back": "Назад",
+      "next": "Далей"
     }
   }
 }

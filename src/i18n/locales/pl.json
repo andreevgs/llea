@@ -1,14 +1,14 @@
 {
   "buttons": {
-    "save": "zapisz",
-    "close": "zamknij",
-    "cancel": "anuluj"
+    "save": "Zapisz",
+    "close": "Zamknij",
+    "cancel": "Anuluj"
   },
   "app_bar": {
-    "progress": "postęp",
-    "essays": "eseje",
-    "dictionary": "słownik",
-    "new_essay": "nowy esej",
+    "progress": "Postęp",
+    "essays": "Eseje",
+    "dictionary": "Słownik",
+    "new_essay": "Nowy esej",
     "switch_languages": "Zmień języki",
     "light_theme": "Włącz ciemny motyw",
     "dark_theme": "Włącz jasny motyw"
@@ -41,7 +41,7 @@
     "letters_remaining": "Do minimalnej objętości eseju: {n} liter | Do minimalnej objętości eseju: {n} litera | Do minimalnej objętości eseju: {n} litery | Do minimalnej objętości eseju: {n} liter",
     "min_requirements_met": "Minimalna objętość osiągnięta",
     "buttons": {
-      "handle": "uchwyt"
+      "handle": "Uchwyt"
     }
   },
   "progress": {
@@ -53,9 +53,9 @@
     "essays_without_translator_title": "Eseje bez tłumacza",
     "average_grammar_estimation_title": "Średnia ocena gramatyki",
     "buttons": {
-      "share": "udostępnij",
-      "export": "eksportuj",
-      "reset": "resetuj"
+      "share": "Udostępnij",
+      "export": "Eksportuj",
+      "reset": "Resetuj"
     }
   },
   "essays": {
@@ -79,8 +79,8 @@
     "grammar_estimation_title": "Ocena gramatyki",
     "dictionary_title": "Słownik",
     "buttons": {
-      "back": "wstecz",
-      "next": "dalej"
+      "back": "Wstecz",
+      "next": "Dalej"
     }
   }
 }

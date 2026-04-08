@@ -1,14 +1,14 @@
 {
   "buttons": {
-    "save": "kaydet",
-    "close": "kapat",
-    "cancel": "iptal"
+    "save": "Kaydet",
+    "close": "Kapat",
+    "cancel": "İptal"
   },
   "app_bar": {
-    "progress": "ilerleme",
-    "essays": "denemeler",
-    "dictionary": "sözlük",
-    "new_essay": "yeni deneme",
+    "progress": "İlerleme",
+    "essays": "Denemeler",
+    "dictionary": "Sözlük",
+    "new_essay": "Yeni deneme",
     "switch_languages": "Dilleri Değiştir",
     "light_theme": "Karanlık temasını aç",
     "dark_theme": "Açık temasını aç"
@@ -41,7 +41,7 @@
     "letters_remaining": "Minimum deneme hacmine kadar: {n} harf | Minimum deneme hacmine kadar: {n} harf | Minimum deneme hacmine kadar: {n} harf",
     "min_requirements_met": "Minimum hacme ulaşıldı",
     "buttons": {
-      "handle": "işle"
+      "handle": "İşle"
     }
   },
   "progress": {
@@ -53,9 +53,9 @@
     "essays_without_translator_title": "Çevirmensiz denemeler",
     "average_grammar_estimation_title": "Ortalama gramer değerlendirmesi",
     "buttons": {
-      "share": "paylaş",
-      "export": "dışa aktar",
-      "reset": "sıfırla"
+      "share": "Paylaş",
+      "export": "Dışa aktar",
+      "reset": "Sıfırla"
     }
   },
   "essays": {
@@ -79,8 +79,8 @@
     "grammar_estimation_title": "Gramer değerlendirmesi",
     "dictionary_title": "Sözlük",
     "buttons": {
-      "back": "geri",
-      "next": "ileri"
+      "back": "Geri",
+      "next": "İleri"
     }
   }
 }
