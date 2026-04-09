@@ -3,30 +3,25 @@
     v-if="dictionary.length === 0"
     class="fill-height"
   >
-    <v-row>
-      <v-col
-        class="d-flex flex-column justify-center flex-grow-1"
-        cols="12"
+    <div class="h-100 d-flex flex-column justify-center flex-grow-1">
+      <v-icon
+        class="align-self-center mb-2"
+        color="warning"
+        icon="mdi-book-alert"
+        style="font-size: 6em"
+      />
+      <p class="align-self-center text-disabled mb-4">
+        {{ $t("dictionary.no_data") }}
+      </p>
+      <v-btn
+        class="align-self-center"
+        color="warning"
+        to="/new-essay"
+        variant="tonal"
       >
-        <v-icon
-          class="align-self-center mb-2"
-          color="warning"
-          icon="mdi-book-alert"
-          style="font-size: 6em"
-        />
-        <p class="align-self-center text-disabled mb-4">
-          {{ $t("dictionary.no_data") }}
-        </p>
-        <v-btn
-          class="align-self-center"
-          color="warning"
-          to="/new-essay"
-          variant="tonal"
-        >
-          {{ $t("app_bar.new_essay") }}
-        </v-btn>
-      </v-col>
-    </v-row>
+        {{ $t("app_bar.new_essay") }}
+      </v-btn>
+    </div>
   </v-container>
   <v-container
     v-else
