@@ -47,7 +47,7 @@ Ensure you have **Node.js** installed on your machine (v18 or v20+ is recommende
    npm run dev
    ```
 
-Once started, open the link provided by Vite in your browser (default is [http://localhost:3001](http://localhost:3001)). Any changes you make to the code will be instantly reflected in the browser (thanks to instant HMR).
+Once started, open the link provided by Vite in your browser (default is [http://localhost:3000/llea/](http://localhost:3000/llea/)). Any changes you make to the code will be instantly reflected in the browser (thanks to instant HMR).
 
 ## Build for Production
 
