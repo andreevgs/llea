@@ -32,6 +32,7 @@ export interface AnalyzedEssayDto {
   targetLanguage: string;
   isTranslatorUsed: boolean;
   grammarQuality: GrammarQuality;
+  numOfMistakes: number;
   numOfSentencesWithMistakes: number;
   numOfWords: number;
   analyzedSentences: AnalyzedSentence[];

@@ -210,6 +210,12 @@
     newEssayGrammarQuality.estimation = Number(
       (newEssayGrammarQuality.estimation / 10).toFixed(1),
     );
+    const numOfMistakes = newAnalyzedSentences.reduce(
+      (count, sentence) => {
+        return count + sentence.mistakes.length;
+      },
+      0,
+    );
     const newAnalyzedEssay: AnalyzedEssay = {
       text: essaysStore.newEssay,
       date: new Date(),
@@ -220,6 +226,7 @@
       numOfWords: essaysStore.newEssay.trim()
         ? essaysStore.newEssay.trim().split(/\s+/).length
         : 0,
+      numOfMistakes,
       numOfSentencesWithMistakes: newAnalyzedSentences.reduce(
         (count, sentence) => {
           return sentence.mistakes.length > 0 ? count + 1 : count;
@@ -239,12 +246,6 @@
         targetLanguage: languagesStore.targetLanguage,
       });
     }
-    const numOfMistakes = newAnalyzedEssay.analyzedSentences.reduce(
-      (count, sentence) => {
-        return count + sentence.mistakes.length;
-      },
-      0,
-    );
     const numOfSentencesWithoutMistakes
       = newAnalyzedEssay.analyzedSentences.length
         - newAnalyzedEssay.numOfSentencesWithMistakes;

@@ -62,6 +62,7 @@
   "essays": {
     "no_data": "Tavo ese sąrašas šiuo metu tuščias",
     "grammar_estimation_label": "gramatikos įvertinimas",
+    "mistakes_label": "klaidų | klaida | klaidos | klaidų",
     "sentences_with_mistakes_label": "sakinių su klaidomis | sakinys su klaida | sakiniai su klaidomis | sakinių su klaidomis",
     "translator_used_label": "Parašyta naudojant vertėją",
     "translation_title": "Vertimas",

@@ -46,6 +46,22 @@
                 </template>
               </v-tooltip>
               <v-tooltip
+                v-if="essay.numOfMistakes"
+                :text="`${essay.numOfMistakes} ${$t('essays.mistakes_label', essay.numOfMistakes)}`"
+              >
+                <template #activator="{ props }">
+                  <v-chip
+                    v-bind="props"
+                    class="cursor-pointer"
+                    color="warning"
+                    prepend-icon="mdi-alert-circle"
+                    variant="tonal"
+                  >
+                    {{ essay.numOfMistakes }}
+                  </v-chip>
+                </template>
+              </v-tooltip>
+              <v-tooltip
                 v-if="essay.numOfSentencesWithMistakes"
                 :text="`${essay.numOfSentencesWithMistakes} ${$t('essays.sentences_with_mistakes_label', essay.numOfSentencesWithMistakes)}`"
               >
@@ -53,7 +69,6 @@
                   <v-chip
                     v-bind="props"
                     class="cursor-pointer"
-                    color="warning"
                     prepend-icon="mdi-alert"
                     variant="tonal"
                   >
@@ -61,6 +76,7 @@
                   </v-chip>
                 </template>
               </v-tooltip>
+
               <v-tooltip
                 v-if="essay.isTranslatorUsed"
                 :text="$t('essays.translator_used_label')"

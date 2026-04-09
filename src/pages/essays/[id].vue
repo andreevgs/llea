@@ -13,8 +13,15 @@
                 {{ essay.grammarQuality.estimation }} — {{ $t('essays.grammar_estimation_label') }}
               </v-chip>
               <v-chip
-                v-if="essay.numOfSentencesWithMistakes"
+                v-if="essay.numOfMistakes"
                 color="warning"
+                prepend-icon="mdi-alert-circle"
+                variant="tonal"
+              >
+                {{ essay.numOfMistakes }} {{ $t('essays.mistakes_label', essay.numOfMistakes) }}
+              </v-chip>
+              <v-chip
+                v-if="essay.numOfSentencesWithMistakes"
                 prepend-icon="mdi-alert"
                 variant="tonal"
               >
@@ -70,7 +77,7 @@
             >
               <v-alert
                 border="start"
-                icon="mdi-alert"
+                icon="mdi-alert-circle"
                 :title="mistake.type"
                 type="warning"
                 variant="tonal"
