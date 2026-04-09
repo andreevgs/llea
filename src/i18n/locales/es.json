@@ -30,7 +30,7 @@
   "new_essay": {
     "nn_recommendation": {
       "header": "Usa Google Gemini o Qwen",
-      "text": "La inteligencia artificial generativa debe usarse para probar tu competencia lingüística y proporcionar información para el aprendizaje. Si aún no estás registrado en al menos uno de los sistemas propuestos, por favor regístrate."
+      "text": "La red neuronal generativa debe usarse para probar tu competencia lingüística y proporcionar información para el aprendizaje. Si aún no estás registrado en al menos uno de los sistemas propuestos, por favor regístrate."
     },
     "translate_recommendation": {
       "header": "Usa Google Translate",
@@ -38,7 +38,8 @@
     },
     "textarea_placeholder": "Tu nuevo ensayo en el idioma que estás estudiando",
     "checkbox_label": "Se utilizó traductor y/o materiales adicionales",
-    "letters_remaining": "Hasta el volumen mínimo del ensayo: {n} letras | Hasta el volumen mínimo del ensayo: {n} letra | Hasta el volumen mínimo del ensayo: {n} letras",
+    "until_min_volume": "Hasta el volumen mínimo del ensayo —",
+    "letters_left": "{n} letras | {n} letra | {n} letras",
     "min_requirements_met": "Volumen mínimo alcanzado",
     "buttons": {
       "handle": "Manejar"

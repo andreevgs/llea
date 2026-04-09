@@ -30,7 +30,7 @@
   "new_essay": {
     "nn_recommendation": {
       "header": "Use Google Gemini or Qwen",
-      "text": "Generative AI must be used to test your language proficiency and provide information for learning. If you are not yet registered in at least one of the proposed systems, please register."
+      "text": "A generative neural network must be used to test your language proficiency and provide information for learning. If you are not yet registered in at least one of the proposed systems, please register."
     },
     "translate_recommendation": {
       "header": "Use Google Translate",
@@ -38,7 +38,8 @@
     },
     "textarea_placeholder": "Your new essay in the language you are studying",
     "checkbox_label": "A translator and/or additional materials were used",
-    "letters_remaining": "Until the minimum essay volume: {n} letters | Until the minimum essay volume: {n} letter | Until the minimum essay volume: {n} letters",
+    "until_min_volume": "Until the minimum essay volume —",
+    "letters_left": "{n} letters | {n} letter | {n} letters",
     "min_requirements_met": "Minimum volume reached",
     "buttons": {
       "handle": "Handle"

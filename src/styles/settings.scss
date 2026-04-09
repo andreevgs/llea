@@ -11,7 +11,8 @@
 
 @use "vuetify/settings" with (
   $alert-title-font-size: 1.25rem,
-  $alert-title-font-weight: 500
+  $alert-title-font-weight: 500,
+  $alert-title-letter-spacing: 0.0125em
 );
 
 code {

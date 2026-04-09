@@ -257,7 +257,6 @@
       "grammarQuality.estimation",
     );
     progressData.averageGrammarEstimation = averageGrammarEstimation;
-    console.log(progressData);
     return progressData;
   });
 </script>

@@ -217,11 +217,9 @@
       isTranslatorUsed: essaysStore.isNewEssayTranslatorUsed,
       currentLanguage: languagesStore.currentLanguage,
       targetLanguage: languagesStore.targetLanguage,
-      numOfWords: essaysStore.newEssay
-        .replace(/[^\w\s]|_/g, " ")
-        .replace(/\s+/g, " ")
-        .split(" ")
-        .length,
+      numOfWords: essaysStore.newEssay.trim()
+        ? essaysStore.newEssay.trim().split(/\s+/).length
+        : 0,
       numOfSentencesWithMistakes: newAnalyzedSentences.reduce(
         (count, sentence) => {
           return sentence.mistakes.length > 0 ? count + 1 : count;
@@ -261,11 +259,6 @@
         "next",
       );
     if (progressEntriesForLanguagePair.length > 0) {
-      console.log(
-        progressEntriesForLanguagePair[0].points,
-        essayPoints,
-        progressEntriesForLanguagePair[0].points + essayPoints,
-      );
       await progressEntriesService.put({
         ...progressEntriesForLanguagePair[0],
         points:
@@ -295,34 +288,9 @@
     }
     handleCloseDialog();
     isSuccessSnackbarVisible.value = true;
+    essaysStore.newEssay = "";
+    essaysStore.isNewEssayTranslatorUsed = false;
   };
-
-// const pasteAnalysisResult = async () => {
-//   try {
-//     const analysisResult = await navigator.clipboard.readText();
-//     const sentencesGrammaticalAnalysis = JSON.parse(
-//       analysisResult,
-//     ) as AnalyzedSentence[];
-//     analyzedEssayString.value = JSON.stringify({
-//       text: essaysStore.newEssay,
-//       date: new Date(),
-//       numOfSentencesWithMistakes: sentencesGrammaticalAnalysis.reduce(
-//         (count, sentence) => {
-//           return sentence.mistakes.length ? count + 1 : count;
-//         },
-//         0,
-//       ),
-//       numOfWords: essaysStore.newEssay
-//         .replace(/[^\w\s]|_/g, " ")
-//         .replace(/\s+/g, " ")
-//         .split(" ").length,
-//       analyzedSentences: sentencesGrammaticalAnalysis,
-//     });
-//   } catch (e) {
-//     console.log(e);
-//     //
-//   }
-// };
 </script>
 
 <style scoped></style>

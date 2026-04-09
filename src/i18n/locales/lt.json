@@ -15,8 +15,8 @@
   },
   "change_langs_dialog": {
     "header": "Keičiamos kalbos",
-    "select_current_lang_label": "Pasirinkite kalbą, kuriai kalbate",
-    "select_target_lang_label": "Pasirinkite kalbą, kurios mokate",
+    "select_current_lang_label": "Pasirink kalbą, kuria kalbi",
+    "select_target_lang_label": "Pasirink kalbą, kurios mokaisi",
     "langs": {
       "en": "Anglų",
       "ru": "Rusų",
@@ -29,16 +29,17 @@
   },
   "new_essay": {
     "nn_recommendation": {
-      "header": "Naudokite „Google Gemini“ arba „Qwen“",
-      "text": "Generatyvusis dirbtinis intelektas turi būti naudojamas jūsų kalbos įgūdžių patikrinimui ir mokymo informacijai pateikti. Jei dar nesate užsiregistravę bent viename iš siūlomų sistemų, prašome prisiregistruoti."
+      "header": "Naudok „Google Gemini“ arba „Qwen“",
+      "text": "Generatyvinis neuroninis tinklas turi būti naudojamas tavo kalbos įgūdžių patikrinimui ir mokymo informacijai pateikti. Jei dar nesi užsiregistravęs bent vienoje iš siūlomų sistemų, prašome prisiregistruoti."
     },
     "translate_recommendation": {
-      "header": "Naudokite „Google Translate“",
-      "text": "Jei dar nepakankamai gerai mokate norimą kalbą, naudokite vertėją. Tik nepamirškite pažymėti, kad naudojote jį — tai būtina, kad būtų galima apskaičiuoti jūsų progresą!"
+      "header": "Naudok „Google Translate“",
+      "text": "Jei dar nepakankamai gerai moki mokomąją kalbą, naudok vertėją. Tik nepamiršk pažymėti, kad naudojai jį — tai būtina, kad būtų galima apskaičiuoti tavo progresą!"
     },
-    "textarea_placeholder": "Jūsų nauja esė mokomąja kalba",
+    "textarea_placeholder": "Tavo nauja esė mokomąja kalba",
     "checkbox_label": "Naudotas vertėjas ir (arba) papildomos medžiagos",
-    "letters_remaining": "Iki minimalios esė apimties: {n} raidžių | Iki minimalios esė apimties: {n} raidė | Iki minimalios esė apimties: {n} raidės | Iki minimalios esė apimties: {n} raidžių",
+    "until_min_volume": "Iki minimalios esė apimties —",
+    "letters_left": "{n} raidžių | {n} raidė | {n} raidės | {n} raidžių",
     "min_requirements_met": "Pasiekta minimali apimtis",
     "buttons": {
       "handle": "Tvarkyti"
@@ -47,9 +48,9 @@
   "progress": {
     "no_data": "Kol kas nėra duomenų apie pažangą",
     "points_label": "taškų | taškas | taškai | taškų",
-    "info_text": "Jūsų kelias į kalbos mokėjimą atsispindi sukauptais taškais. Kiekvienas sakinys be klaidų priartina jus prie tobulumo, suteikdamas <b>2 taškus</b>. Klaidos mus moko, bet atima <b>1 tašką</b>. Siekite viršūnės – <b>100 taškų</b>, kur kiekvienas taškas simbolizuoja žingsnį link meistriškumo.",
+    "info_text": "Tavo kelias į kalbos mokėjimą atsispindi sukauptais taškais. Kiekvienas sakinys be klaidų priartina tave prie tobulumo, suteikdamas <b>2 taškus</b>. Klaidos mus moko, bet atima <b>1 tašką</b>. Siek viršūnės – <b>100 taškų</b>, kur kiekvienas taškas simbolizuoja žingsnį link meistriškumo.",
     "essays_without_mistakes_title": "Sakiniai be klaidų",
-    "grammar_improvement_recommendation": "Jūsų gramatiką reikia tobulinti. Rekomenduojama pakartoti pagrindines taisykles ir pasipraktikuoti rašant paprastus sakinius.",
+    "grammar_improvement_recommendation": "Tavo gramatiką reikia tobulinti. Rekomenduojama pakartoti pagrindines taisykles ir pasipraktikuoti rašant paprastus sakinius.",
     "essays_without_translator_title": "Esė be vertėjo",
     "average_grammar_estimation_title": "Vidutinis gramatikos įvertinimas",
     "buttons": {
@@ -59,7 +60,7 @@
     }
   },
   "essays": {
-    "no_data": "Jūsų ese sąrašas šiuo metu tuščias",
+    "no_data": "Tavo ese sąrašas šiuo metu tuščias",
     "grammar_estimation_label": "gramatikos įvertinimas",
     "sentences_with_mistakes_label": "sakinių su klaidomis | sakinys su klaida | sakiniai su klaidomis | sakinių su klaidomis",
     "translator_used_label": "Parašyta naudojant vertėją",
@@ -70,7 +71,7 @@
     "out_of_10": "iš 10"
   },
   "dictionary": {
-    "no_data": "Jūsų žodynas šiuo metu yra tuščias"
+    "no_data": "Tavo žodynas šiuo metu yra tuščias"
   },
   "essay_analysis_dialog": {
     "success_title": "Analizė sėkmingai baigta",

@@ -1,7 +1,13 @@
 <template>
-  <v-container v-if="dictionary.length === 0" class="fill-height">
+  <v-container
+    v-if="dictionary.length === 0"
+    class="fill-height"
+  >
     <v-row>
-      <v-col class="d-flex flex-column justify-center flex-grow-1" cols="12">
+      <v-col
+        class="d-flex flex-column justify-center flex-grow-1"
+        cols="12"
+      >
         <v-icon
           class="align-self-center mb-2"
           color="warning"
@@ -16,11 +22,16 @@
           color="warning"
           to="/new-essay"
           variant="tonal"
-        >{{ $t("app_bar.new_essay") }}</v-btn>
+        >
+          {{ $t("app_bar.new_essay") }}
+        </v-btn>
       </v-col>
     </v-row>
   </v-container>
-  <v-container v-else class="pa-0">
+  <v-container
+    v-else
+    class="pa-0"
+  >
     <v-data-table
       v-model:items-per-page="itemsPerPage"
       v-model:page="pageNumber"
@@ -41,20 +52,22 @@
   import { useLanguagesStore } from "@/stores/languages";
 
   const languagesStore = useLanguagesStore();
-  export const useDictionaryData = defineBasicLoader("/dictionary", async () => {
-    return await dictionaryEntriesService.getAllByIndex(
-      "languagePair",
-      {
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      },
-      "prev",
-    );
-  });
+  export const useDictionaryData = defineBasicLoader(
+    "/dictionary",
+    async () => {
+      return await dictionaryEntriesService.getAllByIndex(
+        "languagePair",
+        {
+          currentLanguage: languagesStore.currentLanguage,
+          targetLanguage: languagesStore.targetLanguage,
+        },
+        "prev",
+      );
+    },
+  );
 </script>
 
 <script setup lang="ts">
-
   const { data: dictionary, reload } = useDictionaryData();
   watch(languagesStore, () => {
     reload();

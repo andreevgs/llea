@@ -30,15 +30,16 @@
   "new_essay": {
     "nn_recommendation": {
       "header": "Użyj Google Gemini lub Qwen",
-      "text": "Do sprawdzenia znajomości języka i dostarczenia informacji potrzebnych do nauki należy zastosować generatywną sztuczną inteligencję. Jeśli nie jesteś jeszcze zarejestrowany w przynajmniej jednym z proponowanych systemów, prosimy o rejestrację."
+      "text": "Do sprawdzenia twojej znajomości języka i dostarczenia informacji potrzebnych do nauki należy zastosować generatywną sieć neuronową. Jeśli nie jesteś jeszcze zarejestrowany w przynajmniej jednym z proponowanych systemów, prosimy o rejestrację."
     },
     "translate_recommendation": {
       "header": "Użyj Google Translate",
-      "text": "Jeśli nie jesteś jeszcze zbyt dobry w języku, którego się uczysz, skorzystaj z tłumacza. Tylko nie zapomnij zauważyć, że go użyłeś – jest to konieczne do obliczenia Twoich postępów!"
+      "text": "Jeśli nie jesteś jeszcze zbyt dobry w języku, którego się uczysz, skorzystaj z tłumacza. Tylko nie zapomnij zauważyć, że go użyłeś – jest to konieczne do obliczenia twoich postępów!"
     },
     "textarea_placeholder": "Twój nowy esej w języku, którego się uczysz",
     "checkbox_label": "Użyto tłumacza i/lub dodatkowych materiałów",
-    "letters_remaining": "Do minimalnej objętości eseju: {n} liter | Do minimalnej objętości eseju: {n} litera | Do minimalnej objętości eseju: {n} litery | Do minimalnej objętości eseju: {n} liter",
+    "until_min_volume": "Do minimalnej objętości eseju —",
+    "letters_left": "{n} liter | {n} litera | {n} litery | {n} liter",
     "min_requirements_met": "Minimalna objętość osiągnięta",
     "buttons": {
       "handle": "Uchwyt"
@@ -47,7 +48,7 @@
   "progress": {
     "no_data": "Nie ma jeszcze danych o postępie",
     "points_label": "punktów | punkt | punkty | punktów",
-    "info_text": "Twoja droga do biegłości językowej odzwierciedla się w zdobytych punktach. Każde zdanie bez błędów przybliża Cię do doskonałości, dając <b>2 punkty</b>. Błędy nas uczą, ale odejmują <b>1 punkt</b>. Dąż do szczytu — <b>100 punktów</b>, gdzie każdy punkt symbolizuje krok ku mistrzostwu.",
+    "info_text": "Twoja droga do biegłości językowej odzwierciedla się w zdobytych punktach. Każde zdanie bez błędów przybliża cię do doskonałości, dając <b>2 punkty</b>. Błędy nas uczą, ale odejmują <b>1 punkt</b>. Dąż do szczytu — <b>100 punktów</b>, gdzie każdy punkt symbolizuje krok ku mistrzostwu.",
     "essays_without_mistakes_title": "Zdania bez błędów",
     "grammar_improvement_recommendation": "Twoja gramatyka wymaga poprawy. Zaleca się powtórzenie podstawowych zasad i ćwiczenie pisania prostych zdań.",
     "essays_without_translator_title": "Eseje bez tłumacza",

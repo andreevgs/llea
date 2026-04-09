@@ -1,7 +1,7 @@
 <template>
-  <v-row class="mb-1" dense>
+  <v-row class="mb-2" density="compact">
     <v-col cols="12">
-      <v-alert closable color="primary" type="info" variant="tonal">
+      <v-alert color="primary" type="info" variant="tonal">
         <template #text>
           <span>
             Скопируй промпт и вставь его в генеративную нейросеть (<b>Google Gemini</b>
@@ -44,7 +44,7 @@
       <v-spacer />
       <v-btn
         v-if="Boolean(model)"
-        class="text-none"
+        class="text-none mr-4"
         color="error"
         density="comfortable"
         prepend-icon="mdi-delete"
@@ -54,7 +54,7 @@
         Очистить
       </v-btn>
     </v-toolbar>
-    <pre class="pa-4 preview">{{ model || prompt }}</pre>
+    <pre class="pa-4 ma-0 preview">{{ model || prompt }}</pre>
   </v-sheet>
 </template>
 
@@ -70,7 +70,7 @@
   const isPromptCopied = ref(false);
 
   const copyPromptText = computed(() => {
-    return isPromptCopied.value ? "скопировано" : "скопировать";
+    return isPromptCopied.value ? "Скопировано" : "Скопировать";
   });
 
   const toolbarText = computed(() => {
@@ -88,7 +88,7 @@
   });
 
   const pasteResultText = computed(() => {
-    return model.value ? "результат записан" : "вставить результат";
+    return model.value ? "Результат записан" : "Вставить результат";
   });
 
   const pasteResultIcon = computed(() => {
