@@ -62,6 +62,7 @@
   "essays": {
     "no_data": "Your essay list is currently empty",
     "grammar_estimation_label": "grammar estimation",
+    "mistakes_label": "mistakes | mistake | mistakes",
     "sentences_with_mistakes_label": "sentences with mistakes | sentence with mistakes | sentences with mistakes",
     "translator_used_label": "Written with a translator",
     "translation_title": "Translation",
