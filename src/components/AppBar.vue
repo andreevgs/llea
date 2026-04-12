@@ -35,15 +35,27 @@
         <template #activator="{ props }">
           <v-btn
             v-bind="props"
-            class="mr-2"
+            class="mr-1"
             icon="mdi-theme-light-dark"
             @click="toggleTheme()"
           />
         </template>
       </v-tooltip>
+      <v-tooltip
+        location="bottom"
+        text="Настройки"
+      >
+        <template #activator="{ props }">
+          <v-btn
+            v-bind="props"
+            class="mr-2"
+            icon="mdi-cog"
+            @click="isSettingsModalOpen = true"
+          />
+        </template>
+      </v-tooltip>
       <v-btn
         :append-icon="`$flag-${languagesStore.targetLanguage}`"
-        class="mr-2"
         color="primary"
         :prepend-icon="`$flag-${languagesStore.currentLanguage}`"
         variant="tonal"
@@ -57,11 +69,11 @@
         </v-tooltip>
       </v-btn>
       <v-divider
-        inset
+        class="my-4 mx-4"
         vertical
       />
       <v-btn
-        class="mr-2 ml-2"
+        class="mr-2"
         color="primary"
         prepend-icon="mdi-plus"
         to="/new-essay"
@@ -70,6 +82,7 @@
         {{ $t("app_bar.new_essay") }}
       </v-btn>
       <change-languages-dialog v-model="isChangeLanguagesModalOpen" />
+      <settings-dialog v-model="isSettingsModalOpen" />
     </template>
   </v-app-bar>
 </template>
@@ -78,8 +91,10 @@
   import { useI18n } from "vue-i18n";
   import { useTheme } from "vuetify";
   import ChangeLanguagesDialog from "@/components/ChangeLanguagesDialog.vue";
+  import SettingsDialog from "@/components/SettingsDialog.vue";
   import { useLanguagesStore } from "@/stores/languages";
   const isChangeLanguagesModalOpen = ref(false);
+  const isSettingsModalOpen = ref(false);
 
   const theme = useTheme();
   const { t } = useI18n();
