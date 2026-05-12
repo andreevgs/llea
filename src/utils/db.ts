@@ -75,6 +75,18 @@ export const idbDelete = async (
   });
 };
 
+export const idbClear = async (
+  dbPromise: Promise<IDBDatabase>,
+  storeName: string,
+): Promise<void> => {
+  const store = await getDBTransaction(dbPromise, storeName, "readwrite");
+  return new Promise((resolve, reject) => {
+    const request = store.clear();
+    request.onsuccess = () => resolve();
+    request.onerror = () => reject(request.error);
+  });
+};
+
 export const idbGetAllByIndex = async <T>(
   dbPromise: Promise<IDBDatabase>,
   storeName: string,

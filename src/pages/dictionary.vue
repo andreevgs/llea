@@ -45,6 +45,7 @@
   import { defineBasicLoader } from "vue-router/experimental";
   import { dictionaryEntriesService } from "@/services/dictionaryEntriesService";
   import { useLanguagesStore } from "@/stores/languages";
+  import { useSystemStore } from "@/stores/system";
 
   const languagesStore = useLanguagesStore();
   export const useDictionaryData = defineBasicLoader(
@@ -63,10 +64,19 @@
 </script>
 
 <script setup lang="ts">
+  const systemStore = useSystemStore();
   const { data: dictionary, reload } = useDictionaryData();
-  watch(languagesStore, () => {
-    reload();
-  });
+
+  watch(
+    [
+      () => languagesStore.currentLanguage,
+      () => languagesStore.targetLanguage,
+      () => systemStore.lastUpdateTimestamp,
+    ],
+    () => {
+      reload();
+    },
+  );
   const tableHeaders = [
     {
       title: "Слово",

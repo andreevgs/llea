@@ -124,8 +124,10 @@
   import { defineBasicLoader } from "vue-router/experimental";
   import { essaysService as essaysRepository } from "@/services/essaysService";
   import { useLanguagesStore } from "@/stores/languages";
+  import { useSystemStore } from "@/stores/system";
   import { getEstimationChipColor } from "@/utils/chip";
   import { formatRelativeDate } from "@/utils/date";
+
   const languagesStore = useLanguagesStore();
 
   export const useEssaysData = defineBasicLoader("/essays/", async () => {
@@ -142,10 +144,19 @@
 </script>
 
 <script setup lang="ts">
+  const systemStore = useSystemStore();
   const { data: essays, reload } = useEssaysData();
-  watch(languagesStore, () => {
-    reload();
-  });
+
+  watch(
+    [
+      () => languagesStore.currentLanguage,
+      () => languagesStore.targetLanguage,
+      () => systemStore.lastUpdateTimestamp,
+    ],
+    () => {
+      reload();
+    },
+  );
 </script>
 
 <style scoped></style>
