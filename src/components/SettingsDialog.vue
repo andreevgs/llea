@@ -6,15 +6,15 @@
           <v-btn dark icon @click="model = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
-          <v-toolbar-title>Настройки</v-toolbar-title>
+          <v-toolbar-title>{{ $t('settings.header') }}</v-toolbar-title>
         </v-toolbar>
         <v-list lines="two">
-          <v-list-subheader>Управление данными</v-list-subheader>
+          <v-list-subheader>{{ $t('settings.data_management') }}</v-list-subheader>
           <v-list-item
             key="Импорт"
-            subtitle="Импортировать данные из файла"
-            title="Импорт"
-            @click="handleImport"
+            :subtitle="$t('settings.import.subtitle')"
+            :title="$t('settings.import.title')"
+            @click="handleImportClick"
           >
             <template #prepend>
               <v-icon icon="mdi-download" />
@@ -23,9 +23,9 @@
           <v-list-item
             key="Экспорт"
             :disabled="isExporting"
-            subtitle="Экспортировать в файл все данные приложения"
-            title="Экспорт"
-            @click="handleExport"
+            :subtitle="$t('settings.export.subtitle')"
+            :title="$t('settings.export.title')"
+            @click="exportData"
           >
             <template #prepend>
               <v-icon icon="mdi-upload" />
@@ -34,8 +34,8 @@
           <v-list-item
             key="Удалить все данные"
             class="text-error"
-            title="Удалить все данные приложения"
-            @click="handleDelete"
+            :title="$t('settings.delete_all.title')"
+            @click="handleDeleteClick"
           >
             <template #prepend>
               <v-icon color="error" icon="mdi-delete" />
@@ -46,19 +46,7 @@
     </v-card>
   </v-dialog>
 
-  <v-dialog v-model="showConfirmDelete" style="max-width: 500px">
-    <v-card>
-      <v-card-title>Удаление данных</v-card-title>
-      <v-card-text>
-        Вы уверены, что хотите удалить все данные? Это действие нельзя отменить.
-      </v-card-text>
-      <v-card-actions>
-        <v-spacer />
-        <v-btn color="primary" variant="text" @click="showConfirmDelete = false">Отмена</v-btn>
-        <v-btn color="error" variant="text" @click="confirmDelete">Удалить</v-btn>
-      </v-card-actions>
-    </v-card>
-  </v-dialog>
+  <DeleteConfirmDialog v-model="showConfirmDelete" @confirm="onConfirmDelete" />
 
   <input
     ref="fileInput"
@@ -71,23 +59,16 @@
 
 <script lang="ts" setup>
   import { ref } from "vue";
-  import { dictionaryEntriesService } from "@/services/dictionaryEntriesService";
-  import { essaysService } from "@/services/essaysService";
-  import { progressEntriesService } from "@/services/progressEntriesService";
-  import { progressHistoryService } from "@/services/progressHistoryService";
-  import { useEssaysStore } from "@/stores/essays";
-  import { useLanguagesStore } from "@/stores/languages";
-  import { useSystemStore } from "@/stores/system";
+  import { useDataManagement } from "@/composables/useDataManagement";
+  import DeleteConfirmDialog from "./DeleteConfirmDialog.vue";
 
   const model = defineModel<boolean>();
-  const languagesStore = useLanguagesStore();
-  const systemStore = useSystemStore();
-
-  const isExporting = ref(false);
   const showConfirmDelete = ref(false);
   const fileInput = ref<HTMLInputElement | null>(null);
 
-  const handleImport = () => {
+  const { isExporting, exportData, importData, clearAllData } = useDataManagement();
+
+  const handleImportClick = () => {
     fileInput.value?.click();
   };
 
@@ -95,95 +76,23 @@
     const file = (event.target as HTMLInputElement).files?.[0];
     if (!file) return;
 
-    try {
-      const result = await file.text();
-      const data = JSON.parse(result);
-
-      if (data.dictionaryEntries) {
-        for (const entry of data.dictionaryEntries) {
-          await dictionaryEntriesService.put(entry);
-        }
-      }
-      if (data.essays) {
-        for (const entry of data.essays) {
-          await essaysService.put(entry);
-        }
-      }
-      if (data.progressEntries) {
-        for (const entry of data.progressEntries) {
-          await progressEntriesService.put(entry);
-        }
-      }
-      if (data.progressHistory) {
-        for (const entry of data.progressHistory) {
-          await progressHistoryService.put(entry);
-        }
-      }
-
-      if (data.currentLanguage) {
-        languagesStore.setCurrentLanguage(data.currentLanguage);
-      }
-      if (data.targetLanguage) {
-        languagesStore.setTargetLanguage(data.targetLanguage);
-      }
-
+    const success = await importData(file);
+    if (success) {
       model.value = false;
-      systemStore.triggerUpdate();
-    } catch (error) {
-      console.error(error);
     }
 
     (event.target as HTMLInputElement).value = "";
   };
 
-  const handleExport = async () => {
-    if (isExporting.value) return;
-    isExporting.value = true;
-    try {
-      const data = {
-        dictionaryEntries: await dictionaryEntriesService.getAll(),
-        essays: await essaysService.getAll(),
-        progressEntries: await progressEntriesService.getAll(),
-        progressHistory: await progressHistoryService.getAll(),
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      };
-      const blob = new Blob([JSON.stringify(data)], { type: "application/json" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "data.llea";
-      document.body.append(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      isExporting.value = false;
-    }
-  };
-
-  const handleDelete = () => {
+  const handleDeleteClick = () => {
     model.value = false;
     showConfirmDelete.value = true;
   };
 
-  const confirmDelete = async () => {
-    try {
-      await dictionaryEntriesService.clear();
-      await essaysService.clear();
-      await progressEntriesService.clear();
-      await progressHistoryService.clear();
-
-      const essaysStore = useEssaysStore();
-      essaysStore.newEssay = "";
-      essaysStore.isNewEssayTranslatorUsed = false;
-
+  const onConfirmDelete = async () => {
+    const success = await clearAllData();
+    if (success) {
       showConfirmDelete.value = false;
-      systemStore.triggerUpdate();
-    } catch (error) {
-      console.error(error);
     }
   };
 </script>

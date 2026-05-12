@@ -84,5 +84,26 @@
       "back": "Wstecz",
       "next": "Dalej"
     }
+  },
+  "settings": {
+    "header": "Ustawienia",
+    "data_management": "Zarządzanie danymi",
+    "import": {
+      "title": "Importuj",
+      "subtitle": "Importuj dane z pliku"
+    },
+    "export": {
+      "title": "Eksportuj",
+      "subtitle": "Eksportuj wszystkie dane aplikacji do pliku"
+    },
+    "delete_all": {
+      "title": "Usuń wszystkie dane aplikacji"
+    },
+    "delete_confirm": {
+      "header": "Usuwanie danych",
+      "text": "Na pewno chcesz usunąć wszystkie dane? Tej akcji nie można cofnąć.",
+      "delete_btn": "Usuń",
+      "cancel_btn": "Anuluj"
+    }
   }
 }
