@@ -84,5 +84,26 @@
       "back": "Geri",
       "next": "İleri"
     }
+  },
+  "settings": {
+    "header": "Ayarlar",
+    "data_management": "Veri yönetimi",
+    "import": {
+      "title": "İçe aktar",
+      "subtitle": "Verileri dosyadan içe aktar"
+    },
+    "export": {
+      "title": "Dışa aktar",
+      "subtitle": "Tüm uygulama verilerini dosyaya dışa aktar"
+    },
+    "delete_all": {
+      "title": "Tüm uygulama verilerini sil"
+    },
+    "delete_confirm": {
+      "header": "Verileri sil",
+      "text": "Tüm verileri gerçekten silmek istiyor musun? Bu işlem geri alınamaz.",
+      "delete_btn": "Sil",
+      "cancel_btn": "İptal"
+    }
   }
 }

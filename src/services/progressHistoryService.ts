@@ -1,5 +1,6 @@
 import { getDB } from "@/db";
 import {
+  idbClear,
   idbDelete,
   idbGet,
   idbGetAll,
@@ -29,6 +30,7 @@ export const progressHistoryService = {
   put: (entry: ProgressHistory) =>
     idbPut<ProgressHistory>(getDB(), STORE_NAME, entry),
   delete: (id: number) => idbDelete(getDB(), STORE_NAME, id),
+  clear: () => idbClear(getDB(), STORE_NAME),
 
   getAllByIndex: (
     indexName: string,

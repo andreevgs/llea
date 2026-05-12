@@ -171,6 +171,7 @@
   import { progressEntriesService } from "@/services/progressEntriesService";
   import { progressHistoryService } from "@/services/progressHistoryService";
   import { useLanguagesStore } from "@/stores/languages";
+  import { useSystemStore } from "@/stores/system";
   import { formatRelativeDate } from "@/utils/date";
   import { getDefaultCountResult } from "@/utils/db";
   import {
@@ -259,6 +260,8 @@
   });
 </script>
 <script setup lang="ts">
+
+  const systemStore = useSystemStore();
   const { data: progressData, reload: reloadProgressData } = useProgressData();
 
   const progressPointsDelta = computed(() => {
@@ -285,7 +288,14 @@
     );
   });
 
-  watch(languagesStore, () => {
-    reloadProgressData();
-  });
+  watch(
+    [
+      () => languagesStore.currentLanguage,
+      () => languagesStore.targetLanguage,
+      () => systemStore.lastUpdateTimestamp,
+    ],
+    () => {
+      reloadProgressData();
+    },
+  );
 </script>
