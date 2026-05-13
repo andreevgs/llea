@@ -21,8 +21,8 @@
   <v-container v-else class="pa-0">
     <v-card>
       <v-card-title class="d-flex align-center ga-2">
-        <v-chip class="font-weight-medium" size="small">
-          {{ languagesStore.targetLanguage.toUpperCase() }}
+        <v-chip class="font-weight-medium text-uppercase" size="small">
+          {{ languagesStore.targetLanguage }}
         </v-chip>
         <span>{{ progressData.progressEntry.points }}/100 {{ $t('progress.points_label', progressData.progressEntry.points) }}</span>
       </v-card-title>
