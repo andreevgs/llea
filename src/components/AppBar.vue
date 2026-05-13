@@ -42,14 +42,18 @@
         </template>
       </v-tooltip>
       <v-btn
-        :append-icon="`$flag-${languagesStore.targetLanguage}`"
         class="mr-2"
         color="primary"
-        :prepend-icon="`$flag-${languagesStore.currentLanguage}`"
         variant="tonal"
         @click="isChangeLanguagesModalOpen = true"
       >
-        /
+        <v-chip class="font-weight-medium text-uppercase" color="primary" size="x-small" variant="flat">
+          {{ languagesStore.currentLanguage }}
+        </v-chip>
+        <span class="mx-1">/</span>
+        <v-chip class="font-weight-medium text-uppercase" color="primary" size="x-small" variant="flat">
+          {{ languagesStore.targetLanguage }}
+        </v-chip>
         <v-tooltip
           activator="parent"
           location="bottom"
