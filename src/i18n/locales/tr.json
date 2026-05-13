@@ -18,13 +18,14 @@
     "select_current_lang_label": "Konuştuğun dili seç",
     "select_target_lang_label": "Öğrendiğin dili seç",
     "langs": {
-      "en": "İngilizce",
-      "ru": "Rusça",
-      "pl": "Lehçe",
       "be": "Beyaz Rusça",
+      "de": "Almanca",
+      "en": "İngilizce",
+      "es": "İspanyolca",
       "lt": "Litvanca",
-      "tr": "Türkçe",
-      "es": "İspanyolca"
+      "pl": "Lehçe",
+      "ru": "Rusça",
+      "tr": "Türkçe"
     }
   },
   "new_essay": {

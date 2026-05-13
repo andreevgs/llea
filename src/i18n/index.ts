@@ -1,5 +1,6 @@
 import { createI18n } from "vue-i18n";
 import be from "./locales/be.json";
+import de from "./locales/de.json";
 import en from "./locales/en.json";
 import es from "./locales/es.json";
 import lt from "./locales/lt.json";
@@ -50,7 +51,7 @@ const ltPluralRule = (choice: number, choicesLength: number) => {
   return choicesLength < 4 ? 2 : 3;
 };
 
-export const localesMessages = { ru, en, pl, be, lt, tr, es };
+export const localesMessages = { ru, en, pl, be, lt, tr, es, de };
 
 export type SupportedLocale = keyof typeof localesMessages;
 
