@@ -2,8 +2,8 @@
   <v-dialog v-model="model" persistent style="max-width: 500px">
     <v-card>
       <div>
-        <v-toolbar dark>
-          <v-btn dark icon @click="model = false">
+        <v-toolbar>
+          <v-btn icon @click="model = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
           <v-toolbar-title>{{

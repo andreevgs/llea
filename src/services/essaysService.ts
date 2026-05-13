@@ -1,5 +1,6 @@
 import { getDB } from "@/db";
 import {
+  idbClear,
   idbDelete,
   idbGet,
   idbGetAll,
@@ -53,6 +54,8 @@ export const essaysService = {
     idbPut<AnalyzedEssay>(getDB(), STORE_NAME, essay),
 
   delete: (id: number) => idbDelete(getDB(), STORE_NAME, id),
+
+  clear: () => idbClear(getDB(), STORE_NAME),
 
   getAllByIndex: (
     indexName: string,

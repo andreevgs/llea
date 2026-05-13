@@ -84,5 +84,26 @@
       "back": "Atrás",
       "next": "Siguiente"
     }
+  },
+  "settings": {
+    "header": "Configuración",
+    "data_management": "Gestión de datos",
+    "import": {
+      "title": "Importar",
+      "subtitle": "Importar datos desde un archivo"
+    },
+    "export": {
+      "title": "Exportar",
+      "subtitle": "Exportar todos los datos de la aplicación a un archivo"
+    },
+    "delete_all": {
+      "title": "Eliminar todos los datos de la aplicación"
+    },
+    "delete_confirm": {
+      "header": "Eliminar datos",
+      "text": "¿Seguro que quieres eliminar todos los datos? Esta acción no se puede deshacer.",
+      "delete_btn": "Eliminar",
+      "cancel_btn": "Cancelar"
+    }
   }
 }

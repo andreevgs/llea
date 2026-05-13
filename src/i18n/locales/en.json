@@ -84,5 +84,26 @@
       "back": "Back",
       "next": "Next"
     }
+  },
+  "settings": {
+    "header": "Settings",
+    "data_management": "Data management",
+    "import": {
+      "title": "Import",
+      "subtitle": "Import data from file"
+    },
+    "export": {
+      "title": "Export",
+      "subtitle": "Export all app data to file"
+    },
+    "delete_all": {
+      "title": "Delete all app data"
+    },
+    "delete_confirm": {
+      "header": "Delete data",
+      "text": "Do you really want to delete all data? This action cannot be undone.",
+      "delete_btn": "Delete",
+      "cancel_btn": "Cancel"
+    }
   }
 }

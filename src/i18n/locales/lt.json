@@ -84,5 +84,26 @@
       "back": "Atgal",
       "next": "Toliau"
     }
+  },
+  "settings": {
+    "header": "Nustatymai",
+    "data_management": "Duomenų valdymas",
+    "import": {
+      "title": "Importuoti",
+      "subtitle": "Importuoti duomenis iš failo"
+    },
+    "export": {
+      "title": "Eksportuoti",
+      "subtitle": "Eksportuoti visus programos duomenis į failą"
+    },
+    "delete_all": {
+      "title": "Ištrinti visus programos duomenis"
+    },
+    "delete_confirm": {
+      "header": "Ištrinti duomenis",
+      "text": "Ar tikrai nori ištrinti visus duomenis? Šio veiksmo atšaukti negalima.",
+      "delete_btn": "Ištrinti",
+      "cancel_btn": "Atšaukti"
+    }
   }
 }
