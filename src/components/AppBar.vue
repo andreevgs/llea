@@ -55,7 +55,6 @@
         </template>
       </v-tooltip>
       <v-btn
-        class="mr-2"
         color="primary"
         variant="tonal"
         @click="isChangeLanguagesModalOpen = true"
