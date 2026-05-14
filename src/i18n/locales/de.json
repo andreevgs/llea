@@ -58,6 +58,20 @@
       "share": "Teilen",
       "export": "Exportieren",
       "reset": "Zurücksetzen"
+    },
+    "recommendations": {
+      "translator": {
+        "low": "Du verlässt dich oft auf einen Übersetzer. Versuche, Texte selbstständig zu schreiben, um die Sprache besser zu verinnerlichen.",
+        "medium": "Du fängst an, selbstständig zu schreiben. Mach weiter so und verringere allmählich deine Abhängigkeit vom Übersetzer.",
+        "high": "Du benutzt selten einen Übersetzer. Das ist ein gutes Zeichen für deinen Fortschritt beim Sprachenlernen.",
+        "perfect": "Du benutzt praktisch keinen Übersetzer. Deine Fähigkeit, deine Gedanken selbstständig in der Lernsprache auszudrücken, ist beeindruckend."
+      },
+      "grammar": {
+        "low": "Du musst der Grammatik mehr Aufmerksamkeit schenken. Nutze zusätzliche Lernmaterialien.",
+        "medium": "Du hast ein grundlegendes Verständnis der Grammatik. Lerne weiter und erweitere dein Wissen.",
+        "high": "Deine Grammatik ist gut. Versuche dich an komplexeren Übungen, um dich weiter zu verbessern.",
+        "perfect": "Du zeigst hervorragende Grammatikkenntnisse. Bleibe auf dem Laufenden über die neuesten Änderungen und Feinheiten der Sprache."
+      }
     }
   },
   "essays": {
@@ -73,7 +87,16 @@
     "out_of_10": "von 10"
   },
   "dictionary": {
-    "no_data": "Dein Wörterbuch ist momentan leer"
+    "no_data": "Dein Wörterbuch ist momentan leer",
+    "table": {
+      "items_per_page": "Wörter pro Seite",
+      "page_text": "Seite {pageNumber} von {pagesCount}",
+      "headers": {
+        "word": "Wort",
+        "pronunciation": "Aussprache",
+        "translation": "Übersetzung"
+      }
+    }
   },
   "essay_analysis_dialog": {
     "success_title": "Analyse erfolgreich abgeschlossen",
@@ -84,6 +107,20 @@
     "buttons": {
       "back": "Zurück",
       "next": "Weiter"
+    }
+  },
+  "essay_analysis_step": {
+    "alert_text": "Kopiere den Prompt und füge ihn in ein generatives neuronales Netz (<b>Google Gemini</b> oder <b>Qwen</b>) ein, kopiere dann das erhaltene Ergebnis und füge es hier ein.",
+    "toolbar": {
+      "prompt": "Prompt",
+      "result": "Ergebnis"
+    },
+    "buttons": {
+      "copy": "Kopieren",
+      "copied": "Kopiert",
+      "paste": "Ergebnis einfügen",
+      "pasted": "Ergebnis gespeichert",
+      "clear": "Leeren"
     }
   },
   "settings": {
