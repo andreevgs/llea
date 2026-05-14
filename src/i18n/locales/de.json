@@ -1,0 +1,110 @@
+{
+  "buttons": {
+    "save": "Speichern",
+    "close": "Schließen",
+    "cancel": "Abbrechen"
+  },
+  "app_bar": {
+    "progress": "Fortschritt",
+    "essays": "Aufsätze",
+    "dictionary": "Wörterbuch",
+    "new_essay": "Neuer Aufsatz",
+    "switch_languages": "Sprachen wechseln",
+    "light_theme": "Helles Design aktivieren",
+    "dark_theme": "Dunkles Design aktivieren"
+  },
+  "change_langs_dialog": {
+    "header": "Sprachen wechseln",
+    "select_current_lang_label": "Wähle die Sprache, die du sprichst",
+    "select_target_lang_label": "Wähle die Sprache, die du lernst",
+    "langs": {
+      "be": "Belarussisch",
+      "de": "Deutsch",
+      "en": "Englisch",
+      "es": "Spanisch",
+      "lt": "Litauisch",
+      "pl": "Polnisch",
+      "ru": "Russisch",
+      "tr": "Türkisch"
+    }
+  },
+  "new_essay": {
+    "nn_recommendation": {
+      "header": "Nutze Google Gemini oder Qwen",
+      "text": "Um dein Sprachniveau zu prüfen und dir Lerninformationen bereitzustellen, muss ein generatives neuronales Netz verwendet werden. Wenn du noch bei keinem der vorgeschlagenen Systeme registriert bist, registriere dich bitte."
+    },
+    "translate_recommendation": {
+      "header": "Nutze Google Translate",
+      "text": "Wenn du in der Sprache, die du lernst, noch nicht so gut bist, benutze einen Übersetzer. Vergiss nur nicht anzugeben, dass du ihn benutzt hast — das ist wichtig für die Berechnung deines Fortschritts!"
+    },
+    "textarea_placeholder": "Dein neuer Aufsatz in der Sprache, die du lernst",
+    "checkbox_label": "Ein Übersetzer und/oder zusätzliche Materialien wurden verwendet",
+    "until_min_volume": "Bis zum Mindestumfang des Aufsatzes —",
+    "letters_left": "{n} Buchstaben | {n} Buchstabe | {n} Buchstaben",
+    "min_requirements_met": "Mindestumfang erreicht",
+    "buttons": {
+      "handle": "Verarbeiten"
+    }
+  },
+  "progress": {
+    "no_data": "Noch keine Fortschrittsdaten",
+    "points_label": "Punkte | Punkt | Punkte",
+    "info_text": "Dein Weg zur Sprachbeherrschung spiegelt sich in den gesammelten Punkten wider. Jeder fehlerfreie Satz bringt dich der Perfektion näher und gibt <b>2 Punkte</b>. Fehler lehren uns, ziehen aber <b>1 Punkt</b> ab. Strebe nach der Spitze — <b>100 Punkte</b>, wo jeder Punkt einen Schritt zur Meisterschaft symbolisiert.",
+    "essays_without_mistakes_title": "Fehlerfreie Sätze",
+    "grammar_improvement_recommendation": "Deine Grammatik muss verbessert werden. Es wird empfohlen, die Grundregeln zu wiederholen und das Schreiben einfacher Sätze zu üben.",
+    "essays_without_translator_title": "Aufsätze ohne Übersetzer",
+    "average_grammar_estimation_title": "Durchschnittliche Grammatikbewertung",
+    "buttons": {
+      "share": "Teilen",
+      "export": "Exportieren",
+      "reset": "Zurücksetzen"
+    }
+  },
+  "essays": {
+    "no_data": "Deine Aufsatzliste ist momentan leer",
+    "grammar_estimation_label": "Grammatikbewertung",
+    "mistakes_label": "Fehler | Fehler | Fehler",
+    "sentences_with_mistakes_label": "Sätze mit Fehlern | Satz mit Fehlern | Sätze mit Fehlern",
+    "translator_used_label": "Mit Übersetzer geschrieben",
+    "translation_title": "Übersetzung",
+    "corrected_sentence_title": "Korrigierter Satz",
+    "sentences_label": "Sätze | Satz | Sätze",
+    "words_label": "Wörter | Wort | Wörter",
+    "out_of_10": "von 10"
+  },
+  "dictionary": {
+    "no_data": "Dein Wörterbuch ist momentan leer"
+  },
+  "essay_analysis_dialog": {
+    "success_title": "Analyse erfolgreich abgeschlossen",
+    "success_text": "Aufsatz analysiert und gespeichert",
+    "grammar_analysis_title": "Grammatikanalyse",
+    "grammar_estimation_title": "Grammatikbewertung",
+    "dictionary_title": "Wörterbuch",
+    "buttons": {
+      "back": "Zurück",
+      "next": "Weiter"
+    }
+  },
+  "settings": {
+    "header": "Einstellungen",
+    "data_management": "Datenverwaltung",
+    "import": {
+      "title": "Importieren",
+      "subtitle": "Daten aus Datei importieren"
+    },
+    "export": {
+      "title": "Exportieren",
+      "subtitle": "Alle App-Daten in eine Datei exportieren"
+    },
+    "delete_all": {
+      "title": "Alle App-Daten löschen"
+    },
+    "delete_confirm": {
+      "header": "Daten löschen",
+      "text": "Willst du wirklich alle Daten löschen? Diese Aktion kann nicht rückgängig gemacht werden.",
+      "delete_btn": "Löschen",
+      "cancel_btn": "Abbrechen"
+    }
+  }
+}

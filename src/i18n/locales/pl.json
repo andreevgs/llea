@@ -18,13 +18,14 @@
     "select_current_lang_label": "Wybierz język, którym mówisz",
     "select_target_lang_label": "Wybierz język, którego się uczysz",
     "langs": {
-      "en": "Angielski",
-      "ru": "Rosyjski",
-      "pl": "Polski",
       "be": "Białoruski",
+      "de": "Niemiecki",
+      "en": "Angielski",
+      "es": "Hiszpański",
       "lt": "Litewski",
-      "tr": "Turecki",
-      "es": "Hiszpański"
+      "pl": "Polski",
+      "ru": "Rosyjski",
+      "tr": "Turecki"
     }
   },
   "new_essay": {
