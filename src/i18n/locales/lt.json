@@ -6,7 +6,7 @@
   },
   "app_bar": {
     "progress": "Progresas",
-    "essays": "Ese",
+    "essays": "Esė",
     "dictionary": "Žodynas",
     "new_essay": "Nauja esė",
     "switch_languages": "Keisti kalbas",
@@ -34,15 +34,15 @@
     },
     "translate_recommendation": {
       "header": "Naudok „Google Translate“",
-      "text": "Jei dar nepakankamai gerai moki mokomąją kalbą, naudok vertėją. Tik nepamiršk pažymėti, kad naudojai jį — tai būtina, kad būtų galima apskaičiuoti tavo progresą!"
+      "text": "Jei dar nepakankamai gerai moki mokomąją kalbą, naudok vertėją. Tik nepamiršk pažymėti, kad jį naudojai — tai būtina, kad būtų galima apskaičiuoti tavo progresą!"
     },
     "textarea_placeholder": "Tavo nauja esė mokomąja kalba",
-    "checkbox_label": "Naudotas vertėjas ir (arba) papildomos medžiagos",
+    "checkbox_label": "Naudotas vertėjas ir (arba) papildoma medžiaga",
     "until_min_volume": "Iki minimalios esė apimties —",
     "letters_left": "{n} raidžių | {n} raidė | {n} raidės | {n} raidžių",
     "min_requirements_met": "Pasiekta minimali apimtis",
     "buttons": {
-      "handle": "Tvarkyti"
+      "handle": "Apdoroti"
     }
   },
   "progress": {
@@ -57,10 +57,24 @@
       "share": "Dalintis",
       "export": "Eksportuoti",
       "reset": "Atstatyti"
+    },
+    "recommendations": {
+      "translator": {
+        "low": "Dažnai pasikliauji vertėju. Stenkis rašyti tekstus savarankiškai, kad geriau įsisavintum kalbą.",
+        "medium": "Pradedi rašyti savarankiškai. Taip ir toliau, palaipsniui mažink priklausomybę nuo vertėjo.",
+        "high": "Retai naudoji vertėją. Tai geras tavo kalbos mokymosi pažangos ženklas.",
+        "perfect": "Praktiškai nenaudoji vertėjo. Tavo gebėjimas savarankiškai reikšti mintis mokomąja kalba daro įspūdį."
+      },
+      "grammar": {
+        "low": "Reikia skirti daugiau dėmesio gramatikai. Naudok papildomus mokymosi išteklius.",
+        "medium": "Turi bazinį gramatikos supratimą. Tęsk mokymąsi ir plėsk savo žinias.",
+        "high": "Tavo gramatika gera. Pabandyk sudėtingesnius pratimus, kad dar labiau patobulėtum.",
+        "perfect": "Demonstruoji puikų gramatikos išmanymą. Sek naujausius kalbos pokyčius ir niuansus."
+      }
     }
   },
   "essays": {
-    "no_data": "Tavo ese sąrašas šiuo metu tuščias",
+    "no_data": "Tavo esė sąrašas šiuo metu tuščias",
     "grammar_estimation_label": "gramatikos įvertinimas",
     "mistakes_label": "klaidų | klaida | klaidos | klaidų",
     "sentences_with_mistakes_label": "sakinių su klaidomis | sakinys su klaida | sakiniai su klaidomis | sakinių su klaidomis",
@@ -72,7 +86,16 @@
     "out_of_10": "iš 10"
   },
   "dictionary": {
-    "no_data": "Tavo žodynas šiuo metu yra tuščias"
+    "no_data": "Tavo žodynas šiuo metu yra tuščias",
+    "table": {
+      "items_per_page": "Žodžių puslapyje",
+      "page_text": "Puslapis {pageNumber} iš {pagesCount}",
+      "headers": {
+        "word": "Žodis",
+        "pronunciation": "Tarimas",
+        "translation": "Vertimas"
+      }
+    }
   },
   "essay_analysis_dialog": {
     "success_title": "Analizė sėkmingai baigta",
@@ -83,6 +106,20 @@
     "buttons": {
       "back": "Atgal",
       "next": "Toliau"
+    }
+  },
+  "essay_analysis_step": {
+    "alert_text": "Nukopijuok užklausą ir įklijuok ją į generatyvinį neuroninį tinklą (<b>Google Gemini</b> arba <b>Qwen</b>), tada nukopijuok gautą rezultatą ir įklijuok jį čia.",
+    "toolbar": {
+      "prompt": "Užklausa",
+      "result": "Rezultatas"
+    },
+    "buttons": {
+      "copy": "Kopijuoti",
+      "copied": "Nukopijuota",
+      "paste": "Įklijuoti rezultatą",
+      "pasted": "Rezultatas įrašytas",
+      "clear": "Išvalyti"
     }
   },
   "settings": {

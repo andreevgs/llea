@@ -34,20 +34,22 @@
       hover
       :items="dictionary"
       :items-per-page-options="itemsPerPageOptions"
-      items-per-page-text="Слов на странице"
-      :page-text="`Страница ${pageNumber} из ${pagesCount}`"
+      :items-per-page-text="$t('dictionary.table.items_per_page')"
+      :page-text="$t('dictionary.table.page_text', { pageNumber, pagesCount })"
     />
   </v-container>
 </template>
 
 <script lang="ts">
   import { computed, ref, watch } from "vue";
+  import { useI18n } from "vue-i18n";
   import { defineBasicLoader } from "vue-router/experimental";
   import { dictionaryEntriesService } from "@/services/dictionaryEntriesService";
   import { useLanguagesStore } from "@/stores/languages";
   import { useSystemStore } from "@/stores/system";
 
   const languagesStore = useLanguagesStore();
+
   export const useDictionaryData = defineBasicLoader(
     "/dictionary",
     async () => {
@@ -64,6 +66,8 @@
 </script>
 
 <script setup lang="ts">
+
+  const { t } = useI18n();
   const systemStore = useSystemStore();
   const { data: dictionary, reload } = useDictionaryData();
 
@@ -79,15 +83,15 @@
   );
   const tableHeaders = [
     {
-      title: "Слово",
+      title: t("dictionary.table.headers.word"),
       key: "word",
     },
     {
-      title: "Произношение",
+      title: t("dictionary.table.headers.pronunciation"),
       key: "pronunciation",
     },
     {
-      title: "Перевод",
+      title: t("dictionary.table.headers.translation"),
       key: "translate",
     },
   ];
