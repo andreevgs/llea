@@ -58,6 +58,20 @@
       "share": "Share",
       "export": "Export",
       "reset": "Reset"
+    },
+    "recommendations": {
+      "translator": {
+        "low": "You often rely on a translator. Aim to write texts independently to better master the language.",
+        "medium": "You are starting to write on your own. Keep it up, gradually reducing your dependence on the translator.",
+        "high": "You rarely use a translator. This is a good sign of your progress in language learning.",
+        "perfect": "You almost never use a translator. Your ability to express your thoughts independently in the language you are studying is impressive."
+      },
+      "grammar": {
+        "low": "You need to pay more attention to grammar. Use additional resources for learning.",
+        "medium": "You have a basic understanding of grammar. Continue learning and expand your knowledge.",
+        "high": "Your grammar is good. Try more complex exercises for further improvement.",
+        "perfect": "You demonstrate excellent command of grammar. Stay up to date with the latest changes and nuances of the language."
+      }
     }
   },
   "essays": {
@@ -73,7 +87,16 @@
     "out_of_10": "out of 10"
   },
   "dictionary": {
-    "no_data": "Your dictionary is currently empty"
+    "no_data": "Your dictionary is currently empty",
+    "table": {
+      "items_per_page": "Words per page",
+      "page_text": "Page {pageNumber} of {pagesCount}",
+      "headers": {
+        "word": "Word",
+        "pronunciation": "Pronunciation",
+        "translation": "Translation"
+      }
+    }
   },
   "essay_analysis_dialog": {
     "success_title": "Analysis successfully completed",
@@ -84,6 +107,20 @@
     "buttons": {
       "back": "Back",
       "next": "Next"
+    }
+  },
+  "essay_analysis_step": {
+    "alert_text": "Copy the prompt and paste it into a generative neural network (<b>Google Gemini</b> or <b>Qwen</b>), then copy the generated result and paste it here.",
+    "toolbar": {
+      "prompt": "Prompt",
+      "result": "Result"
+    },
+    "buttons": {
+      "copy": "Copy",
+      "copied": "Copied",
+      "paste": "Paste result",
+      "pasted": "Result saved",
+      "clear": "Clear"
     }
   },
   "settings": {

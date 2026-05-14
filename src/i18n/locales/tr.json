@@ -58,6 +58,20 @@
       "share": "Paylaş",
       "export": "Dışa aktar",
       "reset": "Sıfırla"
+    },
+    "recommendations": {
+      "translator": {
+        "low": "Çevirmene sıkça güveniyorsun. Dili daha iyi kavramak için metinleri kendi başına yazmaya çalış.",
+        "medium": "Kendi başına yazmaya başlıyorsun. Çevirmene olan bağımlılığını yavaş yavaş azaltarak böyle devam et.",
+        "high": "Çevirmeni nadiren kullanıyorsun. Bu, dil öğrenimindeki ilerlemenin iyi bir işareti.",
+        "perfect": "Çevirmeni neredeyse hiç kullanmıyorsun. Düşüncelerini öğrendiğin dilde bağımsız olarak ifade etme yeteneğin çok etkileyici."
+      },
+      "grammar": {
+        "low": "Gramere daha fazla dikkat etmen gerekiyor. Öğrenmek için ek kaynaklar kullan.",
+        "medium": "Temel bir gramer anlayışın var. Öğrenmeye devam et ve bilgini genişlet.",
+        "high": "Gramerin iyi. Daha da gelişmek için daha karmaşık alıştırmalar dene.",
+        "perfect": "Mükemmel bir gramer hakimiyeti sergiliyorsun. Dildeki son değişiklikleri ve ince ayrıntıları takip etmeye devam et."
+      }
     }
   },
   "essays": {
@@ -73,7 +87,16 @@
     "out_of_10": "/ 10"
   },
   "dictionary": {
-    "no_data": "Sözlüğün şu anda boş"
+    "no_data": "Sözlüğün şu anda boş",
+    "table": {
+      "items_per_page": "Sayfa başına kelime",
+      "page_text": "Sayfa {pageNumber} / {pagesCount}",
+      "headers": {
+        "word": "Kelime",
+        "pronunciation": "Telaffuz",
+        "translation": "Çeviri"
+      }
+    }
   },
   "essay_analysis_dialog": {
     "success_title": "Analiz başarıyla tamamlandı",
@@ -84,6 +107,20 @@
     "buttons": {
       "back": "Geri",
       "next": "İleri"
+    }
+  },
+  "essay_analysis_step": {
+    "alert_text": "İstemi kopyala ve üretken bir sinir ağına (<b>Google Gemini</b> veya <b>Qwen</b>) yapıştır, ardından elde ettiğin sonucu kopyalayıp buraya yapıştır.",
+    "toolbar": {
+      "prompt": "İstem",
+      "result": "Sonuç"
+    },
+    "buttons": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "paste": "Sonucu yapıştır",
+      "pasted": "Sonuç kaydedildi",
+      "clear": "Temizle"
     }
   },
   "settings": {

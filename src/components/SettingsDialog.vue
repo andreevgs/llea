@@ -11,7 +11,7 @@
         <v-list lines="two">
           <v-list-subheader>{{ $t('settings.data_management') }}</v-list-subheader>
           <v-list-item
-            key="Импорт"
+            key="import"
             :subtitle="$t('settings.import.subtitle')"
             :title="$t('settings.import.title')"
             @click="handleImportClick"
@@ -21,7 +21,7 @@
             </template>
           </v-list-item>
           <v-list-item
-            key="Экспорт"
+            key="export"
             :disabled="isExporting"
             :subtitle="$t('settings.export.subtitle')"
             :title="$t('settings.export.title')"
@@ -32,7 +32,7 @@
             </template>
           </v-list-item>
           <v-list-item
-            key="Удалить все данные"
+            key="delete_all"
             class="text-error"
             :title="$t('settings.delete_all.title')"
             @click="handleDeleteClick"

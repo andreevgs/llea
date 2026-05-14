@@ -43,7 +43,7 @@
       </v-tooltip>
       <v-tooltip
         location="bottom"
-        text="Настройки"
+        :text="$t('settings.header')"
       >
         <template #activator="{ props }">
           <v-btn

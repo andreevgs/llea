@@ -3,11 +3,7 @@
     <v-col cols="12">
       <v-alert color="primary" type="info" variant="tonal">
         <template #text>
-          <span>
-            Скопируй промпт и вставь его в генеративную нейросеть (<b>Google Gemini</b>
-            или <b>Qwen</b>), затем скопируй полученный результат и
-            вставь его сюда.
-          </span>
+          <span v-html="$t('essay_analysis_step.alert_text')" />
         </template>
       </v-alert>
     </v-col>
@@ -51,7 +47,7 @@
         variant="tonal"
         @click="model = null"
       >
-        Очистить
+        {{ $t("essay_analysis_step.buttons.clear") }}
       </v-btn>
     </v-toolbar>
     <pre class="pa-4 ma-0 preview">{{ model || prompt }}</pre>
@@ -60,6 +56,9 @@
 
 <script lang="ts" setup>
   import { computed, ref } from "vue";
+  import { useI18n } from "vue-i18n";
+
+  const { t } = useI18n();
 
   const model = defineModel<string | null>({ default: null });
 
@@ -70,11 +69,15 @@
   const isPromptCopied = ref(false);
 
   const copyPromptText = computed(() => {
-    return isPromptCopied.value ? "Скопировано" : "Скопировать";
+    return isPromptCopied.value
+      ? t("essay_analysis_step.buttons.copied")
+      : t("essay_analysis_step.buttons.copy");
   });
 
   const toolbarText = computed(() => {
-    return model.value ? "Результат" : "Промпт";
+    return model.value
+      ? t("essay_analysis_step.toolbar.result")
+      : t("essay_analysis_step.toolbar.prompt");
   });
 
   const copyPromptIcon = computed(() => {
@@ -88,7 +91,9 @@
   });
 
   const pasteResultText = computed(() => {
-    return model.value ? "Результат записан" : "Вставить результат";
+    return model.value
+      ? t("essay_analysis_step.buttons.pasted")
+      : t("essay_analysis_step.buttons.paste");
   });
 
   const pasteResultIcon = computed(() => {

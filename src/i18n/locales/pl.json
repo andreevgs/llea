@@ -31,11 +31,11 @@
   "new_essay": {
     "nn_recommendation": {
       "header": "Użyj Google Gemini lub Qwen",
-      "text": "Do sprawdzenia twojej znajomości języka i dostarczenia informacji potrzebnych do nauki należy zastosować generatywną sieć neuronową. Jeśli nie jesteś jeszcze zarejestrowany w przynajmniej jednym z proponowanych systemów, prosimy o rejestrację."
+      "text": "Do sprawdzenia twojej znajomości języka i dostarczenia informacji potrzebnych do nauki należy zastosować generatywną sieć neuronową. Jeśli nie jesteś jeszcze zarejestrowany w przynajmniej jednym z proponowanych systemów, proszę, zarejestruj się."
     },
     "translate_recommendation": {
       "header": "Użyj Google Translate",
-      "text": "Jeśli nie jesteś jeszcze zbyt dobry w języku, którego się uczysz, skorzystaj z tłumacza. Tylko nie zapomnij zauważyć, że go użyłeś – jest to konieczne do obliczenia twoich postępów!"
+      "text": "Jeśli nie jesteś jeszcze zbyt dobry w języku, którego się uczysz, skorzystaj z tłumacza. Tylko nie zapomnij zaznaczyć, że go użyłeś – jest to konieczne do obliczenia twoich postępów!"
     },
     "textarea_placeholder": "Twój nowy esej w języku, którego się uczysz",
     "checkbox_label": "Użyto tłumacza i/lub dodatkowych materiałów",
@@ -43,7 +43,7 @@
     "letters_left": "{n} liter | {n} litera | {n} litery | {n} liter",
     "min_requirements_met": "Minimalna objętość osiągnięta",
     "buttons": {
-      "handle": "Uchwyt"
+      "handle": "Przetwórz"
     }
   },
   "progress": {
@@ -58,6 +58,20 @@
       "share": "Udostępnij",
       "export": "Eksportuj",
       "reset": "Resetuj"
+    },
+    "recommendations": {
+      "translator": {
+        "low": "Często polegasz na tłumaczu. Staraj się pisać teksty samodzielnie, aby lepiej przyswoić język.",
+        "medium": "Zaczynasz pisać samodzielnie. Oby tak dalej, stopniowo zmniejszając zależność od tłumacza.",
+        "high": "Rzadko używasz tłumacza. To dobry znak twojego postępu w nauce języka.",
+        "perfect": "Praktycznie nie używasz tłumacza. Twoja zdolność do samodzielnego wyrażania myśli w języku, którego się uczysz, robi wrażenie."
+      },
+      "grammar": {
+        "low": "Musisz poświęcić więcej uwagi gramatyce. Używaj dodatkowych materiałów do nauki.",
+        "medium": "Masz podstawowe zrozumienie gramatyki. Kontynuuj naukę i poszerzaj swoją wiedzę.",
+        "high": "Twoja gramatyka jest dobra. Spróbuj trudniejszych ćwiczeń, aby poprawić się jeszcze bardziej.",
+        "perfect": "Demonstrujesz doskonałą znajomość gramatyki. Bądź na bieżąco z najnowszymi zmianami i niuansami języka."
+      }
     }
   },
   "essays": {
@@ -73,7 +87,16 @@
     "out_of_10": "z 10"
   },
   "dictionary": {
-    "no_data": "Twój słownik jest obecnie pusty"
+    "no_data": "Twój słownik jest obecnie pusty",
+    "table": {
+      "items_per_page": "Słów na stronie",
+      "page_text": "Strona {pageNumber} z {pagesCount}",
+      "headers": {
+        "word": "Słowo",
+        "pronunciation": "Wymowa",
+        "translation": "Tłumaczenie"
+      }
+    }
   },
   "essay_analysis_dialog": {
     "success_title": "Analiza zakończona pomyślnie",
@@ -84,6 +107,20 @@
     "buttons": {
       "back": "Wstecz",
       "next": "Dalej"
+    }
+  },
+  "essay_analysis_step": {
+    "alert_text": "Skopiuj prompt i wklej go do generatywnej sieci neuronowej (<b>Google Gemini</b> lub <b>Qwen</b>), a następnie skopiuj otrzymany wynik i wklej go tutaj.",
+    "toolbar": {
+      "prompt": "Prompt",
+      "result": "Wynik"
+    },
+    "buttons": {
+      "copy": "Skopiuj",
+      "copied": "Skopiowano",
+      "paste": "Wklej wynik",
+      "pasted": "Wynik zapisany",
+      "clear": "Wyczyść"
     }
   },
   "settings": {

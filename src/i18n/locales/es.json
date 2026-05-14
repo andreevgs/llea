@@ -43,7 +43,7 @@
     "letters_left": "{n} letras | {n} letra | {n} letras",
     "min_requirements_met": "Volumen mínimo alcanzado",
     "buttons": {
-      "handle": "Manejar"
+      "handle": "Procesar"
     }
   },
   "progress": {
@@ -58,6 +58,20 @@
       "share": "Compartir",
       "export": "Exportar",
       "reset": "Reiniciar"
+    },
+    "recommendations": {
+      "translator": {
+        "low": "A menudo dependes del traductor. Esfuérzate por escribir textos por tu cuenta para asimilar mejor el idioma.",
+        "medium": "Estás empezando a escribir por tu cuenta. Sigue así, reduciendo poco a poco la dependencia del traductor.",
+        "high": "Rara vez usas el traductor. Es una buena señal de tu progreso en el aprendizaje del idioma.",
+        "perfect": "Prácticamente no usas el traductor. Tu capacidad para expresar pensamientos de forma independiente en el idioma que estudias es impresionante."
+      },
+      "grammar": {
+        "low": "Debes prestar más atención a la gramática. Usa recursos de aprendizaje adicionales.",
+        "medium": "Tienes una comprensión básica de la gramática. Sigue estudiando y amplía tus conocimientos.",
+        "high": "Tu gramática es buena. Prueba con ejercicios más complejos para seguir mejorando.",
+        "perfect": "Demuestras un dominio excelente de la gramática. Mantente al tanto de los últimos cambios y matices del idioma."
+      }
     }
   },
   "essays": {
@@ -73,7 +87,16 @@
     "out_of_10": "de 10"
   },
   "dictionary": {
-    "no_data": "Tu diccionario está actualmente vacío"
+    "no_data": "Tu diccionario está actualmente vacío",
+    "table": {
+      "items_per_page": "Palabras por página",
+      "page_text": "Página {pageNumber} de {pagesCount}",
+      "headers": {
+        "word": "Palabra",
+        "pronunciation": "Pronunciación",
+        "translation": "Traducción"
+      }
+    }
   },
   "essay_analysis_dialog": {
     "success_title": "Análisis completado con éxito",
@@ -84,6 +107,20 @@
     "buttons": {
       "back": "Atrás",
       "next": "Siguiente"
+    }
+  },
+  "essay_analysis_step": {
+    "alert_text": "Copia el prompt y pégalo en una red neuronal generativa (<b>Google Gemini</b> o <b>Qwen</b>), luego copia el resultado obtenido y pégalo aquí.",
+    "toolbar": {
+      "prompt": "Prompt",
+      "result": "Resultado"
+    },
+    "buttons": {
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "paste": "Pegar resultado",
+      "pasted": "Resultado guardado",
+      "clear": "Limpiar"
     }
   },
   "settings": {
