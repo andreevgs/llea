@@ -1,7 +1,7 @@
 import type { SupportedLocale } from "@/i18n";
 import type { Locale } from "date-fns";
 import { format, formatDistance, subDays } from "date-fns";
-import { be, enGB, es, lt, pl, ru, tr } from "date-fns/locale";
+import { be, de, enGB, es, lt, pl, ru, tr } from "date-fns/locale";
 
 const locales: Record<SupportedLocale, Locale> = {
   en: enGB,
@@ -11,6 +11,7 @@ const locales: Record<SupportedLocale, Locale> = {
   lt,
   tr,
   es,
+  de,
 };
 
 export const formatRelativeDate = (date: Date, locale: SupportedLocale) => {

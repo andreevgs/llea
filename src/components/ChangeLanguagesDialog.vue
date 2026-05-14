@@ -23,16 +23,37 @@
               <template #chip="{ props, item }">
                 <v-chip
                   v-bind="props"
-                  :prepend-icon="`$flag-${item.code}`"
+                  color="primary"
+                  label
                   :text="item.name"
-                />
+                >
+                  <template #prepend>
+                    <v-chip
+                      class="font-weight-medium text-uppercase mr-1 px-2"
+                      color="primary"
+                      density="compact"
+                      size="x-small"
+                      variant="flat"
+                    >
+                      {{ item.code }}
+                    </v-chip>
+                  </template>
+                </v-chip>
               </template>
               <template #item="{ props, item }">
                 <v-list-item
                   v-bind="props"
-                  :prepend-icon="`$flag-${item.code}`"
+                  label
                   :title="item.name"
-                />
+                >
+                  <template #prepend>
+                    <v-chip
+                      class="font-weight-medium text-uppercase mr-4"
+                      size="x-small"
+                    >
+                      {{ item.code }}
+                    </v-chip>
+                  </template></v-list-item>
               </template>
             </v-autocomplete>
             <v-autocomplete
@@ -46,16 +67,38 @@
               <template #chip="{ props, item }">
                 <v-chip
                   v-bind="props"
-                  :prepend-icon="`$flag-${item.code}`"
+                  color="primary"
+                  label
                   :text="item.name"
-                />
+                >
+                  <template #prepend>
+                    <v-chip
+                      class="font-weight-medium text-uppercase mr-1 px-2"
+                      color="primary"
+                      density="compact"
+                      size="x-small"
+                      variant="flat"
+                    >
+                      {{ item.code }}
+                    </v-chip>
+                  </template>
+                </v-chip>
               </template>
               <template #item="{ props, item }">
                 <v-list-item
                   v-bind="props"
-                  :prepend-icon="`$flag-${item.code}`"
+                  label
                   :title="item.name"
-                />
+                >
+                  <template #prepend>
+                    <v-chip
+                      class="font-weight-medium text-uppercase mr-4"
+                      size="x-small"
+                    >
+                      {{ item.code }}
+                    </v-chip>
+                  </template>
+                </v-list-item>
               </template>
             </v-autocomplete>
             <v-btn

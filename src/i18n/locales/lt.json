@@ -18,13 +18,14 @@
     "select_current_lang_label": "Pasirink kalbą, kuria kalbi",
     "select_target_lang_label": "Pasirink kalbą, kurios mokaisi",
     "langs": {
-      "en": "Anglų",
-      "ru": "Rusų",
-      "pl": "Lenkų",
       "be": "Baltarusių",
+      "de": "Vokiečių",
+      "en": "Anglų",
+      "es": "Ispanų",
       "lt": "Lietuvių",
-      "tr": "Turkų",
-      "es": "Ispanų"
+      "pl": "Lenkų",
+      "ru": "Rusų",
+      "tr": "Turkų"
     }
   },
   "new_essay": {
