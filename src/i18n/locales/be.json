@@ -84,7 +84,9 @@
     "corrected_sentence_title": "Выпраўлены сказ",
     "sentences_label": "сказаў | сказ | сказы | сказаў",
     "words_label": "слоў | слова | словы | слоў",
-    "out_of_10": "з 10"
+    "out_of_10": "з 10",
+    "listen_button": "Праслухаць",
+    "stop_button": "Спыніць"
   },
   "dictionary": {
     "no_data": "Твой слоўнік зараз пусты",

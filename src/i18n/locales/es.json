@@ -84,7 +84,9 @@
     "corrected_sentence_title": "Oración corregida",
     "sentences_label": "oraciones | oración | oraciones",
     "words_label": "palabras | palabra | palabras",
-    "out_of_10": "de 10"
+    "out_of_10": "de 10",
+    "listen_button": "Escuchar",
+    "stop_button": "Detener"
   },
   "dictionary": {
     "no_data": "Tu diccionario está actualmente vacío",

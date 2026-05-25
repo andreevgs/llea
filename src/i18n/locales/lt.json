@@ -84,7 +84,9 @@
     "corrected_sentence_title": "Ištaisytas sakinys",
     "sentences_label": "sakinių | sakinys | sakiniai | sakinių",
     "words_label": "žodžių | žodis | žodžiai | žodžių",
-    "out_of_10": "iš 10"
+    "out_of_10": "iš 10",
+    "listen_button": "Klausytis",
+    "stop_button": "Sustabdyti"
   },
   "dictionary": {
     "no_data": "Tavo žodynas šiuo metu yra tuščias",
