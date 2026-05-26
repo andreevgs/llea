@@ -84,7 +84,9 @@
     "corrected_sentence_title": "Korrigierter Satz",
     "sentences_label": "Sätze | Satz | Sätze",
     "words_label": "Wörter | Wort | Wörter",
-    "out_of_10": "von 10"
+    "out_of_10": "von 10",
+    "listen_button": "Anhören",
+    "stop_button": "Stopp"
   },
   "dictionary": {
     "no_data": "Dein Wörterbuch ist momentan leer",

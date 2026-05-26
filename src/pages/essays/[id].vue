@@ -94,7 +94,18 @@
                 :title="$t('essays.corrected_sentence_title')"
                 type="success"
                 variant="tonal"
-              />
+              >
+                <div class="mt-2">
+                  <v-btn
+                    color="success"
+                    :prepend-icon="isSentencePlaying(sentence.correctedSentence) ? 'mdi-stop' : 'mdi-volume-high'"
+                    :variant="isSentencePlaying(sentence.correctedSentence) ? 'flat' : 'tonal'"
+                    @click="speak(sentence.correctedSentence, languagesStore.targetLanguage)"
+                  >
+                    {{ isSentencePlaying(sentence.correctedSentence) ? $t('essays.stop_button') : $t('essays.listen_button') }}
+                  </v-btn>
+                </div>
+              </v-alert>
             </v-col>
           </v-row>
         </v-sheet>
@@ -106,6 +117,7 @@
 <script lang="ts">
   import type { SupportedLocale } from "@/i18n";
   import { defineBasicLoader } from "vue-router/experimental";
+  import { useSpeechSynthesis } from "@/composables/useSpeechSynthesis";
   import { essaysService as essaysRepository } from "@/services/essaysService";
   import { useLanguagesStore } from "@/stores/languages";
   import { getEstimationChipColor } from "@/utils/chip";
@@ -120,6 +132,11 @@
 <script setup lang="ts">
   const languagesStore = useLanguagesStore();
   const { data: essay } = useEssayData();
+  const { speak, isTextPlaying, currentPlayingText } = useSpeechSynthesis();
+
+  const isSentencePlaying = (sentenceText: string) => {
+    return isTextPlaying.value && currentPlayingText.value === sentenceText;
+  };
 </script>
 
 <style scoped>
@@ -129,5 +146,20 @@
 }
 .date-created__text {
   line-height: 32px;
+}
+
+.action-alert :deep(.v-alert-title) {
+  align-self: flex-start;
+}
+
+.action-alert :deep(.v-alert__content) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.play-button {
+  background: transparent;
+  color: inherit;
 }
 </style>

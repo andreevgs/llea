@@ -84,7 +84,9 @@
     "corrected_sentence_title": "Düzeltilmiş cümle",
     "sentences_label": "cümle | cümle | cümle",
     "words_label": "kelime | kelime | kelime",
-    "out_of_10": "/ 10"
+    "out_of_10": "/ 10",
+    "listen_button": "Dinle",
+    "stop_button": "Durdur"
   },
   "dictionary": {
     "no_data": "Sözlüğün şu anda boş",

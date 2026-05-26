@@ -84,7 +84,9 @@
     "corrected_sentence_title": "Poprawione zdanie",
     "sentences_label": "zdań | zdanie | zdania | zdań",
     "words_label": "słów | słowo | słowa | słów",
-    "out_of_10": "z 10"
+    "out_of_10": "z 10",
+    "listen_button": "Posłuchaj",
+    "stop_button": "Zatrzymaj"
   },
   "dictionary": {
     "no_data": "Twój słownik jest obecnie pusty",

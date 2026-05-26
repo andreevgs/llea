@@ -127,10 +127,6 @@
   });
 </script>
 <style scoped>
-.action-alert {
-  align-items: stretch;
-}
-
 .action-alert :deep(.v-alert-title) {
   align-self: flex-start;
 }

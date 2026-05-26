@@ -84,7 +84,9 @@
     "corrected_sentence_title": "Corrected sentence",
     "sentences_label": "sentences | sentence | sentences",
     "words_label": "words | word | words",
-    "out_of_10": "out of 10"
+    "out_of_10": "out of 10",
+    "listen_button": "Listen",
+    "stop_button": "Stop"
   },
   "dictionary": {
     "no_data": "Your dictionary is currently empty",
