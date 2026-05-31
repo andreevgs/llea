@@ -42,8 +42,10 @@
     "until_min_volume": "Bis zum Mindestumfang des Aufsatzes —",
     "letters_left": "{n} Buchstaben | {n} Buchstabe | {n} Buchstaben",
     "min_requirements_met": "Mindestumfang erreicht",
+    "no_ideas_title": "Weißt du nicht, worüber du schreiben sollst?",
     "buttons": {
-      "handle": "Verarbeiten"
+      "handle": "Verarbeiten",
+      "another_idea": "Andere Idee"
     }
   },
   "progress": {

@@ -42,8 +42,10 @@
     "until_min_volume": "Да мінімальнага аб'ёму сачынення —",
     "letters_left": "{n} літар | {n} літара | {n} літары | {n} літар",
     "min_requirements_met": "Мінімальны аб'ём дасягнуты",
+    "no_ideas_title": "Не ведаеш, пра што напісаць?",
     "buttons": {
-      "handle": "Апрацаваць"
+      "handle": "Апрацаваць",
+      "another_idea": "Іншая ідэя"
     }
   },
   "progress": {

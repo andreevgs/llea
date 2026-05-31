@@ -1,7 +1,7 @@
 <template>
   <v-row class="mb-2" density="compact">
     <v-col cols="12">
-      <v-alert color="primary" type="info" variant="tonal">
+      <v-alert color="primary" rounded="xl" type="info" variant="tonal">
         <template #text>
           <span v-html="$t('essay_analysis_step.alert_text')" />
         </template>
@@ -12,6 +12,7 @@
         block
         :color="copyPromptColor"
         :prepend-icon="copyPromptIcon"
+        rounded
         variant="tonal"
         @click="handleCopyPrompt"
       >
@@ -24,6 +25,7 @@
         :color="pasteResultColor"
         :disabled="Boolean(model)"
         :prepend-icon="pasteResultIcon"
+        rounded
         variant="tonal"
         @click="handlePasteResult"
       >
@@ -32,7 +34,7 @@
     </v-col>
   </v-row>
 
-  <v-sheet border rounded>
+  <v-sheet border class="overflow-hidden" rounded="xl">
     <v-toolbar density="compact">
       <span class="text-subtitle-1 ml-4">
         {{ toolbarText }}
@@ -44,6 +46,7 @@
         color="error"
         density="comfortable"
         prepend-icon="mdi-delete"
+        rounded
         variant="tonal"
         @click="model = null"
       >

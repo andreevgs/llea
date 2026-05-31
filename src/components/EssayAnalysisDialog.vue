@@ -7,6 +7,7 @@
     variant="elevated"
   >
     <v-alert
+      rounded="xl"
       :text="$t('essay_analysis_dialog.success_text')"
       :title="$t('essay_analysis_dialog.success_title')"
       type="success"
@@ -102,6 +103,7 @@
             <v-btn
               v-if="currentStep === '1'"
               color="error"
+              rounded
               @click="model = false"
             >
               {{ $t('buttons.cancel') }}
@@ -110,6 +112,7 @@
               v-else
               :disabled="isEssayAnalysisProcessing"
               prepend-icon="mdi-arrow-left"
+              rounded
               @click="prev"
             >
               {{ $t('essay_analysis_dialog.buttons.back') }}
@@ -122,6 +125,7 @@
               :disabled="isSaveButtonDisabled"
               :loading="isEssayAnalysisProcessing"
               prepend-icon="mdi-check"
+              rounded
               @click="handleEssayAnalysis"
             >
               {{ $t('buttons.save') }}
@@ -130,6 +134,7 @@
               v-else
               append-icon="mdi-arrow-right"
               :disabled="isNextButtonDisabled"
+              rounded
               @click="next"
             >
               {{ $t('essay_analysis_dialog.buttons.next') }}

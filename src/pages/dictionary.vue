@@ -16,6 +16,7 @@
       <v-btn
         class="align-self-center"
         color="warning"
+        rounded
         to="/new-essay"
         variant="tonal"
       >

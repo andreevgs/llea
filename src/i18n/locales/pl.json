@@ -42,8 +42,10 @@
     "until_min_volume": "Do minimalnej objętości eseju —",
     "letters_left": "{n} liter | {n} litera | {n} litery | {n} liter",
     "min_requirements_met": "Minimalna objętość osiągnięta",
+    "no_ideas_title": "Nie wiesz, o czym napisać?",
     "buttons": {
-      "handle": "Przetwórz"
+      "handle": "Przetwórz",
+      "another_idea": "Inny pomysł"
     }
   },
   "progress": {

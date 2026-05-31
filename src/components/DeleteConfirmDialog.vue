@@ -12,6 +12,7 @@
         <v-btn
           class="mb-2 mt-4 w-100"
           color="error"
+          rounded
           type="submit"
           variant="tonal"
           @click="$emit('confirm')"
@@ -21,6 +22,7 @@
         <v-btn
           class="w-100"
           color="primary"
+          rounded
           variant="tonal"
           @click="model = false"
         >

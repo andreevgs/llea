@@ -42,8 +42,10 @@
     "until_min_volume": "Minimum deneme hacmine kadar —",
     "letters_left": "{n} harf | {n} harf | {n} harf",
     "min_requirements_met": "Minimum hacme ulaşıldı",
+    "no_ideas_title": "Ne hakkında yazacağını bilmiyor musun?",
     "buttons": {
-      "handle": "İşle"
+      "handle": "İşle",
+      "another_idea": "Başka bir fikir"
     }
   },
   "progress": {

@@ -3,10 +3,27 @@ import be from "./locales/be.json";
 import de from "./locales/de.json";
 import en from "./locales/en.json";
 import es from "./locales/es.json";
+import beEssayIdeas from "./locales/essay-ideas/be.json";
+import deEssayIdeas from "./locales/essay-ideas/de.json";
+import enEssayIdeas from "./locales/essay-ideas/en.json";
+import esEssayIdeas from "./locales/essay-ideas/es.json";
+import ltEssayIdeas from "./locales/essay-ideas/lt.json";
+import plEssayIdeas from "./locales/essay-ideas/pl.json";
+import ruEssayIdeas from "./locales/essay-ideas/ru.json";
+import trEssayIdeas from "./locales/essay-ideas/tr.json";
 import lt from "./locales/lt.json";
 import pl from "./locales/pl.json";
 import ru from "./locales/ru.json";
 import tr from "./locales/tr.json";
+
+Object.assign(be, { essay_ideas: beEssayIdeas });
+Object.assign(de, { essay_ideas: deEssayIdeas });
+Object.assign(en, { essay_ideas: enEssayIdeas });
+Object.assign(es, { essay_ideas: esEssayIdeas });
+Object.assign(lt, { essay_ideas: ltEssayIdeas });
+Object.assign(pl, { essay_ideas: plEssayIdeas });
+Object.assign(ru, { essay_ideas: ruEssayIdeas });
+Object.assign(tr, { essay_ideas: trEssayIdeas });
 
 const slavicPluralRule = (choice: number, choicesLength: number) => {
   if (choice === 0) {

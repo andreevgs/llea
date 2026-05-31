@@ -10,6 +10,7 @@
       <v-btn
         class="mr-2"
         prepend-icon="mdi-chart-box"
+        rounded
         to="/progress"
       >
         {{ $t("app_bar.progress") }}
@@ -17,6 +18,7 @@
       <v-btn
         class="mr-2"
         prepend-icon="mdi-list-box-outline"
+        rounded
         to="/essays"
       >
         {{ $t("app_bar.essays") }}
@@ -24,6 +26,7 @@
       <v-btn
         class="mr-2"
         prepend-icon="mdi-book-alphabet"
+        rounded
         to="/dictionary"
       >
         {{ $t("app_bar.dictionary") }}
@@ -56,14 +59,30 @@
       </v-tooltip>
       <v-btn
         color="primary"
+        rounded
         variant="tonal"
         @click="isChangeLanguagesModalOpen = true"
       >
-        <v-chip class="font-weight-medium text-uppercase" color="primary" size="x-small" variant="flat">
+        <v-chip
+          class="font-weight-medium text-uppercase"
+          color="primary"
+          rounded="lg"
+          size="x-small"
+          variant="flat"
+        >
           {{ languagesStore.currentLanguage }}
         </v-chip>
-        <span class="mx-1">/</span>
-        <v-chip class="font-weight-medium text-uppercase" color="primary" size="x-small" variant="flat">
+        <v-divider
+          class="mx-2 border-opacity-50"
+          vertical
+        />
+        <v-chip
+          class="font-weight-medium text-uppercase"
+          color="primary"
+          rounded="lg"
+          size="x-small"
+          variant="flat"
+        >
           {{ languagesStore.targetLanguage }}
         </v-chip>
         <v-tooltip
@@ -80,6 +99,7 @@
         class="mr-2"
         color="primary"
         prepend-icon="mdi-plus"
+        rounded
         to="/new-essay"
         variant="tonal"
       >

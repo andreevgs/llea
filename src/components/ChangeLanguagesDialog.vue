@@ -23,22 +23,13 @@
               <template #chip="{ props, item }">
                 <v-chip
                   v-bind="props"
-                  color="primary"
+                  class="font-weight-medium text-uppercase mr-1"
                   label
-                  :text="item.name"
+                  rounded="lg"
                 >
-                  <template #prepend>
-                    <v-chip
-                      class="font-weight-medium text-uppercase mr-1 px-2"
-                      color="primary"
-                      density="compact"
-                      size="x-small"
-                      variant="flat"
-                    >
-                      {{ item.code }}
-                    </v-chip>
-                  </template>
+                  {{ item.code }}
                 </v-chip>
+                <span> {{ item.name }} </span>
               </template>
               <template #item="{ props, item }">
                 <v-list-item
@@ -49,11 +40,14 @@
                   <template #prepend>
                     <v-chip
                       class="font-weight-medium text-uppercase mr-4"
-                      size="x-small"
+                      label
+                      rounded="lg"
+                      size="small"
                     >
                       {{ item.code }}
                     </v-chip>
-                  </template></v-list-item>
+                  </template>
+                </v-list-item>
               </template>
             </v-autocomplete>
             <v-autocomplete
@@ -67,22 +61,13 @@
               <template #chip="{ props, item }">
                 <v-chip
                   v-bind="props"
-                  color="primary"
+                  class="font-weight-medium text-uppercase mr-1"
                   label
-                  :text="item.name"
+                  rounded="lg"
                 >
-                  <template #prepend>
-                    <v-chip
-                      class="font-weight-medium text-uppercase mr-1 px-2"
-                      color="primary"
-                      density="compact"
-                      size="x-small"
-                      variant="flat"
-                    >
-                      {{ item.code }}
-                    </v-chip>
-                  </template>
+                  {{ item.code }}
                 </v-chip>
+                <span> {{ item.name }} </span>
               </template>
               <template #item="{ props, item }">
                 <v-list-item
@@ -93,7 +78,9 @@
                   <template #prepend>
                     <v-chip
                       class="font-weight-medium text-uppercase mr-4"
-                      size="x-small"
+                      label
+                      rounded="lg"
+                      size="small"
                     >
                       {{ item.code }}
                     </v-chip>
@@ -104,6 +91,7 @@
             <v-btn
               class="mb-2 w-100"
               color="primary"
+              rounded
               type="submit"
               variant="tonal"
               @click="model = false"
@@ -113,6 +101,7 @@
             <v-btn
               class="w-100"
               color="error"
+              rounded
               variant="tonal"
               @click="handleCancel"
             >

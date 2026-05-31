@@ -42,8 +42,10 @@
     "until_min_volume": "До минимального объёма сочинения —",
     "letters_left": "{n} букв | {n} буква | {n} буквы | {n} букв",
     "min_requirements_met": "Минимальный объём достигнут",
+    "no_ideas_title": "Не знаешь, о чём написать?",
     "buttons": {
-      "handle": "Обработать"
+      "handle": "Обработать",
+      "another_idea": "Другая идея"
     }
   },
   "progress": {
