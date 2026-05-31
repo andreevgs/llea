@@ -42,8 +42,10 @@
     "until_min_volume": "Hasta el volumen mínimo del ensayo —",
     "letters_left": "{n} letras | {n} letra | {n} letras",
     "min_requirements_met": "Volumen mínimo alcanzado",
+    "no_ideas_title": "¿No sabes de qué escribir?",
     "buttons": {
-      "handle": "Procesar"
+      "handle": "Procesar",
+      "another_idea": "Otra idea"
     }
   },
   "progress": {

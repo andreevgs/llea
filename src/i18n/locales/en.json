@@ -42,8 +42,10 @@
     "until_min_volume": "Until the minimum essay volume —",
     "letters_left": "{n} letters | {n} letter | {n} letters",
     "min_requirements_met": "Minimum volume reached",
+    "no_ideas_title": "Don't know what to write about?",
     "buttons": {
-      "handle": "Handle"
+      "handle": "Handle",
+      "another_idea": "Another idea"
     }
   },
   "progress": {

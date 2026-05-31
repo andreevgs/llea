@@ -42,8 +42,10 @@
     "until_min_volume": "Iki minimalios esė apimties —",
     "letters_left": "{n} raidžių | {n} raidė | {n} raidės | {n} raidžių",
     "min_requirements_met": "Pasiekta minimali apimtis",
+    "no_ideas_title": "Nežinai, apie ką rašyti?",
     "buttons": {
-      "handle": "Apdoroti"
+      "handle": "Apdoroti",
+      "another_idea": "Kita idėja"
     }
   },
   "progress": {

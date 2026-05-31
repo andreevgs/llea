@@ -13,24 +13,24 @@
       <v-btn
         class="align-self-center"
         color="warning"
+        rounded
         to="/new-essay"
         variant="tonal"
       >{{ $t("app_bar.new_essay") }}</v-btn>
     </div>
   </v-container>
   <v-container v-else class="pa-0">
-    <v-card>
-      <v-card-title class="d-flex align-center ga-2">
-        <v-chip class="font-weight-medium text-uppercase" size="small">
-          {{ languagesStore.targetLanguage }}
-        </v-chip>
-        <span>{{ progressData.progressEntry.points }}/100 {{ $t('progress.points_label', progressData.progressEntry.points) }}</span>
-      </v-card-title>
-      <v-card-subtitle
-        v-if="progressData.progressHistory && progressPointsDelta"
-      >
+    <div class="d-flex align-center ga-2 mb-3">
+      <v-chip class="font-weight-medium text-uppercase" label rounded="lg">
+        {{ languagesStore.targetLanguage }}
+      </v-chip>
+      <span class="text-title-large">{{ $t(`change_langs_dialog.langs.${languagesStore.targetLanguage}`) }}</span>
+      <v-spacer />
+      <div v-if="progressData.progressHistory && progressPointsDelta">
         <v-chip
           :color="progressPointsDelta > 0 ? 'success' : 'error'"
+          label
+          rounded="lg"
           variant="tonal"
         >
           <span>
@@ -40,125 +40,117 @@
             <strong v-else>{{ progressPointsDelta }} {{ $t('progress.points_label', Math.abs(progressPointsDelta)) }}</strong>
             {{ progressPointsDeltaUpdateDate }}</span>
         </v-chip>
-      </v-card-subtitle>
-      <v-row class="px-4 py-3">
-        <v-col cols="12">
-          <v-alert color="secondary" type="info" variant="tonal">
-            <template #text>
-              <span
-                v-html="$t('progress.info_text')"
-              />
-            </template>
-          </v-alert>
-        </v-col>
-        <v-col cols="12">
-          <v-progress-linear
-            color="secondary"
-            height="24"
-            :model-value="progressData.progressEntry.points"
-            rounded
-          >
-            <template #default="{ value }">
-              <v-spacer />
-              <span class="pr-4">{{ Math.ceil(value) }}/100</span>
-            </template>
-          </v-progress-linear>
-        </v-col>
-        <v-col cols="12">
-          <v-alert
-            border="start"
-            :title="$t('progress.essays_without_mistakes_title')"
-            type="warning"
-            variant="tonal"
-          >
-            <template #text>
-              <div class="mb-2">
-                <span>{{ $t('progress.grammar_improvement_recommendation') }}</span>
-              </div>
-              <v-progress-linear
-                color="inherit"
-                height="24"
-                :model-value="progressData.essaysWithoutMistakes.totalCount ? (progressData.essaysWithoutMistakes.count / progressData.essaysWithoutMistakes.totalCount) * 100 : 0"
-                rounded
-              >
-                <template #default>
-                  <v-spacer />
-                  <span class="pr-4 progress-bar__label">{{ progressData.essaysWithoutMistakes.count }}/{{ progressData.essaysWithoutMistakes.totalCount }}</span>
-                </template>
-              </v-progress-linear>
-            </template>
-          </v-alert>
-        </v-col>
-        <v-col cols="12">
-          <v-alert
-            border="start"
-            icon="mdi-translate-off"
-            :title="$t('progress.essays_without_translator_title')"
-            :type="getProgressColor(essaysWithoutTranslatorProgress)"
-            variant="tonal"
-          >
-            <template #text>
-              <div class="mb-2">
-                <span>{{
-                  getTranslatorProgressRecommendation(
-                    essaysWithoutTranslatorProgress,
-                  )
-                }}</span>
-              </div>
-              <v-progress-linear
-                color="inherit"
-                height="24"
-                :model-value="essaysWithoutTranslatorProgress"
-                rounded
-              >
-                <template #default>
-                  <v-spacer />
-                  <span class="pr-4 progress-bar__label">{{ progressData.essaysWithoutTranslator.count }}/{{
-                    progressData.essaysWithoutTranslator.totalCount
-                  }}</span>
-                </template>
-              </v-progress-linear>
-            </template>
-          </v-alert>
-        </v-col>
-        <v-col cols="12">
-          <v-alert
-            border="start"
-            icon="mdi-star"
-            :title="$t('progress.average_grammar_estimation_title')"
-            :type="getProgressColor(progressData.averageGrammarEstimation * 10)"
-            variant="tonal"
-          >
-            <template #text>
-              <div class="mb-2">
-                <span>{{
-                  getAverageGrammarEstimationProgressRecommendation(
-                    progressData.averageGrammarEstimation * 10,
-                  )
-                }}</span>
-              </div>
-              <v-progress-linear
-                color="inherit"
-                height="24"
-                :model-value="progressData.averageGrammarEstimation * 10"
-                rounded
-              >
-                <template #default>
-                  <v-spacer />
-                  <span class="pr-4 progress-bar__label">{{ progressData.averageGrammarEstimation }}/10</span>
-                </template>
-              </v-progress-linear>
-            </template>
-          </v-alert>
-        </v-col>
-      </v-row>
-      <!-- <v-card-actions>
-        <v-btn prepend-icon="mdi-share">{{ $t('progress.buttons.share') }}</v-btn>
-        <v-btn prepend-icon="mdi-export-variant">{{ $t('progress.buttons.export') }}</v-btn>
-        <v-spacer></v-spacer>
-        <v-btn color="error" prepend-icon="mdi-cancel">{{ $t('progress.buttons.reset') }}</v-btn>
-      </v-card-actions> -->
-    </v-card>
+      </div>
+    </div>
+    <v-alert
+      color="secondary"
+      icon="mdi-trending-up"
+      rounded="xl"
+      type="info"
+      variant="tonal"
+    >
+      <template #title>
+        <span>{{ progressData.progressEntry.points }}/100 {{ $t('progress.points_label', progressData.progressEntry.points) }}</span>
+      </template>
+      <template #text>
+        <div class="mb-2">
+          <span
+            v-html="$t('progress.info_text')"
+          /></div>
+        <v-progress-linear
+          color="secondary"
+          height="26"
+          :model-value="progressData.progressEntry.points"
+          rounded="lg"
+        />
+      </template>
+    </v-alert>
+    <v-divider class="my-4" />
+    <v-alert
+      class="mb-2"
+      rounded="xl"
+      type="warning"
+      variant="tonal"
+    >
+      <template #title>
+        <span>{{ $t('progress.essays_without_mistakes_title') }}</span>
+        <v-spacer />
+        <v-chip class="font-weight-medium flex-shrink-0 align-self-start ml-2" label rounded="lg" size="small">
+          {{ progressData.essaysWithoutMistakes.count }}/{{ progressData.essaysWithoutMistakes.totalCount }}
+        </v-chip>
+      </template>
+      <template #text>
+        <div class="mb-2">
+          <span>{{ $t('progress.grammar_improvement_recommendation') }}</span>
+        </div>
+        <v-progress-linear
+          color="inherit"
+          height="26"
+          :model-value="progressData.essaysWithoutMistakes.totalCount ? (progressData.essaysWithoutMistakes.count / progressData.essaysWithoutMistakes.totalCount) * 100 : 0"
+          rounded="lg"
+        />
+      </template>
+    </v-alert>
+    <v-alert
+      class="mb-2"
+      icon="mdi-translate-off"
+      rounded="xl"
+      :title="$t('progress.essays_without_translator_title')"
+      :type="getProgressColor(essaysWithoutTranslatorProgress)"
+      variant="tonal"
+    >
+      <template #title>
+        <span>{{ $t('progress.essays_without_translator_title') }}</span>
+        <v-spacer />
+        <v-chip class="font-weight-medium flex-shrink-0 align-self-start ml-2" label rounded="lg" size="small">
+          {{ progressData.essaysWithoutTranslator.count }}/{{ progressData.essaysWithoutTranslator.totalCount }}
+        </v-chip>
+      </template>
+      <template #text>
+        <div class="mb-2">
+          <span>{{
+            getTranslatorProgressRecommendation(
+              essaysWithoutTranslatorProgress,
+            )
+          }}</span>
+        </div>
+        <v-progress-linear
+          color="inherit"
+          height="26"
+          :model-value="essaysWithoutTranslatorProgress"
+          rounded="lg"
+        />
+      </template>
+    </v-alert>
+    <v-alert
+      icon="mdi-star"
+      rounded="xl"
+      :type="getProgressColor(progressData.averageGrammarEstimation * 10)"
+      variant="tonal"
+    >
+      <template #title>
+        <span>{{ $t('progress.average_grammar_estimation_title') }}</span>
+        <v-spacer />
+        <v-chip class="font-weight-medium flex-shrink-0 align-self-start ml-2" label rounded="lg" size="small">
+          {{ progressData.averageGrammarEstimation }}/10
+        </v-chip>
+      </template>
+      <template #text>
+        <div class="mb-2">
+          <span>{{
+            getAverageGrammarEstimationProgressRecommendation(
+              progressData.averageGrammarEstimation * 10,
+            )
+          }}</span>
+        </div>
+        <v-progress-linear
+          color="inherit"
+          height="26"
+          :model-value="progressData.averageGrammarEstimation * 10"
+          rounded="lg"
+        />
+      </template>
+    </v-alert>
   </v-container>
 </template>
 
@@ -301,3 +293,11 @@
     },
   );
 </script>
+
+<style scoped>
+:deep(.v-progress-linear__determinate) {
+  border-radius: 8px;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+</style>
