@@ -1,5 +1,5 @@
 export const ESSAY_IDEAS: string[] = Array.from(
-  { length: 101 },
+  { length: 100 },
   (_, i) => `essay_ideas.${i}`,
 );
 
