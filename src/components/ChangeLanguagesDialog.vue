@@ -129,7 +129,7 @@
   const newTargetLang = ref<string>(languagesStore.targetLanguage);
 
   const langsList = computed(() => {
-    return availableLocales.map((code) => ({
+    return availableLocales.map(code => ({
       name: t(`change_langs_dialog.langs.${code}`),
       code,
     }));
