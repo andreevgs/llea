@@ -51,7 +51,7 @@
   "progress": {
     "no_data": "No progress data yet",
     "points_label": "points | point | points",
-    "info_text": "Your journey to language proficiency is reflected in the points earned. Every sentence without mistakes brings you closer to perfection, earning <b>2 points</b>. Mistakes teach us, but subtract <b>1 point</b>. Aim for the top — <b>100 points</b>, where every point symbolizes a step towards mastery.",
+    "info_text": "Your journey to language proficiency is reflected in the points earned. Points are awarded for each essay: for effort, sentence accuracy, AI grammar score, and writing without a translator. Mistakes teach us without taking away your hard-earned experience. Aim for the top — <b>100 points</b>!",
     "essays_without_mistakes_title": "Sentences without mistakes",
     "grammar_improvement_recommendation": "Your grammar needs improvement. It is recommended to review the basic rules and practice writing simple sentences.",
     "essays_without_translator_title": "Essays without translator",
@@ -62,6 +62,12 @@
       "reset": "Reset"
     },
     "recommendations": {
+      "sentences": {
+        "low": "Pay closer attention to sentence structure and review them carefully before submitting.",
+        "medium": "Good result. You construct basic sentences well, but some need a bit of polish.",
+        "high": "Great accuracy! Most of your sentences are well-structured and error-free.",
+        "perfect": "Exceptional accuracy! Your sentences are virtually flawless."
+      },
       "translator": {
         "low": "You often rely on a translator. Aim to write texts independently to better master the language.",
         "medium": "You are starting to write on your own. Keep it up, gradually reducing your dependence on the translator.",

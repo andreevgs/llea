@@ -68,25 +68,30 @@
     <v-divider class="my-4" />
     <v-alert
       class="mb-2"
+      icon="mdi-check-circle"
       rounded="xl"
-      type="warning"
+      :type="getProgressColor(essaysWithoutMistakesProgress)"
       variant="tonal"
     >
       <template #title>
         <span>{{ $t('progress.essays_without_mistakes_title') }}</span>
         <v-spacer />
         <v-chip class="font-weight-medium flex-shrink-0 align-self-start ml-2" label rounded="lg" size="small">
-          {{ progressData.essaysWithoutMistakes.count }}/{{ progressData.essaysWithoutMistakes.totalCount }}
+          {{ Math.round(essaysWithoutMistakesProgress) }}%
         </v-chip>
       </template>
       <template #text>
         <div class="mb-2">
-          <span>{{ $t('progress.grammar_improvement_recommendation') }}</span>
+          <span>{{
+            getCleanSentencesProgressRecommendation(
+              essaysWithoutMistakesProgress,
+            )
+          }}</span>
         </div>
         <v-progress-linear
           color="inherit"
           height="26"
-          :model-value="progressData.essaysWithoutMistakes.totalCount ? (progressData.essaysWithoutMistakes.count / progressData.essaysWithoutMistakes.totalCount) * 100 : 0"
+          :model-value="essaysWithoutMistakesProgress"
           rounded="lg"
         />
       </template>
@@ -103,7 +108,7 @@
         <span>{{ $t('progress.essays_without_translator_title') }}</span>
         <v-spacer />
         <v-chip class="font-weight-medium flex-shrink-0 align-self-start ml-2" label rounded="lg" size="small">
-          {{ progressData.essaysWithoutTranslator.count }}/{{ progressData.essaysWithoutTranslator.totalCount }}
+          {{ Math.round(essaysWithoutTranslatorProgress) }}%
         </v-chip>
       </template>
       <template #text>
@@ -170,6 +175,7 @@
   import { getDefaultCountResult } from "@/utils/db";
   import {
     getAverageGrammarEstimationProgressRecommendation,
+    getCleanSentencesProgressRecommendation,
     getProgressColor,
     getTranslatorProgressRecommendation,
   } from "@/utils/progress";
@@ -209,47 +215,46 @@
       "prev",
     );
     if (progressHistory.length > 0) progressData.progressHistory = progressHistory[0];
-    const reduceResult = await essaysService.reduceByIndex(
+
+    const recentEssays = await essaysService.getAllByIndex(
       "languagePair",
       {
         currentLanguage: languagesStore.currentLanguage,
         targetLanguage: languagesStore.targetLanguage,
       },
       "prev",
-      (acc, essay) => {
-        acc.totalSentences += essay.analyzedSentences.length;
-        acc.errorSentences += essay.numOfSentencesWithMistakes;
-        return acc;
-      },
-      { totalSentences: 0, errorSentences: 0 },
+      undefined,
+      10,
     );
 
-    progressData.essaysWithoutMistakes = {
-      count: reduceResult.totalSentences - reduceResult.errorSentences,
-      totalCount: reduceResult.totalSentences,
-    };
+    if (recentEssays.length > 0) {
+      let totalSentences = 0;
+      let cleanSentences = 0;
+      let withoutTranslatorCount = 0;
+      let totalGrammarScore = 0;
 
-    const essaysWithoutTranslatorCountResult
-      = await essaysService.getAllByIndexAndCount(
-        "languagePair",
-        {
-          currentLanguage: languagesStore.currentLanguage,
-          targetLanguage: languagesStore.targetLanguage,
-        },
-        "prev",
-        { isTranslatorUsed: false },
-      );
-    progressData.essaysWithoutTranslator = essaysWithoutTranslatorCountResult;
-    const averageGrammarEstimation = await essaysService.getAllByIndexAVG(
-      "languagePair",
-      {
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      },
-      "prev",
-      "grammarQuality.estimation",
-    );
-    progressData.averageGrammarEstimation = averageGrammarEstimation;
+      for (const essay of recentEssays) {
+        totalSentences += essay.analyzedSentences.length;
+        cleanSentences += (essay.analyzedSentences.length - essay.numOfSentencesWithMistakes);
+        if (!essay.isTranslatorUsed) {
+          withoutTranslatorCount++;
+        }
+        totalGrammarScore += (essay.grammarQuality?.estimation ?? 0);
+      }
+
+      progressData.essaysWithoutMistakes = {
+        count: cleanSentences,
+        totalCount: totalSentences,
+      };
+
+      progressData.essaysWithoutTranslator = {
+        count: withoutTranslatorCount,
+        totalCount: recentEssays.length,
+      };
+
+      progressData.averageGrammarEstimation = Number((totalGrammarScore / recentEssays.length).toFixed(1));
+    }
+
     return progressData;
   });
 </script>
@@ -274,7 +279,17 @@
     );
   });
 
+  const essaysWithoutMistakesProgress = computed(() => {
+    if (!progressData.value.essaysWithoutMistakes.totalCount) return 0;
+    return (
+      (progressData.value.essaysWithoutMistakes.count
+        / progressData.value.essaysWithoutMistakes.totalCount)
+      * 100
+    );
+  });
+
   const essaysWithoutTranslatorProgress = computed(() => {
+    if (!progressData.value.essaysWithoutTranslator.totalCount) return 0;
     return (
       (progressData.value.essaysWithoutTranslator.count
         / progressData.value.essaysWithoutTranslator.totalCount)

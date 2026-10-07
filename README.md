@@ -8,7 +8,7 @@ The main goal of **LLEA** is to help users bridge the gap between theory and pra
 
 - **Write Texts and Essays**: Practice writing in your chosen language. If you're a beginner, you can use a translator (there is a special checkbox to ensure your learning statistics remain accurate).
 - **AI Analysis & Error Correction**: Each of your essays is analyzed by neural networks. The app highlights sentences with mistakes, suggests correct translations, and gives you a grammar score (out of 10).
-- **Detailed Statistics & Progress**: A motivating points system! For every sentence without mistakes, you earn **+2 points**, while mistakes deduct **-1 point**. The app tracks your "clean" texts and average grammar level.
+- **Detailed Statistics & Progress**: A fair and motivating 0–100 mastery scale! Points are awarded for practice, sentence accuracy, AI grammar rating, and writing without a translator. Mistakes provide valuable learning feedback without wiping out your hard-earned score.
 - **Personalized Dictionary**: Unknown or difficult words are extracted and saved into your personal database for future study.
 - **Multilingual Interface**: Fully localized UI (English, Russian, Belarusian, Polish, Spanish, etc.), with a customizable "Native Language -> Target Language" setup.
 - **Light & Dark Themes**: For a comfortable user experience at any time of the day.

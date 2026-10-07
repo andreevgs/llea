@@ -51,7 +51,7 @@
   "progress": {
     "no_data": "Kol kas nėra duomenų apie pažangą",
     "points_label": "taškų | taškas | taškai | taškų",
-    "info_text": "Tavo kelias į kalbos mokėjimą atsispindi sukauptais taškais. Kiekvienas sakinys be klaidų priartina tave prie tobulumo, suteikdamas <b>2 taškus</b>. Klaidos mus moko, bet atima <b>1 tašką</b>. Siek viršūnės – <b>100 taškų</b>, kur kiekvienas taškas simbolizuoja žingsnį link meistriškumo.",
+    "info_text": "Tavo kelias į kalbos mokėjimą atsispindi sukauptais taškais. Taškai skiriami už kiekvieną rašinį: už pastangas, sakinių tikslumą, DI įvertinimą ir savarankiškumą be vertėjo. Klaidos mus moko, neatimdamos sukauptos patirties. Siek viršūnės – <b>100 taškų</b>!",
     "essays_without_mistakes_title": "Sakiniai be klaidų",
     "grammar_improvement_recommendation": "Tavo gramatiką reikia tobulinti. Rekomenduojama pakartoti pagrindines taisykles ir pasipraktikuoti rašant paprastus sakinius.",
     "essays_without_translator_title": "Esė be vertėjo",
@@ -62,6 +62,12 @@
       "reset": "Atstatyti"
     },
     "recommendations": {
+      "sentences": {
+        "low": "Atidžiau atkreipk dėmesį į sakinių struktūrą ir patikrink juos prieš išsaugodamas.",
+        "medium": "Geras rezultatas. Gerai formuoji pagrindinius sakinius, tačiau kai kuriuos verta patobulinti.",
+        "high": "Puikus tikslumas! Dauguma tavo sakinių yra taisyklingi ir be klaidų.",
+        "perfect": "Išskirtinis tikslumas! Tavo sakiniai yra praktiškai nepriekaištingi."
+      },
       "translator": {
         "low": "Dažnai pasikliauji vertėju. Stenkis rašyti tekstus savarankiškai, kad geriau įsisavintum kalbą.",
         "medium": "Pradedi rašyti savarankiškai. Taip ir toliau, palaipsniui mažink priklausomybę nuo vertėjo.",

@@ -51,7 +51,7 @@
   "progress": {
     "no_data": "Nie ma jeszcze danych o postępie",
     "points_label": "punktów | punkt | punkty | punktów",
-    "info_text": "Twoja droga do biegłości językowej odzwierciedla się w zdobytych punktach. Każde zdanie bez błędów przybliża cię do doskonałości, dając <b>2 punkty</b>. Błędy nas uczą, ale odejmują <b>1 punkt</b>. Dąż do szczytu — <b>100 punktów</b>, gdzie każdy punkt symbolizuje krok ku mistrzostwu.",
+    "info_text": "Twoja droga do biegłości językowej odzwierciedla się w zdobytych punktach. Punkty są przyznawane za każde wypracowanie: za wkład pracy, poprawność zdań, ocenę AI oraz samodzielność bez tłumacza. Błędy uczą nas, nie odbierając zdobytego doświadczenia. Dąż do szczytu — <b>100 punktów</b>!",
     "essays_without_mistakes_title": "Zdania bez błędów",
     "grammar_improvement_recommendation": "Twoja gramatyka wymaga poprawy. Zaleca się powtórzenie podstawowych zasad i ćwiczenie pisania prostych zdań.",
     "essays_without_translator_title": "Eseje bez tłumacza",
@@ -62,6 +62,12 @@
       "reset": "Resetuj"
     },
     "recommendations": {
+      "sentences": {
+        "low": "Zwracaj większą uwagę na strukturę zdań i sprawdzaj je uważnie przed zapisaniem.",
+        "medium": "Dobry wynik. Dobrze budujesz podstawowe zdania, ale niektóre wymagają dopracowania.",
+        "high": "Świetna dokładność! Większość Twoich zdań jest poprawna i bezbłędna.",
+        "perfect": "Wyjątkowa dokładność! Twoje zdania są praktycznie bezbłędne."
+      },
       "translator": {
         "low": "Często polegasz na tłumaczu. Staraj się pisać teksty samodzielnie, aby lepiej przyswoić język.",
         "medium": "Zaczynasz pisać samodzielnie. Oby tak dalej, stopniowo zmniejszając zależność od tłumacza.",

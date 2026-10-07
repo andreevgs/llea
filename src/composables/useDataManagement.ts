@@ -54,7 +54,10 @@ export function useDataManagement() {
       }
       if (data.essays) {
         for (const entry of data.essays) {
-          await essaysService.put(entry);
+          await essaysService.put({
+            ...entry,
+            date: new Date(entry.date),
+          });
         }
       }
       if (data.progressEntries) {
@@ -64,7 +67,10 @@ export function useDataManagement() {
       }
       if (data.progressHistory) {
         for (const entry of data.progressHistory) {
-          await progressHistoryService.put(entry);
+          await progressHistoryService.put({
+            ...entry,
+            date: new Date(entry.date),
+          });
         }
       }
 

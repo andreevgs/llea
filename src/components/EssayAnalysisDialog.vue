@@ -166,6 +166,7 @@
     getGrammaticalAnalysisPrompt,
     getGrammaticalEstimationPrompt,
   } from "@/utils/prompts";
+  import { calculateEssayPoints } from "@/utils/progress";
 
   const essaysStore = useEssaysStore();
   const languagesStore = useLanguagesStore();
@@ -254,7 +255,12 @@
     const numOfSentencesWithoutMistakes
       = newAnalyzedEssay.analyzedSentences.length
         - newAnalyzedEssay.numOfSentencesWithMistakes;
-    const essayPoints = numOfSentencesWithoutMistakes * 2 - numOfMistakes;
+    const essayPoints = calculateEssayPoints({
+      totalSentences: newAnalyzedEssay.analyzedSentences.length,
+      sentencesWithoutMistakes: numOfSentencesWithoutMistakes,
+      grammarEstimation: newEssayGrammarQuality.estimation,
+      isTranslatorUsed: newAnalyzedEssay.isTranslatorUsed,
+    });
     const progressEntriesForLanguagePair
       = await progressEntriesService.getAllByIndex(
         "languagePair",
@@ -265,28 +271,29 @@
         "next",
       );
     if (progressEntriesForLanguagePair.length > 0) {
+      const currentPoints = progressEntriesForLanguagePair[0].points;
+      const newPoints = Math.min(100, Math.max(0, currentPoints + essayPoints));
       await progressEntriesService.put({
         ...progressEntriesForLanguagePair[0],
-        points:
-          Math.max(progressEntriesForLanguagePair[0].points + essayPoints, 0),
+        points: newPoints,
       });
       await progressHistoryService.put({
-        previousPointsValue: progressEntriesForLanguagePair[0].points,
-        newPointsValue:
-          Math.max(progressEntriesForLanguagePair[0].points + essayPoints, 0),
+        previousPointsValue: currentPoints,
+        newPointsValue: newPoints,
         date: new Date(),
         currentLanguage: languagesStore.currentLanguage,
         targetLanguage: languagesStore.targetLanguage,
       });
     } else {
+      const newPoints = Math.min(100, Math.max(0, essayPoints));
       await progressEntriesService.put({
         currentLanguage: languagesStore.currentLanguage,
         targetLanguage: languagesStore.targetLanguage,
-        points: Math.max(essayPoints, 0),
+        points: newPoints,
       });
       await progressHistoryService.put({
         previousPointsValue: 0,
-        newPointsValue: Math.max(essayPoints, 0),
+        newPointsValue: newPoints,
         date: new Date(),
         currentLanguage: languagesStore.currentLanguage,
         targetLanguage: languagesStore.targetLanguage,

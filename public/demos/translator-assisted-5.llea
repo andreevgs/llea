@@ -1,0 +1,273 @@
+{
+  "currentLanguage": "ru",
+  "targetLanguage": "en",
+  "dictionaryEntries": [
+    {
+      "word": "proliferation",
+      "pronunciation": "[prəˌlɪf.əˈreɪ.ʃən]",
+      "translation": "быстрое распространение",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "camaraderie",
+      "pronunciation": "[ˌkæm.əˈrɑː.dər.i]",
+      "translation": "товарищество, взаимовыручка",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "sanctuary",
+      "pronunciation": "[ˈsæŋk.tʃʊə.ri]",
+      "translation": "убежище, тихий уголок",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "exacerbate",
+      "pronunciation": "[ɪɡˈzæs.ə.beɪt]",
+      "translation": "усугублять, обострять",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "indispensable",
+      "pronunciation": "[ˌɪn.dɪˈspen.sə.bəl]",
+      "translation": "незаменимый, обязательный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "eloquent",
+      "pronunciation": "[ˈel.ə.kwənt]",
+      "translation": "красноречивый, выразительный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "mitigate",
+      "pronunciation": "[ˈmɪt.ɪ.ɡeɪt]",
+      "translation": "смягчать, уменьшать",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    }
+  ],
+  "essays": [
+    {
+      "id": 1,
+      "text": "Artificial intelligence has become an integral component of contemporary society. Modern algorithms assist professionals in healthcare, finance, and engineering with remarkable accuracy. Furthermore, machine learning models streamline repetitive workflows and enhance human decision-making. As this technological revolution unfolds, ethical considerations surrounding algorithmic transparency must remain a top priority.",
+      "date": "2026-10-02T22:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 9.2
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 48,
+      "analyzedSentences": [
+        {
+          "sentence": "Artificial intelligence has become an integral component of contemporary society.",
+          "translation": "Искусственный интеллект стал неотъемлемой частью современного общества.",
+          "mistakes": [],
+          "correctedSentence": "Artificial intelligence has become an integral component of contemporary society."
+        },
+        {
+          "sentence": "Modern algorithms assist professionals in healthcare, finance, and engineering with remarkable accuracy.",
+          "translation": "Современные алгоритмы помогают специалистам в здравоохранении, финансах и инженерии с поразительной точностью.",
+          "mistakes": [],
+          "correctedSentence": "Modern algorithms assist professionals in healthcare, finance, and engineering with remarkable accuracy."
+        },
+        {
+          "sentence": "Furthermore, machine learning models streamline repetitive workflows and enhance human decision-making.",
+          "translation": "Кроме того, модели машинного обучения оптимизируют рутинные процессы и улучшают принятие решений человеком.",
+          "mistakes": [],
+          "correctedSentence": "Furthermore, machine learning models streamline repetitive workflows and enhance human decision-making."
+        },
+        {
+          "sentence": "As this technological revolution unfolds, ethical considerations surrounding algorithmic transparency must remain a top priority.",
+          "translation": "По мере развития этой технологической революции этические вопросы, связанные с прозрачностью алгоритмов, должны оставаться главным приоритетом.",
+          "mistakes": [],
+          "correctedSentence": "As this technological revolution unfolds, ethical considerations surrounding algorithmic transparency must remain a top priority."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Urban architecture profoundly influences psychological well-being and social interaction. Thoughtfully designed public plazas foster community cohesion and encourage civic engagement. In contrast, monotonous concrete environments often exacerbate feelings of alienation among metropolitan residents. Incorporating green spaces into urban master plans creates vital sanctuaries for relaxation and mental rejuvenation.",
+      "date": "2026-10-03T23:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 9.4
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 48,
+      "analyzedSentences": [
+        {
+          "sentence": "Urban architecture profoundly influences psychological well-being and social interaction.",
+          "translation": "Городская архитектура оказывает глубокое влияние на психологическое благополучие и социальное взаимодействие.",
+          "mistakes": [],
+          "correctedSentence": "Urban architecture profoundly influences psychological well-being and social interaction."
+        },
+        {
+          "sentence": "Thoughtfully designed public plazas foster community cohesion and encourage civic engagement.",
+          "translation": "Продуманно спроектированные общественные площади способствуют сплоченности сообщества и гражданской активности.",
+          "mistakes": [],
+          "correctedSentence": "Thoughtfully designed public plazas foster community cohesion and encourage civic engagement."
+        },
+        {
+          "sentence": "In contrast, monotonous concrete environments often exacerbate feelings of alienation among metropolitan residents.",
+          "translation": "Напротив, монотонная бетонная среда часто усугубляет чувство отчуждения среди жителей мегаполисов.",
+          "mistakes": [],
+          "correctedSentence": "In contrast, monotonous concrete environments often exacerbate feelings of alienation among metropolitan residents."
+        },
+        {
+          "sentence": "Incorporating green spaces into urban master plans creates vital sanctuaries for relaxation and mental rejuvenation.",
+          "translation": "Включение зеленых зон в генеральные планы городов создает жизненно важные убежища для отдыха и ментального восстановления.",
+          "mistakes": [],
+          "correctedSentence": "Incorporating green spaces into urban master plans creates vital sanctuaries for relaxation and mental rejuvenation."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Renewable energy adoption represents an indispensable milestone in mitigating global climate change. Solar photovoltaic installations and offshore wind farms are expanding exponentially across industrialized nations. Although initial capital investments remain substantial, long-term operational expenditures continue to diminish steadily. Consequently, clean energy transitions generate sustainable economic growth while preserving fragile planetary ecosystems.",
+      "date": "2026-10-04T18:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 9
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 49,
+      "analyzedSentences": [
+        {
+          "sentence": "Renewable energy adoption represents an indispensable milestone in mitigating global climate change.",
+          "translation": "Внедрение возобновляемых источников энергии представляет собой незаменимую веху в смягчении последствий глобального изменения климата.",
+          "mistakes": [],
+          "correctedSentence": "Renewable energy adoption represents an indispensable milestone in mitigating global climate change."
+        },
+        {
+          "sentence": "Solar photovoltaic installations and offshore wind farms are expanding exponentially across industrialized nations.",
+          "translation": "Солнечные фотоэлектрические установки и морские ветровые электростанции экспоненциально расширяются в промышленно развитых странах.",
+          "mistakes": [],
+          "correctedSentence": "Solar photovoltaic installations and offshore wind farms are expanding exponentially across industrialized nations."
+        },
+        {
+          "sentence": "Although initial capital investments remain substantial, long-term operational expenditures continue to diminish steadily.",
+          "translation": "Хотя первоначальные капитальные инвестиции остаются значительными, долгосрочные операционные расходы продолжают неуклонно снижаться.",
+          "mistakes": [],
+          "correctedSentence": "Although initial capital investments remain substantial, long-term operational expenditures continue to diminish steadily."
+        },
+        {
+          "sentence": "Consequently, clean energy transitions generate sustainable economic growth while preserving fragile planetary ecosystems.",
+          "translation": "Следовательно, переход на экологически чистую энергию способствует устойчивому экономическому росту, сохраняя при этом хрупкие экосистемы планеты.",
+          "mistakes": [],
+          "correctedSentence": "Consequently, clean energy transitions generate sustainable economic growth while preserving fragile planetary ecosystems."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Literary fiction cultivates cognitive empathy by inviting readers into diverse cultural viewpoints. Engaging with complex narrative arcs encourages reflection on profound philosophical inquiries and human vulnerabilities. Through eloquent prose, authors illuminate subtle nuances of the human condition that empirical research frequently overlooks. Ultimately, literature enriches our internal lives and deepens mutual comprehension.",
+      "date": "2026-10-05T20:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 9.3
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 48,
+      "analyzedSentences": [
+        {
+          "sentence": "Literary fiction cultivates cognitive empathy by inviting readers into diverse cultural viewpoints.",
+          "translation": "Художественная литература развивает когнитивную эмпатию, приглашая читателей к разнообразным культурным взглядам.",
+          "mistakes": [],
+          "correctedSentence": "Literary fiction cultivates cognitive empathy by inviting readers into diverse cultural viewpoints."
+        },
+        {
+          "sentence": "Engaging with complex narrative arcs encourages reflection on profound philosophical inquiries and human vulnerabilities.",
+          "translation": "Погружение в сложные сюжетные линии побуждает к размышлению о глубоких философских вопросах и человеческих уязвимостях.",
+          "mistakes": [],
+          "correctedSentence": "Engaging with complex narrative arcs encourages reflection on profound philosophical inquiries and human vulnerabilities."
+        },
+        {
+          "sentence": "Through eloquent prose, authors illuminate subtle nuances of the human condition that empirical research frequently overlooks.",
+          "translation": "С помощью выразительной прозы авторы освещают тонкие нюансы человеческого бытия, которые часто упускаются эмпирическими исследованиями.",
+          "mistakes": [],
+          "correctedSentence": "Through eloquent prose, authors illuminate subtle nuances of the human condition that empirical research frequently overlooks."
+        },
+        {
+          "sentence": "Ultimately, literature enriches our internal lives and deepens mutual comprehension.",
+          "translation": "В конечном счете литература обогащает наш внутренний мир и углубляет взаимопонимание.",
+          "mistakes": [],
+          "correctedSentence": "Ultimately, literature enriches our internal lives and deepens mutual comprehension."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The global proliferation of remote work models has fundamentally altered traditional workplace dynamics. Geographic boundaries no longer constrain collaborative enterprises from assembling international talent. However, cultivating spontaneous camaraderie through virtual platforms presents notable logistical hurdles. Leaders must therefore establish deliberate rituals that support mental wellness and maintain corporate culture.",
+      "date": "2026-10-06T21:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 9.1
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 48,
+      "analyzedSentences": [
+        {
+          "sentence": "The global proliferation of remote work models has fundamentally altered traditional workplace dynamics.",
+          "translation": "Глобальное распространение моделей удаленной работы коренным образом изменило традиционную динамику рабочего места.",
+          "mistakes": [],
+          "correctedSentence": "The global proliferation of remote work models has fundamentally altered traditional workplace dynamics."
+        },
+        {
+          "sentence": "Geographic boundaries no longer constrain collaborative enterprises from assembling international talent.",
+          "translation": "Географические границы больше не мешают совместным предприятиям объединять международные таланты.",
+          "mistakes": [],
+          "correctedSentence": "Geographic boundaries no longer constrain collaborative enterprises from assembling international talent."
+        },
+        {
+          "sentence": "However, cultivating spontaneous camaraderie through virtual platforms presents notable logistical hurdles.",
+          "translation": "Однако поддержание спонтанного товарищества через виртуальные платформы сопряжено с заметными логистическими трудностями.",
+          "mistakes": [],
+          "correctedSentence": "However, cultivating spontaneous camaraderie through virtual platforms presents notable logistical hurdles."
+        },
+        {
+          "sentence": "Leaders must therefore establish deliberate rituals that support mental wellness and maintain corporate culture.",
+          "translation": "Поэтому лидеры должны внедрять осознанные ритуалы, поддерживающие душевное благополучие и корпоративную культуру.",
+          "mistakes": [],
+          "correctedSentence": "Leaders must therefore establish deliberate rituals that support mental wellness and maintain corporate culture."
+        }
+      ]
+    }
+  ],
+  "progressEntries": [
+    {
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "points": 25
+    }
+  ],
+  "progressHistory": [
+    {
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "previousPointsValue": 20,
+      "newPointsValue": 25,
+      "date": "2026-10-06T21:43:12.730Z"
+    }
+  ]
+}

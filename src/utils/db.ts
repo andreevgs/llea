@@ -94,6 +94,7 @@ export const idbGetAllByIndex = async <T>(
   indexValues: any[],
   direction: IDBCursorDirection,
   where?: Partial<T>,
+  limit?: number,
 ): Promise<T[]> => {
   const store = await getDBTransaction(dbPromise, storeName, "readonly");
   return new Promise((resolve, reject) => {
@@ -108,6 +109,10 @@ export const idbGetAllByIndex = async <T>(
         const item = cursor.value as T;
         if (!where || areObjectsValuesEqual(item, where)) {
           results.push(item);
+          if (limit && results.length >= limit) {
+            resolve(results);
+            return;
+          }
         }
         cursor.continue();
       } else {

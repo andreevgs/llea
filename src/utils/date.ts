@@ -14,13 +14,14 @@ const locales: Record<SupportedLocale, Locale> = {
   de,
 };
 
-export const formatRelativeDate = (date: Date, locale: SupportedLocale) => {
+export const formatRelativeDate = (date: Date | string, locale: SupportedLocale) => {
+  const d = new Date(date);
   const now = new Date();
   const weekAgo = subDays(now, 7);
-  return date > weekAgo
-    ? formatDistance(date, now, {
+  return d > weekAgo
+    ? formatDistance(d, now, {
         addSuffix: true,
         locale: locales[locale] || enGB,
       })
-    : format(date, "P", { locale: locales[locale] || enGB });
+    : format(d, "P", { locale: locales[locale] || enGB });
 };

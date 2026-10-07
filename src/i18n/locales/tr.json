@@ -51,7 +51,7 @@
   "progress": {
     "no_data": "Henüz ilerleme verisi yok",
     "points_label": "puan | puan | puan",
-    "info_text": "Dil yeterliliğine giden yolculuğun kazanılan puanlara yansır. Hatasız her cümle seni mükemmelliğe bir adım daha yaklaştırır ve <b>2 puan</b> kazandırır. Hatalar bize öğretir ama <b>1 puan</b> eksiltir. Her puanın ustalığa doğru bir adımı simgelediği zirveyi — <b>100 puanı</b> hedefle.",
+    "info_text": "Dil yeterliliğine giden yolculuğun kazanılan puanlara yansır. Puanlar her makale için verilir: çaba, cümle doğruluğu, yapay zeka puanı ve çevirmensiz yazma. Hatalar kazanılan deneyimi silmeden öğretir. Zirveyi hedefle — <b>100 puan</b>!",
     "essays_without_mistakes_title": "Hatasız cümleler",
     "grammar_improvement_recommendation": "Gramerinin geliştirilmesi gerekiyor. Temel kuralları gözden geçirmen ve basit cümleler yazma alıştırması yapman önerilir.",
     "essays_without_translator_title": "Çevirmensiz denemeler",
@@ -62,6 +62,12 @@
       "reset": "Sıfırla"
     },
     "recommendations": {
+      "sentences": {
+        "low": "Cümle yapısına daha fazla dikkat et ve kaydetmeden önce dikkatlice kontrol et.",
+        "medium": "İyi sonuç. Temel cümleleri iyi kuruyorsun ancak bazılarının geliştirilmesi gerekiyor.",
+        "high": "Harika doğruluk! Cümlelerinin çoğu kurallara uygun ve hatasız.",
+        "perfect": "Kusursuz doğruluk! Cümlelerin neredeyse hatasız."
+      },
       "translator": {
         "low": "Çevirmene sıkça güveniyorsun. Dili daha iyi kavramak için metinleri kendi başına yazmaya çalış.",
         "medium": "Kendi başına yazmaya başlıyorsun. Çevirmene olan bağımlılığını yavaş yavaş azaltarak böyle devam et.",

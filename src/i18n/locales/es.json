@@ -51,7 +51,7 @@
   "progress": {
     "no_data": "Aún no hay datos de progreso",
     "points_label": "puntos | punto | puntos",
-    "info_text": "Tu camino hacia el dominio del idioma se refleja en los puntos acumulados. Cada oración sin errores te acerca a la perfección, sumando <b>2 puntos</b>. Los errores nos enseñan, pero restan <b>1 punto</b>. Aspira a la cima: <b>100 puntos</b>, donde cada punto simboliza un paso hacia la maestría.",
+    "info_text": "Tu camino hacia el dominio del idioma se refleja en los puntos acumulados. Se otorgan puntos por cada texto: por esfuerzo, precisión de oraciones, evaluación de la IA y escribir sin traductor. Los errores enseñan sin restar la experiencia ganada. ¡Apunta a la cima: <b>100 puntos</b>!",
     "essays_without_mistakes_title": "Oraciones sin errores",
     "grammar_improvement_recommendation": "Tu gramática necesita mejorar. Se recomienda repasar las reglas básicas y practicar la escritura de oraciones simples.",
     "essays_without_translator_title": "Ensayos sin traductor",
@@ -62,6 +62,12 @@
       "reset": "Reiniciar"
     },
     "recommendations": {
+      "sentences": {
+        "low": "Presta más atención a la estructura de las oraciones y revísalas antes de guardar.",
+        "medium": "Buen resultado. Construyes bien las oraciones básicas, pero algunas necesitan pulirse.",
+        "high": "¡Gran precisión! La mayoría de tus oraciones están bien estructuradas y sin errores.",
+        "perfect": "¡Precisión excepcional! Tus oraciones son prácticamente impecables."
+      },
       "translator": {
         "low": "A menudo dependes del traductor. Esfuérzate por escribir textos por tu cuenta para asimilar mejor el idioma.",
         "medium": "Estás empezando a escribir por tu cuenta. Sigue así, reduciendo poco a poco la dependencia del traductor.",

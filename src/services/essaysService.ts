@@ -62,6 +62,7 @@ export const essaysService = {
     filters: { currentLanguage: string; targetLanguage: string },
     direction: IDBCursorDirection,
     where?: Partial<AnalyzedEssay>,
+    limit?: number,
   ) =>
     idbGetAllByIndex<AnalyzedEssay>(
       getDB(),
@@ -70,6 +71,7 @@ export const essaysService = {
       [filters.currentLanguage, filters.targetLanguage],
       direction,
       where,
+      limit,
     ),
 
   getAllByIndexAndCount: (

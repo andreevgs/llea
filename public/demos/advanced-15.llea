@@ -1,0 +1,819 @@
+{
+  "currentLanguage": "ru",
+  "targetLanguage": "en",
+  "dictionaryEntries": [
+    {
+      "word": "inconvenience",
+      "pronunciation": "[ˌɪnkənˈviːniəns]",
+      "translation": "неудобство, беспокойство",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "waterproof",
+      "pronunciation": "[ˈwɔːtəpruːf]",
+      "translation": "водонепроницаемый",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "exhausting",
+      "pronunciation": "[ɪɡˈzɔːstɪŋ]",
+      "translation": "изнурительный, утомительный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "prioritize",
+      "pronunciation": "[praɪˈɒrətaɪz]",
+      "translation": "расставлять приоритеты",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "foresight",
+      "pronunciation": "[ˈfɔːsaɪt]",
+      "translation": "предусмотрительность",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "adaptability",
+      "pronunciation": "[əˌdæptəˈbɪləti]",
+      "translation": "адаптивность, приспособляемость",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "compassion",
+      "pronunciation": "[kəmˈpæʃn]",
+      "translation": "сострадание, сочувствие",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "vulnerable",
+      "pronunciation": "[ˈvʌlnərəbl]",
+      "translation": "уязвимый, беззащитный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "fulfillment",
+      "pronunciation": "[fʊlˈfɪlmənt]",
+      "translation": "удовлетворение, реализация",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "tangible",
+      "pronunciation": "[ˈtændʒəbl]",
+      "translation": "ощутимый, осязаемый",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "serenity",
+      "pronunciation": "[səˈrenəti]",
+      "translation": "безмятежность, умиротворение",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "rejuvenation",
+      "pronunciation": "[rɪˌdʒuːvəˈneɪʃn]",
+      "translation": "омоложение, восстановление сил",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "invigorate",
+      "pronunciation": "[ɪnˈvɪɡəreɪt]",
+      "translation": "бодрить, вдохновлять",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "monumental",
+      "pronunciation": "[ˌmɒnjuˈmentl]",
+      "translation": "колоссальный, грандиозный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "colloquial",
+      "pronunciation": "[kəˈləʊkwiəl]",
+      "translation": "разговорный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "culinary",
+      "pronunciation": "[ˈkʌlɪnəri]",
+      "translation": "кулинарный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "transient",
+      "pronunciation": "[ˈtrænziənt]",
+      "translation": "мимолетный, преходящий",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "poignant",
+      "pronunciation": "[ˈpɔɪnjənt]",
+      "translation": "пронзительный, трогательный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "alleviate",
+      "pronunciation": "[əˈliːvieɪt]",
+      "translation": "облегчать, смягчать",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "resilient",
+      "pronunciation": "[rɪˈzɪliənt]",
+      "translation": "устойчивый, жизнестойкий",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    }
+  ],
+  "essays": [
+    {
+      "id": 1,
+      "text": "Visiting modern art galleries always provokes diverse emotional reactions. Contemporary installations challenge established perceptions through unusual materials and abstract forms. Although some exhibits appear confusing initially, reading artist statements clarifies their deeper intent. Art stimulates creative imagination and makes us question societal norms.",
+      "date": "2026-09-22T22:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 7.2
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 43,
+      "analyzedSentences": [
+        {
+          "sentence": "Visiting modern art galleries always provokes diverse emotional reactions.",
+          "translation": "Посещение галерей современного искусства всегда вызывает разнообразные эмоциональные реакции.",
+          "mistakes": [],
+          "correctedSentence": "Visiting modern art galleries always provokes diverse emotional reactions."
+        },
+        {
+          "sentence": "Contemporary installations challenge established perceptions through unusual materials and abstract forms.",
+          "translation": "Современные инсталляции бросают вызов устоявшимся представлениям через необычные материалы и абстрактные формы.",
+          "mistakes": [],
+          "correctedSentence": "Contemporary installations challenge established perceptions through unusual materials and abstract forms."
+        },
+        {
+          "sentence": "Although some exhibits appear confusing initially, reading artist statements clarifies their deeper intent.",
+          "translation": "Хотя некоторые экспонаты поначалу кажутся непонятными, чтение заявлений художников проясняет их глубокий замысел.",
+          "mistakes": [
+            {
+              "type": "Punctuation/Article",
+              "mistake": "Лучше 'the artists' statements'"
+            }
+          ],
+          "correctedSentence": "Although some exhibits appear confusing initially, reading the artists' statements clarifies their deeper intent."
+        },
+        {
+          "sentence": "Art stimulates creative imagination and makes us question societal norms.",
+          "translation": "Искусство стимулирует творческое воображение и заставляет нас подвергать сомнению общественные нормы.",
+          "mistakes": [],
+          "correctedSentence": "Art stimulates creative imagination and makes us question societal norms."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Time management is essential skill for achieving balance between career and personal life. Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion. Using digital calendar helps keep track of upcoming deadlines and meetings. Taking regular breaks during work hours maintains high concentration levels.",
+      "date": "2026-09-23T22:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 7
+      },
+      "numOfMistakes": 2,
+      "numOfSentencesWithMistakes": 2,
+      "numOfWords": 45,
+      "analyzedSentences": [
+        {
+          "sentence": "Time management is essential skill for achieving balance between career and personal life.",
+          "translation": "Тайм-менеджмент — важный навык для достижения баланса между карьерой и личной жизнью.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущен артикль 'an essential skill'"
+            }
+          ],
+          "correctedSentence": "Time management is an essential skill for achieving balance between career and personal life."
+        },
+        {
+          "sentence": "Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion.",
+          "translation": "Расстановка приоритетов в задачах по срочности предотвращает лишний стресс и душевное истощение.",
+          "mistakes": [],
+          "correctedSentence": "Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion."
+        },
+        {
+          "sentence": "Using digital calendar helps keep track of upcoming deadlines and meetings.",
+          "translation": "Использование электронного календаря помогает следить за приближающимися дедлайнами и встречами.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Нужно: 'Using a digital calendar'"
+            }
+          ],
+          "correctedSentence": "Using a digital calendar helps keep track of upcoming deadlines and meetings."
+        },
+        {
+          "sentence": "Taking regular breaks during work hours maintains high concentration levels.",
+          "translation": "Регулярные перерывы в рабочее время поддерживают высокий уровень концентрации.",
+          "mistakes": [],
+          "correctedSentence": "Taking regular breaks during work hours maintains high concentration levels."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Learning how to play chess taught me valuable strategic thinking principles. Each move requires calculating multiple potential counteractions from your opponent. Impulsive decisions often lead to quick defeat, whereas patience brings victory. The game exemplifies that foresight and adaptability are key attributes in any competition.",
+      "date": "2026-09-24T22:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 6.8
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 45,
+      "analyzedSentences": [
+        {
+          "sentence": "Learning how to play chess taught me valuable strategic thinking principles.",
+          "translation": "Обучение игре в шахматы научило меня ценным принципам стратегического мышления.",
+          "mistakes": [],
+          "correctedSentence": "Learning how to play chess taught me valuable strategic thinking principles."
+        },
+        {
+          "sentence": "Each move requires calculating multiple potential counteractions from your opponent.",
+          "translation": "Каждый ход требует просчета множества возможных ответных действий соперника.",
+          "mistakes": [],
+          "correctedSentence": "Each move requires calculating multiple potential counteractions from your opponent."
+        },
+        {
+          "sentence": "Impulsive decisions often lead to quick defeat, whereas patience brings victory.",
+          "translation": "Импульсивные решения часто приводят к быстрому поражению, тогда как терпение приносит победу.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Лучше: 'to a quick defeat'"
+            }
+          ],
+          "correctedSentence": "Impulsive decisions often lead to a quick defeat, whereas patience brings victory."
+        },
+        {
+          "sentence": "The game exemplifies that foresight and adaptability are key attributes in any competition.",
+          "translation": "Игра наглядно показывает, что предусмотрительность и адаптивность — ключевые качества в любом соревновании.",
+          "mistakes": [],
+          "correctedSentence": "The game exemplifies that foresight and adaptability are key attributes in any competition."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Public libraries are evolving into dynamic multimedia hubs for modern communities. Besides borrowing classic literature, visitors access online databases and attend public workshops. Quiet study rooms provide productive sanctuary away from noisy domestic environments. Preserving communal educational spaces remains vital in our increasingly digitalized world.",
+      "date": "2026-09-25T22:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 7.4
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 44,
+      "analyzedSentences": [
+        {
+          "sentence": "Public libraries are evolving into dynamic multimedia hubs for modern communities.",
+          "translation": "Публичные библиотеки превращаются в динамичные мультимедийные центры для современных сообществ.",
+          "mistakes": [],
+          "correctedSentence": "Public libraries are evolving into dynamic multimedia hubs for modern communities."
+        },
+        {
+          "sentence": "Besides borrowing classic literature, visitors access online databases and attend public workshops.",
+          "translation": "Помимо классической литературы, посетители получают доступ к базам данных и посещают семинары.",
+          "mistakes": [],
+          "correctedSentence": "Besides borrowing classic literature, visitors access online databases and attend public workshops."
+        },
+        {
+          "sentence": "Quiet study rooms provide productive sanctuary away from noisy domestic environments.",
+          "translation": "Тихие комнаты для занятий служат продуктивным убежищем от шумной домашней обстановки.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущен артикль 'a productive sanctuary'"
+            }
+          ],
+          "correctedSentence": "Quiet study rooms provide a productive sanctuary away from noisy domestic environments."
+        },
+        {
+          "sentence": "Preserving communal educational spaces remains vital in our increasingly digitalized world.",
+          "translation": "Сохранение общественных образовательных пространств жизненно важно в цифровизованном мире.",
+          "mistakes": [],
+          "correctedSentence": "Preserving communal educational spaces remains vital in our increasingly digitalized world."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Volunteering at animal shelter gave me memorable and heartwarming experiences. Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment. Dedicated shelter staff work tirelessly despite limited resources and funding. Small acts of compassion make tangible difference in lives of vulnerable creatures.",
+      "date": "2026-09-26T22:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 7.2
+      },
+      "numOfMistakes": 2,
+      "numOfSentencesWithMistakes": 2,
+      "numOfWords": 43,
+      "analyzedSentences": [
+        {
+          "sentence": "Volunteering at animal shelter gave me memorable and heartwarming experiences.",
+          "translation": "Волонтерство в приюте для животных подарило мне незабываемые и душевные впечатления.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущен артикль: 'at an animal shelter'"
+            }
+          ],
+          "correctedSentence": "Volunteering at an animal shelter gave me memorable and heartwarming experiences."
+        },
+        {
+          "sentence": "Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment.",
+          "translation": "Прогулки с собаками и общение с кошками приносят огромное эмоциональное удовлетворение.",
+          "mistakes": [],
+          "correctedSentence": "Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment."
+        },
+        {
+          "sentence": "Dedicated shelter staff work tirelessly despite limited resources and funding.",
+          "translation": "Преданные сотрудники приюта неустанно трудятся, несмотря на ограниченные ресурсы.",
+          "mistakes": [],
+          "correctedSentence": "Dedicated shelter staff work tirelessly despite limited resources and funding."
+        },
+        {
+          "sentence": "Small acts of compassion make tangible difference in lives of vulnerable creatures.",
+          "translation": "Маленькие проявления сострадания имеют ощутимое значение в жизни беззащитных существ.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Нужно: 'make a tangible difference in the lives of...'"
+            }
+          ],
+          "correctedSentence": "Small acts of compassion make a tangible difference in the lives of vulnerable creatures."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Reading books has always been an essential pastime for me. Whenever I open an intriguing novel, I immerse myself completely into imaginary universes. Last month I finished reading a science fiction masterpiece about interstellar voyages. It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny.",
+      "date": "2026-09-28T00:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 8.8
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 49,
+      "analyzedSentences": [
+        {
+          "sentence": "Reading books has always been an essential pastime for me.",
+          "translation": "Перевод предложения: \"Reading books has always been an essential pastime for me.\"",
+          "mistakes": [
+            {
+              "type": "Style",
+              "mistake": "Minor stylistic nuance in preposition placement."
+            }
+          ],
+          "correctedSentence": "Reading books has always been an essential pastime for me."
+        },
+        {
+          "sentence": "Whenever I open an intriguing novel, I immerse myself completely into imaginary universes.",
+          "translation": "Перевод предложения: \"Whenever I open an intriguing novel, I immerse myself completely into imaginary universes.\"",
+          "mistakes": [],
+          "correctedSentence": "Whenever I open an intriguing novel, I immerse myself completely into imaginary universes."
+        },
+        {
+          "sentence": "Last month I finished reading a science fiction masterpiece about interstellar voyages.",
+          "translation": "Перевод предложения: \"Last month I finished reading a science fiction masterpiece about interstellar voyages.\"",
+          "mistakes": [],
+          "correctedSentence": "Last month I finished reading a science fiction masterpiece about interstellar voyages."
+        },
+        {
+          "sentence": "It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny.",
+          "translation": "Перевод предложения: \"It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny.\"",
+          "mistakes": [],
+          "correctedSentence": "It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Starting the day with clarity sets the tone for subsequent productivity. I typically awaken at sunrise and dedicate fifteen minutes to gentle meditation. Following that, I prepare nutritious oatmeal topped with fresh blueberries and sliced almonds. A brisk walk in the crisp morning air clears my head before work.",
+      "date": "2026-09-27T21:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 8.6
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 49,
+      "analyzedSentences": [
+        {
+          "sentence": "Starting the day with clarity sets the tone for subsequent productivity.",
+          "translation": "Перевод предложения: \"Starting the day with clarity sets the tone for subsequent productivity.\"",
+          "mistakes": [],
+          "correctedSentence": "Starting the day with clarity sets the tone for subsequent productivity."
+        },
+        {
+          "sentence": "I typically awaken at sunrise and dedicate fifteen minutes to gentle meditation.",
+          "translation": "Перевод предложения: \"I typically awaken at sunrise and dedicate fifteen minutes to gentle meditation.\"",
+          "mistakes": [],
+          "correctedSentence": "I typically awaken at sunrise and dedicate fifteen minutes to gentle meditation."
+        },
+        {
+          "sentence": "Following that, I prepare nutritious oatmeal topped with fresh blueberries and sliced almonds.",
+          "translation": "Перевод предложения: \"Following that, I prepare nutritious oatmeal topped with fresh blueberries and sliced almonds.\"",
+          "mistakes": [],
+          "correctedSentence": "Following that, I prepare nutritious oatmeal topped with fresh blueberries and sliced almonds."
+        },
+        {
+          "sentence": "A brisk walk in the crisp morning air clears my head before work.",
+          "translation": "Перевод предложения: \"A brisk walk in the crisp morning air clears my head before work.\"",
+          "mistakes": [],
+          "correctedSentence": "A brisk walk in the crisp morning air clears my head before work."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Hiking in alpine regions offers unparalleled serenity and physical rejuvenation. The breathtaking panoramas reward hours of strenuous ascending along rocky paths. Standing on a summit surrounded by clouds instills a profound sense of humility. Clean mountain air invigorates both body and mind after months in bustling cities.",
+      "date": "2026-09-28T18:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 8.7
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 47,
+      "analyzedSentences": [
+        {
+          "sentence": "Hiking in alpine regions offers unparalleled serenity and physical rejuvenation.",
+          "translation": "Перевод предложения: \"Hiking in alpine regions offers unparalleled serenity and physical rejuvenation.\"",
+          "mistakes": [],
+          "correctedSentence": "Hiking in alpine regions offers unparalleled serenity and physical rejuvenation."
+        },
+        {
+          "sentence": "The breathtaking panoramas reward hours of strenuous ascending along rocky paths.",
+          "translation": "Перевод предложения: \"The breathtaking panoramas reward hours of strenuous ascending along rocky paths.\"",
+          "mistakes": [],
+          "correctedSentence": "The breathtaking panoramas reward hours of strenuous ascending along rocky paths."
+        },
+        {
+          "sentence": "Standing on a summit surrounded by clouds instills a profound sense of humility.",
+          "translation": "Перевод предложения: \"Standing on a summit surrounded by clouds instills a profound sense of humility.\"",
+          "mistakes": [],
+          "correctedSentence": "Standing on a summit surrounded by clouds instills a profound sense of humility."
+        },
+        {
+          "sentence": "Clean mountain air invigorates both body and mind after months in bustling cities.",
+          "translation": "Перевод предложения: \"Clean mountain air invigorates both body and mind after months in bustling cities.\"",
+          "mistakes": [],
+          "correctedSentence": "Clean mountain air invigorates both body and mind after months in bustling cities."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Mastering a foreign language requires consistent dedication and immense patience. Everyday practice helps memorize grammatical nuances and idiomatic colloquial expressions. Conversing with native speakers might feel intimidating initially, but it accelerates fluency exponentially. Each newly discovered word reveals fascinating cultural perspectives.",
+      "date": "2026-09-29T15:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 8.9
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 41,
+      "analyzedSentences": [
+        {
+          "sentence": "Mastering a foreign language requires consistent dedication and immense patience.",
+          "translation": "Перевод предложения: \"Mastering a foreign language requires consistent dedication and immense patience.\"",
+          "mistakes": [
+            {
+              "type": "Style",
+              "mistake": "Minor stylistic nuance in preposition placement."
+            }
+          ],
+          "correctedSentence": "Mastering a foreign language requires consistent dedication and immense patience."
+        },
+        {
+          "sentence": "Everyday practice helps memorize grammatical nuances and idiomatic colloquial expressions.",
+          "translation": "Перевод предложения: \"Everyday practice helps memorize grammatical nuances and idiomatic colloquial expressions.\"",
+          "mistakes": [],
+          "correctedSentence": "Everyday practice helps memorize grammatical nuances and idiomatic colloquial expressions."
+        },
+        {
+          "sentence": "Conversing with native speakers might feel intimidating initially, but it accelerates fluency exponentially.",
+          "translation": "Перевод предложения: \"Conversing with native speakers might feel intimidating initially, but it accelerates fluency exponentially.\"",
+          "mistakes": [],
+          "correctedSentence": "Conversing with native speakers might feel intimidating initially, but it accelerates fluency exponentially."
+        },
+        {
+          "sentence": "Each newly discovered word reveals fascinating cultural perspectives.",
+          "translation": "Перевод предложения: \"Each newly discovered word reveals fascinating cultural perspectives.\"",
+          "mistakes": [],
+          "correctedSentence": "Each newly discovered word reveals fascinating cultural perspectives."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Small daily routines yield monumental transformations over prolonged periods. By reading ten pages every evening, one finishes dozens of literary works annually. Similarly, regular physical exercise bolsters long-term health and emotional stability. Discipline eventually transforms strenuous efforts into effortless automatic habits.",
+      "date": "2026-09-30T12:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 8.5
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 41,
+      "analyzedSentences": [
+        {
+          "sentence": "Small daily routines yield monumental transformations over prolonged periods.",
+          "translation": "Перевод предложения: \"Small daily routines yield monumental transformations over prolonged periods.\"",
+          "mistakes": [],
+          "correctedSentence": "Small daily routines yield monumental transformations over prolonged periods."
+        },
+        {
+          "sentence": "By reading ten pages every evening, one finishes dozens of literary works annually.",
+          "translation": "Перевод предложения: \"By reading ten pages every evening, one finishes dozens of literary works annually.\"",
+          "mistakes": [],
+          "correctedSentence": "By reading ten pages every evening, one finishes dozens of literary works annually."
+        },
+        {
+          "sentence": "Similarly, regular physical exercise bolsters long-term health and emotional stability.",
+          "translation": "Перевод предложения: \"Similarly, regular physical exercise bolsters long-term health and emotional stability.\"",
+          "mistakes": [],
+          "correctedSentence": "Similarly, regular physical exercise bolsters long-term health and emotional stability."
+        },
+        {
+          "sentence": "Discipline eventually transforms strenuous efforts into effortless automatic habits.",
+          "translation": "Перевод предложения: \"Discipline eventually transforms strenuous efforts into effortless automatic habits.\"",
+          "mistakes": [],
+          "correctedSentence": "Discipline eventually transforms strenuous efforts into effortless automatic habits."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Cooking allows creative experimentation with diverse culinary traditions from around the globe. Combining aromatic spices like turmeric, cumin, and cardamom transforms humble ingredients into culinary feasts. Sharing a freshly prepared meal with beloved friends fosters intimate heartfelt conversations. Food truly connects people across cultural boundaries.",
+      "date": "2026-10-01T09:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 8.4
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 45,
+      "analyzedSentences": [
+        {
+          "sentence": "Cooking allows creative experimentation with diverse culinary traditions from around the globe.",
+          "translation": "Перевод предложения: \"Cooking allows creative experimentation with diverse culinary traditions from around the globe.\"",
+          "mistakes": [],
+          "correctedSentence": "Cooking allows creative experimentation with diverse culinary traditions from around the globe."
+        },
+        {
+          "sentence": "Combining aromatic spices like turmeric, cumin, and cardamom transforms humble ingredients into culinary feasts.",
+          "translation": "Перевод предложения: \"Combining aromatic spices like turmeric, cumin, and cardamom transforms humble ingredients into culinary feasts.\"",
+          "mistakes": [],
+          "correctedSentence": "Combining aromatic spices like turmeric, cumin, and cardamom transforms humble ingredients into culinary feasts."
+        },
+        {
+          "sentence": "Sharing a freshly prepared meal with beloved friends fosters intimate heartfelt conversations.",
+          "translation": "Перевод предложения: \"Sharing a freshly prepared meal with beloved friends fosters intimate heartfelt conversations.\"",
+          "mistakes": [],
+          "correctedSentence": "Sharing a freshly prepared meal with beloved friends fosters intimate heartfelt conversations."
+        },
+        {
+          "sentence": "Food truly connects people across cultural boundaries.",
+          "translation": "Перевод предложения: \"Food truly connects people across cultural boundaries.\"",
+          "mistakes": [],
+          "correctedSentence": "Food truly connects people across cultural boundaries."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Modern metropolitan skylines reflect architectural innovation and engineering prowess. Towering skyscrapers built from reinforced glass and steel dominate contemporary urban centers. However, historical districts with cobblestone lanes retain timeless romantic charm. Balancing modern development with architectural preservation is crucial for future generations.",
+      "date": "2026-10-02T06:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 8.7
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 42,
+      "analyzedSentences": [
+        {
+          "sentence": "Modern metropolitan skylines reflect architectural innovation and engineering prowess.",
+          "translation": "Перевод предложения: \"Modern metropolitan skylines reflect architectural innovation and engineering prowess.\"",
+          "mistakes": [
+            {
+              "type": "Style",
+              "mistake": "Minor stylistic nuance in preposition placement."
+            }
+          ],
+          "correctedSentence": "Modern metropolitan skylines reflect architectural innovation and engineering prowess."
+        },
+        {
+          "sentence": "Towering skyscrapers built from reinforced glass and steel dominate contemporary urban centers.",
+          "translation": "Перевод предложения: \"Towering skyscrapers built from reinforced glass and steel dominate contemporary urban centers.\"",
+          "mistakes": [],
+          "correctedSentence": "Towering skyscrapers built from reinforced glass and steel dominate contemporary urban centers."
+        },
+        {
+          "sentence": "However, historical districts with cobblestone lanes retain timeless romantic charm.",
+          "translation": "Перевод предложения: \"However, historical districts with cobblestone lanes retain timeless romantic charm.\"",
+          "mistakes": [],
+          "correctedSentence": "However, historical districts with cobblestone lanes retain timeless romantic charm."
+        },
+        {
+          "sentence": "Balancing modern development with architectural preservation is crucial for future generations.",
+          "translation": "Перевод предложения: \"Balancing modern development with architectural preservation is crucial for future generations.\"",
+          "mistakes": [],
+          "correctedSentence": "Balancing modern development with architectural preservation is crucial for future generations."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Capturing transient fleeting moments through camera lenses teaches mindfulness and keen observation. Natural lighting plays a decisive role in defining emotional atmosphere and depth. Photographers often wander through quiet streets seeking authentic human expressions and geometric patterns. A single well-composed snapshot can evoke poignant memories for decades.",
+      "date": "2026-10-03T03:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 8.9
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 47,
+      "analyzedSentences": [
+        {
+          "sentence": "Capturing transient fleeting moments through camera lenses teaches mindfulness and keen observation.",
+          "translation": "Перевод предложения: \"Capturing transient fleeting moments through camera lenses teaches mindfulness and keen observation.\"",
+          "mistakes": [],
+          "correctedSentence": "Capturing transient fleeting moments through camera lenses teaches mindfulness and keen observation."
+        },
+        {
+          "sentence": "Natural lighting plays a decisive role in defining emotional atmosphere and depth.",
+          "translation": "Перевод предложения: \"Natural lighting plays a decisive role in defining emotional atmosphere and depth.\"",
+          "mistakes": [],
+          "correctedSentence": "Natural lighting plays a decisive role in defining emotional atmosphere and depth."
+        },
+        {
+          "sentence": "Photographers often wander through quiet streets seeking authentic human expressions and geometric patterns.",
+          "translation": "Перевод предложения: \"Photographers often wander through quiet streets seeking authentic human expressions and geometric patterns.\"",
+          "mistakes": [],
+          "correctedSentence": "Photographers often wander through quiet streets seeking authentic human expressions and geometric patterns."
+        },
+        {
+          "sentence": "A single well-composed snapshot can evoke poignant memories for decades.",
+          "translation": "Перевод предложения: \"A single well-composed snapshot can evoke poignant memories for decades.\"",
+          "mistakes": [],
+          "correctedSentence": "A single well-composed snapshot can evoke poignant memories for decades."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Protecting natural ecosystems requires collective responsibility and conscious individual choices. Reducing single-use plastic waste significantly alleviates environmental degradation in our oceans. Conserving water resources and supporting localized organic farming also contribute meaningfully. Sustainable living is not merely a modern trend, but an absolute necessity.",
+      "date": "2026-10-05T00:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 8.8
+      },
+      "numOfMistakes": 0,
+      "numOfSentencesWithMistakes": 0,
+      "numOfWords": 44,
+      "analyzedSentences": [
+        {
+          "sentence": "Protecting natural ecosystems requires collective responsibility and conscious individual choices.",
+          "translation": "Перевод предложения: \"Protecting natural ecosystems requires collective responsibility and conscious individual choices.\"",
+          "mistakes": [],
+          "correctedSentence": "Protecting natural ecosystems requires collective responsibility and conscious individual choices."
+        },
+        {
+          "sentence": "Reducing single-use plastic waste significantly alleviates environmental degradation in our oceans.",
+          "translation": "Перевод предложения: \"Reducing single-use plastic waste significantly alleviates environmental degradation in our oceans.\"",
+          "mistakes": [],
+          "correctedSentence": "Reducing single-use plastic waste significantly alleviates environmental degradation in our oceans."
+        },
+        {
+          "sentence": "Conserving water resources and supporting localized organic farming also contribute meaningfully.",
+          "translation": "Перевод предложения: \"Conserving water resources and supporting localized organic farming also contribute meaningfully.\"",
+          "mistakes": [],
+          "correctedSentence": "Conserving water resources and supporting localized organic farming also contribute meaningfully."
+        },
+        {
+          "sentence": "Sustainable living is not merely a modern trend, but an absolute necessity.",
+          "translation": "Перевод предложения: \"Sustainable living is not merely a modern trend, but an absolute necessity.\"",
+          "mistakes": [],
+          "correctedSentence": "Sustainable living is not merely a modern trend, but an absolute necessity."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Listening to orchestral symphonies evokes profound feelings beyond verbal communication. Harmonic interplay between string sections and resonant brass creates majestic auditory tapestries. Whether studying complex equations or relaxing after exhaustion, music provides emotional refuge. Artistic melodies possess universal resonance that transcends geographic divisions.",
+      "date": "2026-10-05T21:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 9.1
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 43,
+      "analyzedSentences": [
+        {
+          "sentence": "Listening to orchestral symphonies evokes profound feelings beyond verbal communication.",
+          "translation": "Перевод предложения: \"Listening to orchestral symphonies evokes profound feelings beyond verbal communication.\"",
+          "mistakes": [
+            {
+              "type": "Style",
+              "mistake": "Minor stylistic nuance in preposition placement."
+            }
+          ],
+          "correctedSentence": "Listening to orchestral symphonies evokes profound feelings beyond verbal communication."
+        },
+        {
+          "sentence": "Harmonic interplay between string sections and resonant brass creates majestic auditory tapestries.",
+          "translation": "Перевод предложения: \"Harmonic interplay between string sections and resonant brass creates majestic auditory tapestries.\"",
+          "mistakes": [],
+          "correctedSentence": "Harmonic interplay between string sections and resonant brass creates majestic auditory tapestries."
+        },
+        {
+          "sentence": "Whether studying complex equations or relaxing after exhaustion, music provides emotional refuge.",
+          "translation": "Перевод предложения: \"Whether studying complex equations or relaxing after exhaustion, music provides emotional refuge.\"",
+          "mistakes": [],
+          "correctedSentence": "Whether studying complex equations or relaxing after exhaustion, music provides emotional refuge."
+        },
+        {
+          "sentence": "Artistic melodies possess universal resonance that transcends geographic divisions.",
+          "translation": "Перевод предложения: \"Artistic melodies possess universal resonance that transcends geographic divisions.\"",
+          "mistakes": [],
+          "correctedSentence": "Artistic melodies possess universal resonance that transcends geographic divisions."
+        }
+      ]
+    }
+  ],
+  "progressEntries": [
+    {
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "points": 84
+    }
+  ],
+  "progressHistory": [
+    {
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "previousPointsValue": 76,
+      "newPointsValue": 84,
+      "date": "2026-10-05T21:43:12.730Z"
+    }
+  ]
+}

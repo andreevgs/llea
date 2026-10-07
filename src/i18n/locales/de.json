@@ -51,7 +51,7 @@
   "progress": {
     "no_data": "Noch keine Fortschrittsdaten",
     "points_label": "Punkte | Punkt | Punkte",
-    "info_text": "Dein Weg zur Sprachbeherrschung spiegelt sich in den gesammelten Punkten wider. Jeder fehlerfreie Satz bringt dich der Perfektion näher und gibt <b>2 Punkte</b>. Fehler lehren uns, ziehen aber <b>1 Punkt</b> ab. Strebe nach der Spitze — <b>100 Punkte</b>, wo jeder Punkt einen Schritt zur Meisterschaft symbolisiert.",
+    "info_text": "Dein Weg zur Sprachbeherrschung spiegelt sich in den gesammelten Punkten wider. Punkte werden für jeden Text vergeben: für Fleiß, fehlerfreie Sätze, KI-Bewertung und das Schreiben ohne Übersetzer. Fehler helfen beim Lernen, ohne gesammelte Punkte abzuziehen. Strebe nach der Spitze — <b>100 Punkte</b>!",
     "essays_without_mistakes_title": "Fehlerfreie Sätze",
     "grammar_improvement_recommendation": "Deine Grammatik muss verbessert werden. Es wird empfohlen, die Grundregeln zu wiederholen und das Schreiben einfacher Sätze zu üben.",
     "essays_without_translator_title": "Aufsätze ohne Übersetzer",
@@ -62,6 +62,12 @@
       "reset": "Zurücksetzen"
     },
     "recommendations": {
+      "sentences": {
+        "low": "Achte genauer auf den Satzbau und überprüfe deine Sätze vor dem Speichern.",
+        "medium": "Gutes Ergebnis. Du formulierst Basissätze gut, aber manche benötigen noch Feinschliff.",
+        "high": "Großartige Genauigkeit! Die meisten deiner Sätze sind korrekt und fehlerfrei.",
+        "perfect": "Hervorragende Genauigkeit! Deine Sätze sind nahezu makellos."
+      },
       "translator": {
         "low": "Du verlässt dich oft auf einen Übersetzer. Versuche, Texte selbstständig zu schreiben, um die Sprache besser zu verinnerlichen.",
         "medium": "Du fängst an, selbstständig zu schreiben. Mach weiter so und verringere allmählich deine Abhängigkeit vom Übersetzer.",

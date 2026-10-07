@@ -1,0 +1,590 @@
+{
+  "currentLanguage": "ru",
+  "targetLanguage": "en",
+  "dictionaryEntries": [
+    {
+      "word": "inconvenience",
+      "pronunciation": "[ˌɪnkənˈviːniəns]",
+      "translation": "неудобство, беспокойство",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "waterproof",
+      "pronunciation": "[ˈwɔːtəpruːf]",
+      "translation": "водонепроницаемый",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "exhausting",
+      "pronunciation": "[ɪɡˈzɔːstɪŋ]",
+      "translation": "изнурительный, утомительный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "prioritize",
+      "pronunciation": "[praɪˈɒrətaɪz]",
+      "translation": "расставлять приоритеты",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "foresight",
+      "pronunciation": "[ˈfɔːsaɪt]",
+      "translation": "предусмотрительность",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "adaptability",
+      "pronunciation": "[əˌdæptəˈbɪləti]",
+      "translation": "адаптивность, приспособляемость",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "compassion",
+      "pronunciation": "[kəmˈpæʃn]",
+      "translation": "сострадание, сочувствие",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "vulnerable",
+      "pronunciation": "[ˈvʌlnərəbl]",
+      "translation": "уязвимый, беззащитный",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "fulfillment",
+      "pronunciation": "[fʊlˈfɪlmənt]",
+      "translation": "удовлетворение, реализация",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    },
+    {
+      "word": "tangible",
+      "pronunciation": "[ˈtændʒəbl]",
+      "translation": "ощутимый, осязаемый",
+      "currentLanguage": "ru",
+      "targetLanguage": "en"
+    }
+  ],
+  "essays": [
+    {
+      "id": 1,
+      "text": "I want describe my hometown today. It is small town located near beautiful river and green forests. Many people work in local factories and small shops. On weekends families gather in central park for picnic. I really like quiet atmosphere of this place.",
+      "date": "2026-09-24T21:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 5.5
+      },
+      "numOfMistakes": 3,
+      "numOfSentencesWithMistakes": 3,
+      "numOfWords": 43,
+      "analyzedSentences": [
+        {
+          "sentence": "I want describe my hometown today.",
+          "translation": "Сегодня я хочу описать свой родной город.",
+          "mistakes": [
+            {
+              "type": "Infinitive",
+              "mistake": "Пропущена частица 'to': 'I want to describe...'"
+            }
+          ],
+          "correctedSentence": "I want to describe my hometown today."
+        },
+        {
+          "sentence": "It is small town located near beautiful river and green forests.",
+          "translation": "Это небольшой город, расположенный рядом с красивой рекой и зелеными лесами.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущены артикли: 'a small town', 'a beautiful river'"
+            }
+          ],
+          "correctedSentence": "It is a small town located near a beautiful river and green forests."
+        },
+        {
+          "sentence": "Many people work in local factories and small shops.",
+          "translation": "Многие люди работают на местных фабриках и в небольших магазинах.",
+          "mistakes": [],
+          "correctedSentence": "Many people work in local factories and small shops."
+        },
+        {
+          "sentence": "On weekends families gather in central park for picnic.",
+          "translation": "По выходным семьи собираются в центральном парке на пикник.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Правильно: 'in the central park for a picnic'"
+            }
+          ],
+          "correctedSentence": "On weekends families gather in the central park for a picnic."
+        },
+        {
+          "sentence": "I really like quiet atmosphere of this place.",
+          "translation": "Мне очень нравится спокойная атмосфера этого места.",
+          "mistakes": [],
+          "correctedSentence": "I really like the quiet atmosphere of this place."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Coffee culture became very popular in our society recently. Young people meet in cozy cafeterias to drink cappuccino and discuss project ideas. Baristas make creative patterns with milk foam on top. In my opinion, good cup of coffee can improve whole morning.",
+      "date": "2026-09-26T20:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 6
+      },
+      "numOfMistakes": 2,
+      "numOfSentencesWithMistakes": 2,
+      "numOfWords": 43,
+      "analyzedSentences": [
+        {
+          "sentence": "Coffee culture became very popular in our society recently.",
+          "translation": "Кофейная культура недавно стала очень популярной в нашем обществе.",
+          "mistakes": [
+            {
+              "type": "Present Perfect",
+              "mistake": "С 'recently' предпочтительнее Present Perfect: 'has become very popular'"
+            }
+          ],
+          "correctedSentence": "Coffee culture has become very popular in our society recently."
+        },
+        {
+          "sentence": "Young people meet in cozy cafeterias to drink cappuccino and discuss project ideas.",
+          "translation": "Молодые люди встречаются в уютных кафе, чтобы выпить капучино и обсудить идеи проектов.",
+          "mistakes": [],
+          "correctedSentence": "Young people meet in cozy cafeterias to drink cappuccino and discuss project ideas."
+        },
+        {
+          "sentence": "Baristas make creative patterns with milk foam on top.",
+          "translation": "Бариста создают креативные узоры из молочной пены сверху.",
+          "mistakes": [],
+          "correctedSentence": "Baristas make creative patterns with milk foam on top."
+        },
+        {
+          "sentence": "In my opinion, good cup of coffee can improve whole morning.",
+          "translation": "По моему мнению, хорошая чашка кофе может улучшить все утро.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущены артикли: 'a good cup of coffee', 'the whole morning'"
+            }
+          ],
+          "correctedSentence": "In my opinion, a good cup of coffee can improve the whole morning."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Yesterday I watched fascinating documentary movie about wildlife in Africa. Majestic lions were hunting across vast savannah during sunset. Elephant families walked slowly toward fresh waterhole to drink. Nature documentaries remind us how magnificent and fragile our planet is.",
+      "date": "2026-09-28T22:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 6.8
+      },
+      "numOfMistakes": 2,
+      "numOfSentencesWithMistakes": 2,
+      "numOfWords": 40,
+      "analyzedSentences": [
+        {
+          "sentence": "Yesterday I watched fascinating documentary movie about wildlife in Africa.",
+          "translation": "Вчера я посмотрел увлекательный документальный фильм о дикой природе в Африке.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущен неопределенный артикль: 'a fascinating documentary film'"
+            }
+          ],
+          "correctedSentence": "Yesterday I watched a fascinating documentary film about wildlife in Africa."
+        },
+        {
+          "sentence": "Majestic lions were hunting across vast savannah during sunset.",
+          "translation": "Величественные львы охотились по бескрайней саванне на закате.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Нужен артикль 'the vast savannah'"
+            }
+          ],
+          "correctedSentence": "Majestic lions were hunting across the vast savannah during sunset."
+        },
+        {
+          "sentence": "Elephant families walked slowly toward fresh waterhole to drink.",
+          "translation": "Слоновьи семьи медленно шли к свежему водопою, чтобы напиться.",
+          "mistakes": [],
+          "correctedSentence": "Elephant families walked slowly toward a fresh waterhole to drink."
+        },
+        {
+          "sentence": "Nature documentaries remind us how magnificent and fragile our planet is.",
+          "translation": "Документальные фильмы о природе напоминают нам, насколько великолепна и хрупка наша планета.",
+          "mistakes": [],
+          "correctedSentence": "Nature documentaries remind us how magnificent and fragile our planet is."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Cycling to work became my new daily routine since last month. Not only it helps me save money on public transport, but also keeps me fit. Morning air gives energy for whole working day ahead. Sometimes rain causes inconvenience, but waterproof jacket solves this problem.",
+      "date": "2026-09-29T19:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 6.5
+      },
+      "numOfMistakes": 2,
+      "numOfSentencesWithMistakes": 2,
+      "numOfWords": 43,
+      "analyzedSentences": [
+        {
+          "sentence": "Cycling to work became my new daily routine since last month.",
+          "translation": "Поездки на работу на велосипеде стали моей новой рутиной с прошлого месяца.",
+          "mistakes": [
+            {
+              "type": "Tense with 'since'",
+              "mistake": "С 'since' требуется Present Perfect: 'has become my new daily routine'"
+            }
+          ],
+          "correctedSentence": "Cycling to work has become my new daily routine since last month."
+        },
+        {
+          "sentence": "Not only it helps me save money on public transport, but also keeps me fit.",
+          "translation": "Это не только помогает мне экономить на транспорте, но и держит в форме.",
+          "mistakes": [
+            {
+              "type": "Inversion",
+              "mistake": "После отрицательного наречия 'Not only' нужна инверсия: 'Not only does it help me...'"
+            }
+          ],
+          "correctedSentence": "Not only does it help me save money on public transport, but it also keeps me fit."
+        },
+        {
+          "sentence": "Morning air gives energy for whole working day ahead.",
+          "translation": "Утренний воздух дает энергию на весь предстоящий рабочий день.",
+          "mistakes": [],
+          "correctedSentence": "The morning air gives energy for the whole working day ahead."
+        },
+        {
+          "sentence": "Sometimes rain causes inconvenience, but waterproof jacket solves this problem.",
+          "translation": "Иногда дождь доставляет неудобства, но непромокаемая куртка решает эту проблему.",
+          "mistakes": [],
+          "correctedSentence": "Sometimes rain causes inconvenience, but a waterproof jacket solves this problem."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Cooking healthy dinner after exhausting day is great way to relax. I usually slice fresh vegetables and roast chicken with rosemary in oven. Delicious aromas fill entire apartment while I listen relaxing jazz music. Home cooked food tastes significantly better than fast food.",
+      "date": "2026-09-30T23:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 6.8
+      },
+      "numOfMistakes": 2,
+      "numOfSentencesWithMistakes": 2,
+      "numOfWords": 44,
+      "analyzedSentences": [
+        {
+          "sentence": "Cooking healthy dinner after exhausting day is great way to relax.",
+          "translation": "Приготовление полезного ужина после утомительного дня — отличный способ расслабиться.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущены артикли: 'a healthy dinner', 'an exhausting day', 'a great way'"
+            }
+          ],
+          "correctedSentence": "Cooking a healthy dinner after an exhausting day is a great way to relax."
+        },
+        {
+          "sentence": "I usually slice fresh vegetables and roast chicken with rosemary in oven.",
+          "translation": "Я обычно нарезаю свежие овощи и запекаю курицу с розмарином в духовке.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Нужно: 'in the oven'"
+            }
+          ],
+          "correctedSentence": "I usually slice fresh vegetables and roast chicken with rosemary in the oven."
+        },
+        {
+          "sentence": "Delicious aromas fill entire apartment while I listen relaxing jazz music.",
+          "translation": "Восхитительные ароматы наполняют всю квартиру, пока я слушаю расслабляющий джаз.",
+          "mistakes": [],
+          "correctedSentence": "Delicious aromas fill the entire apartment while I listen to relaxing jazz music."
+        },
+        {
+          "sentence": "Home cooked food tastes significantly better than fast food.",
+          "translation": "Домашняя еда значительно вкуснее фастфуда.",
+          "mistakes": [],
+          "correctedSentence": "Home-cooked food tastes significantly better than fast food."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Visiting modern art galleries always provokes diverse emotional reactions. Contemporary installations challenge established perceptions through unusual materials and abstract forms. Although some exhibits appear confusing initially, reading artist statements clarifies their deeper intent. Art stimulates creative imagination and makes us question societal norms.",
+      "date": "2026-10-02T21:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 7.2
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 43,
+      "analyzedSentences": [
+        {
+          "sentence": "Visiting modern art galleries always provokes diverse emotional reactions.",
+          "translation": "Посещение галерей современного искусства всегда вызывает разнообразные эмоциональные реакции.",
+          "mistakes": [],
+          "correctedSentence": "Visiting modern art galleries always provokes diverse emotional reactions."
+        },
+        {
+          "sentence": "Contemporary installations challenge established perceptions through unusual materials and abstract forms.",
+          "translation": "Современные инсталляции бросают вызов устоявшимся представлениям через необычные материалы и абстрактные формы.",
+          "mistakes": [],
+          "correctedSentence": "Contemporary installations challenge established perceptions through unusual materials and abstract forms."
+        },
+        {
+          "sentence": "Although some exhibits appear confusing initially, reading artist statements clarifies their deeper intent.",
+          "translation": "Хотя некоторые экспонаты поначалу кажутся непонятными, чтение заявлений художников проясняет их глубокий замысел.",
+          "mistakes": [
+            {
+              "type": "Punctuation/Article",
+              "mistake": "Лучше 'the artists' statements'"
+            }
+          ],
+          "correctedSentence": "Although some exhibits appear confusing initially, reading the artists' statements clarifies their deeper intent."
+        },
+        {
+          "sentence": "Art stimulates creative imagination and makes us question societal norms.",
+          "translation": "Искусство стимулирует творческое воображение и заставляет нас подвергать сомнению общественные нормы.",
+          "mistakes": [],
+          "correctedSentence": "Art stimulates creative imagination and makes us question societal norms."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Time management is essential skill for achieving balance between career and personal life. Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion. Using digital calendar helps keep track of upcoming deadlines and meetings. Taking regular breaks during work hours maintains high concentration levels.",
+      "date": "2026-10-03T20:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 7
+      },
+      "numOfMistakes": 2,
+      "numOfSentencesWithMistakes": 2,
+      "numOfWords": 45,
+      "analyzedSentences": [
+        {
+          "sentence": "Time management is essential skill for achieving balance between career and personal life.",
+          "translation": "Тайм-менеджмент — важный навык для достижения баланса между карьерой и личной жизнью.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущен артикль 'an essential skill'"
+            }
+          ],
+          "correctedSentence": "Time management is an essential skill for achieving balance between career and personal life."
+        },
+        {
+          "sentence": "Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion.",
+          "translation": "Расстановка приоритетов в задачах по срочности предотвращает лишний стресс и душевное истощение.",
+          "mistakes": [],
+          "correctedSentence": "Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion."
+        },
+        {
+          "sentence": "Using digital calendar helps keep track of upcoming deadlines and meetings.",
+          "translation": "Использование электронного календаря помогает следить за приближающимися дедлайнами и встречами.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Нужно: 'Using a digital calendar'"
+            }
+          ],
+          "correctedSentence": "Using a digital calendar helps keep track of upcoming deadlines and meetings."
+        },
+        {
+          "sentence": "Taking regular breaks during work hours maintains high concentration levels.",
+          "translation": "Регулярные перерывы в рабочее время поддерживают высокий уровень концентрации.",
+          "mistakes": [],
+          "correctedSentence": "Taking regular breaks during work hours maintains high concentration levels."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Learning how to play chess taught me valuable strategic thinking principles. Each move requires calculating multiple potential counteractions from your opponent. Impulsive decisions often lead to quick defeat, whereas patience brings victory. The game exemplifies that foresight and adaptability are key attributes in any competition.",
+      "date": "2026-10-04T22:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": true,
+      "grammarQuality": {
+        "estimation": 6.8
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 45,
+      "analyzedSentences": [
+        {
+          "sentence": "Learning how to play chess taught me valuable strategic thinking principles.",
+          "translation": "Обучение игре в шахматы научило меня ценным принципам стратегического мышления.",
+          "mistakes": [],
+          "correctedSentence": "Learning how to play chess taught me valuable strategic thinking principles."
+        },
+        {
+          "sentence": "Each move requires calculating multiple potential counteractions from your opponent.",
+          "translation": "Каждый ход требует просчета множества возможных ответных действий соперника.",
+          "mistakes": [],
+          "correctedSentence": "Each move requires calculating multiple potential counteractions from your opponent."
+        },
+        {
+          "sentence": "Impulsive decisions often lead to quick defeat, whereas patience brings victory.",
+          "translation": "Импульсивные решения часто приводят к быстрому поражению, тогда как терпение приносит победу.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Лучше: 'to a quick defeat'"
+            }
+          ],
+          "correctedSentence": "Impulsive decisions often lead to a quick defeat, whereas patience brings victory."
+        },
+        {
+          "sentence": "The game exemplifies that foresight and adaptability are key attributes in any competition.",
+          "translation": "Игра наглядно показывает, что предусмотрительность и адаптивность — ключевые качества в любом соревновании.",
+          "mistakes": [],
+          "correctedSentence": "The game exemplifies that foresight and adaptability are key attributes in any competition."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Public libraries are evolving into dynamic multimedia hubs for modern communities. Besides borrowing classic literature, visitors access online databases and attend public workshops. Quiet study rooms provide productive sanctuary away from noisy domestic environments. Preserving communal educational spaces remains vital in our increasingly digitalized world.",
+      "date": "2026-10-05T23:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 7.4
+      },
+      "numOfMistakes": 1,
+      "numOfSentencesWithMistakes": 1,
+      "numOfWords": 44,
+      "analyzedSentences": [
+        {
+          "sentence": "Public libraries are evolving into dynamic multimedia hubs for modern communities.",
+          "translation": "Публичные библиотеки превращаются в динамичные мультимедийные центры для современных сообществ.",
+          "mistakes": [],
+          "correctedSentence": "Public libraries are evolving into dynamic multimedia hubs for modern communities."
+        },
+        {
+          "sentence": "Besides borrowing classic literature, visitors access online databases and attend public workshops.",
+          "translation": "Помимо классической литературы, посетители получают доступ к базам данных и посещают семинары.",
+          "mistakes": [],
+          "correctedSentence": "Besides borrowing classic literature, visitors access online databases and attend public workshops."
+        },
+        {
+          "sentence": "Quiet study rooms provide productive sanctuary away from noisy domestic environments.",
+          "translation": "Тихие комнаты для занятий служат продуктивным убежищем от шумной домашней обстановки.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущен артикль 'a productive sanctuary'"
+            }
+          ],
+          "correctedSentence": "Quiet study rooms provide a productive sanctuary away from noisy domestic environments."
+        },
+        {
+          "sentence": "Preserving communal educational spaces remains vital in our increasingly digitalized world.",
+          "translation": "Сохранение общественных образовательных пространств жизненно важно в цифровизованном мире.",
+          "mistakes": [],
+          "correctedSentence": "Preserving communal educational spaces remains vital in our increasingly digitalized world."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Volunteering at animal shelter gave me memorable and heartwarming experiences. Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment. Dedicated shelter staff work tirelessly despite limited resources and funding. Small acts of compassion make tangible difference in lives of vulnerable creatures.",
+      "date": "2026-10-06T20:43:12.730Z",
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "isTranslatorUsed": false,
+      "grammarQuality": {
+        "estimation": 7.2
+      },
+      "numOfMistakes": 2,
+      "numOfSentencesWithMistakes": 2,
+      "numOfWords": 43,
+      "analyzedSentences": [
+        {
+          "sentence": "Volunteering at animal shelter gave me memorable and heartwarming experiences.",
+          "translation": "Волонтерство в приюте для животных подарило мне незабываемые и душевные впечатления.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Пропущен артикль: 'at an animal shelter'"
+            }
+          ],
+          "correctedSentence": "Volunteering at an animal shelter gave me memorable and heartwarming experiences."
+        },
+        {
+          "sentence": "Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment.",
+          "translation": "Прогулки с собаками и общение с кошками приносят огромное эмоциональное удовлетворение.",
+          "mistakes": [],
+          "correctedSentence": "Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment."
+        },
+        {
+          "sentence": "Dedicated shelter staff work tirelessly despite limited resources and funding.",
+          "translation": "Преданные сотрудники приюта неустанно трудятся, несмотря на ограниченные ресурсы.",
+          "mistakes": [],
+          "correctedSentence": "Dedicated shelter staff work tirelessly despite limited resources and funding."
+        },
+        {
+          "sentence": "Small acts of compassion make tangible difference in lives of vulnerable creatures.",
+          "translation": "Маленькие проявления сострадания имеют ощутимое значение в жизни беззащитных существ.",
+          "mistakes": [
+            {
+              "type": "Article",
+              "mistake": "Нужно: 'make a tangible difference in the lives of...'"
+            }
+          ],
+          "correctedSentence": "Small acts of compassion make a tangible difference in the lives of vulnerable creatures."
+        }
+      ]
+    }
+  ],
+  "progressEntries": [
+    {
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "points": 56
+    }
+  ],
+  "progressHistory": [
+    {
+      "currentLanguage": "ru",
+      "targetLanguage": "en",
+      "previousPointsValue": 50,
+      "newPointsValue": 56,
+      "date": "2026-10-06T20:43:12.730Z"
+    }
+  ]
+}

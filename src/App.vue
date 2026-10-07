@@ -14,4 +14,8 @@
 .container {
   margin-top: 64px;
 }
+
+.v-container {
+  max-width: 960px !important;
+}
 </style>
