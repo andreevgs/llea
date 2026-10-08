@@ -56,7 +56,7 @@
     {
       "id": 1,
       "text": "Artificial intelligence has become an integral component of contemporary society. Modern algorithms assist professionals in healthcare, finance, and engineering with remarkable accuracy. Furthermore, machine learning models streamline repetitive workflows and enhance human decision-making. As this technological revolution unfolds, ethical considerations surrounding algorithmic transparency must remain a top priority.",
-      "date": "2026-10-02T22:43:12.730Z",
+      "date": "2026-10-04T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -91,12 +91,13 @@
           "mistakes": [],
           "correctedSentence": "As this technological revolution unfolds, ethical considerations surrounding algorithmic transparency must remain a top priority."
         }
-      ]
+      ],
+      "earnedPoints": 5
     },
     {
       "id": 2,
       "text": "Urban architecture profoundly influences psychological well-being and social interaction. Thoughtfully designed public plazas foster community cohesion and encourage civic engagement. In contrast, monotonous concrete environments often exacerbate feelings of alienation among metropolitan residents. Incorporating green spaces into urban master plans creates vital sanctuaries for relaxation and mental rejuvenation.",
-      "date": "2026-10-03T23:43:12.730Z",
+      "date": "2026-10-05T18:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -131,12 +132,13 @@
           "mistakes": [],
           "correctedSentence": "Incorporating green spaces into urban master plans creates vital sanctuaries for relaxation and mental rejuvenation."
         }
-      ]
+      ],
+      "earnedPoints": 5
     },
     {
       "id": 3,
       "text": "Renewable energy adoption represents an indispensable milestone in mitigating global climate change. Solar photovoltaic installations and offshore wind farms are expanding exponentially across industrialized nations. Although initial capital investments remain substantial, long-term operational expenditures continue to diminish steadily. Consequently, clean energy transitions generate sustainable economic growth while preserving fragile planetary ecosystems.",
-      "date": "2026-10-04T18:43:12.730Z",
+      "date": "2026-10-06T13:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -171,12 +173,13 @@
           "mistakes": [],
           "correctedSentence": "Consequently, clean energy transitions generate sustainable economic growth while preserving fragile planetary ecosystems."
         }
-      ]
+      ],
+      "earnedPoints": 5
     },
     {
       "id": 4,
       "text": "Literary fiction cultivates cognitive empathy by inviting readers into diverse cultural viewpoints. Engaging with complex narrative arcs encourages reflection on profound philosophical inquiries and human vulnerabilities. Through eloquent prose, authors illuminate subtle nuances of the human condition that empirical research frequently overlooks. Ultimately, literature enriches our internal lives and deepens mutual comprehension.",
-      "date": "2026-10-05T20:43:12.730Z",
+      "date": "2026-10-07T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -211,12 +214,13 @@
           "mistakes": [],
           "correctedSentence": "Ultimately, literature enriches our internal lives and deepens mutual comprehension."
         }
-      ]
+      ],
+      "earnedPoints": 5
     },
     {
       "id": 5,
       "text": "The global proliferation of remote work models has fundamentally altered traditional workplace dynamics. Geographic boundaries no longer constrain collaborative enterprises from assembling international talent. However, cultivating spontaneous camaraderie through virtual platforms presents notable logistical hurdles. Leaders must therefore establish deliberate rituals that support mental wellness and maintain corporate culture.",
-      "date": "2026-10-06T21:43:12.730Z",
+      "date": "2026-10-08T16:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -251,23 +255,8 @@
           "mistakes": [],
           "correctedSentence": "Leaders must therefore establish deliberate rituals that support mental wellness and maintain corporate culture."
         }
-      ]
-    }
-  ],
-  "progressEntries": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "points": 25
-    }
-  ],
-  "progressHistory": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "previousPointsValue": 20,
-      "newPointsValue": 25,
-      "date": "2026-10-06T21:43:12.730Z"
+      ],
+      "earnedPoints": 5
     }
   ]
 }

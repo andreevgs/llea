@@ -24,12 +24,8 @@ function calculateEssayPoints(totalSentences, cleanSentences, grammarEstimation,
   return Math.max(1, Math.round(raw * mult));
 }
 
-function buildProfile({ essays, dictionaryEntries, forcedPoints, forcedPrevPoints }) {
-  let points = 0;
-  let prevPoints = 0;
-  let lastDate = new Date();
-
-  for (const essay of essays) {
+function buildProfile({ essays, dictionaryEntries }) {
+  const essaysWithPoints = essays.map((essay) => {
     const cleanSentences = essay.analyzedSentences.length - essay.numOfSentencesWithMistakes;
     const earned = calculateEssayPoints(
       essay.analyzedSentences.length,
@@ -37,39 +33,17 @@ function buildProfile({ essays, dictionaryEntries, forcedPoints, forcedPrevPoint
       essay.grammarQuality.estimation,
       essay.isTranslatorUsed,
     );
-    prevPoints = points;
-    points = Math.min(100, points + earned);
-    lastDate = essay.date;
-  }
-
-  const finalPoints = forcedPoints !== undefined ? forcedPoints : points;
-  const finalPrevPoints = forcedPrevPoints !== undefined ? forcedPrevPoints : prevPoints;
-
-  const progressEntries = [
-    {
-      currentLanguage: "ru",
-      targetLanguage: "en",
-      points: finalPoints,
-    },
-  ];
-
-  const progressHistory = [
-    {
-      currentLanguage: "ru",
-      targetLanguage: "en",
-      previousPointsValue: finalPrevPoints,
-      newPointsValue: finalPoints,
-      date: lastDate,
-    },
-  ];
+    return {
+      ...essay,
+      earnedPoints: earned,
+    };
+  });
 
   return {
     currentLanguage: "ru",
     targetLanguage: "en",
     dictionaryEntries,
-    essays,
-    progressEntries,
-    progressHistory,
+    essays: essaysWithPoints,
   };
 }
 
@@ -1146,8 +1120,6 @@ const profiles = [
     data: buildProfile({
       essays: beginnerEssays,
       dictionaryEntries: beginnerDict,
-      forcedPoints: 14,
-      forcedPrevPoints: 11,
     }),
   },
   {
@@ -1155,8 +1127,6 @@ const profiles = [
     data: buildProfile({
       essays: translatorEssays,
       dictionaryEntries: translatorDict,
-      forcedPoints: 25,
-      forcedPrevPoints: 20,
     }),
   },
   {
@@ -1164,8 +1134,6 @@ const profiles = [
     data: buildProfile({
       essays: intermediateEssays,
       dictionaryEntries: intermediateDict,
-      forcedPoints: 56,
-      forcedPrevPoints: 50,
     }),
   },
   {
@@ -1173,8 +1141,6 @@ const profiles = [
     data: buildProfile({
       essays: advancedEssays,
       dictionaryEntries: advancedDict,
-      forcedPoints: 84,
-      forcedPrevPoints: 76,
     }),
   },
   {
@@ -1182,8 +1148,6 @@ const profiles = [
     data: buildProfile({
       essays: masteryEssays,
       dictionaryEntries: masteryDict,
-      forcedPoints: 100,
-      forcedPrevPoints: 92,
     }),
   },
   {
@@ -1191,8 +1155,6 @@ const profiles = [
     data: buildProfile({
       essays: journeyEssays,
       dictionaryEntries: journeyDict,
-      forcedPoints: 91,
-      forcedPrevPoints: 82,
     }),
   },
 ];
@@ -1201,7 +1163,8 @@ for (const profile of profiles) {
   const filePath = path.join(demosDir, profile.filename);
   fs.writeFileSync(filePath, JSON.stringify(profile.data, null, 2), "utf-8");
   const stats = fs.statSync(filePath);
-  console.log(`Created ${profile.filename} (${(stats.size / 1024).toFixed(1)} KB, ${profile.data.essays.length} essays, ${profile.data.progressEntries[0].points} pts)`);
+  const totalPts = Math.min(100, profile.data.essays.reduce((s, e) => s + e.earnedPoints, 0));
+  console.log(`Created ${profile.filename} (${(stats.size / 1024).toFixed(1)} KB, ${profile.data.essays.length} essays, ${totalPts} pts)`);
 }
 
 console.log("All showcase demo files generated successfully in public/demos/!");

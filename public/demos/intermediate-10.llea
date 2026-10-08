@@ -77,7 +77,7 @@
     {
       "id": 1,
       "text": "I want describe my hometown today. It is small town located near beautiful river and green forests. Many people work in local factories and small shops. On weekends families gather in central park for picnic. I really like quiet atmosphere of this place.",
-      "date": "2026-09-24T21:43:12.730Z",
+      "date": "2026-09-26T16:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -133,12 +133,13 @@
           "mistakes": [],
           "correctedSentence": "I really like the quiet atmosphere of this place."
         }
-      ]
+      ],
+      "earnedPoints": 3
     },
     {
       "id": 2,
       "text": "Coffee culture became very popular in our society recently. Young people meet in cozy cafeterias to drink cappuccino and discuss project ideas. Baristas make creative patterns with milk foam on top. In my opinion, good cup of coffee can improve whole morning.",
-      "date": "2026-09-26T20:43:12.730Z",
+      "date": "2026-09-28T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -183,12 +184,13 @@
           ],
           "correctedSentence": "In my opinion, a good cup of coffee can improve the whole morning."
         }
-      ]
+      ],
+      "earnedPoints": 3
     },
     {
       "id": 3,
       "text": "Yesterday I watched fascinating documentary movie about wildlife in Africa. Majestic lions were hunting across vast savannah during sunset. Elephant families walked slowly toward fresh waterhole to drink. Nature documentaries remind us how magnificent and fragile our planet is.",
-      "date": "2026-09-28T22:43:12.730Z",
+      "date": "2026-09-30T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -233,12 +235,13 @@
           "mistakes": [],
           "correctedSentence": "Nature documentaries remind us how magnificent and fragile our planet is."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 4,
       "text": "Cycling to work became my new daily routine since last month. Not only it helps me save money on public transport, but also keeps me fit. Morning air gives energy for whole working day ahead. Sometimes rain causes inconvenience, but waterproof jacket solves this problem.",
-      "date": "2026-09-29T19:43:12.730Z",
+      "date": "2026-10-01T14:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -283,12 +286,13 @@
           "mistakes": [],
           "correctedSentence": "Sometimes rain causes inconvenience, but a waterproof jacket solves this problem."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 5,
       "text": "Cooking healthy dinner after exhausting day is great way to relax. I usually slice fresh vegetables and roast chicken with rosemary in oven. Delicious aromas fill entire apartment while I listen relaxing jazz music. Home cooked food tastes significantly better than fast food.",
-      "date": "2026-09-30T23:43:12.730Z",
+      "date": "2026-10-02T18:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -333,12 +337,13 @@
           "mistakes": [],
           "correctedSentence": "Home-cooked food tastes significantly better than fast food."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 6,
       "text": "Visiting modern art galleries always provokes diverse emotional reactions. Contemporary installations challenge established perceptions through unusual materials and abstract forms. Although some exhibits appear confusing initially, reading artist statements clarifies their deeper intent. Art stimulates creative imagination and makes us question societal norms.",
-      "date": "2026-10-02T21:43:12.730Z",
+      "date": "2026-10-04T16:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -378,12 +383,13 @@
           "mistakes": [],
           "correctedSentence": "Art stimulates creative imagination and makes us question societal norms."
         }
-      ]
+      ],
+      "earnedPoints": 8
     },
     {
       "id": 7,
       "text": "Time management is essential skill for achieving balance between career and personal life. Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion. Using digital calendar helps keep track of upcoming deadlines and meetings. Taking regular breaks during work hours maintains high concentration levels.",
-      "date": "2026-10-03T20:43:12.730Z",
+      "date": "2026-10-05T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -428,12 +434,13 @@
           "mistakes": [],
           "correctedSentence": "Taking regular breaks during work hours maintains high concentration levels."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 8,
       "text": "Learning how to play chess taught me valuable strategic thinking principles. Each move requires calculating multiple potential counteractions from your opponent. Impulsive decisions often lead to quick defeat, whereas patience brings victory. The game exemplifies that foresight and adaptability are key attributes in any competition.",
-      "date": "2026-10-04T22:43:12.730Z",
+      "date": "2026-10-06T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -473,12 +480,13 @@
           "mistakes": [],
           "correctedSentence": "The game exemplifies that foresight and adaptability are key attributes in any competition."
         }
-      ]
+      ],
+      "earnedPoints": 4
     },
     {
       "id": 9,
       "text": "Public libraries are evolving into dynamic multimedia hubs for modern communities. Besides borrowing classic literature, visitors access online databases and attend public workshops. Quiet study rooms provide productive sanctuary away from noisy domestic environments. Preserving communal educational spaces remains vital in our increasingly digitalized world.",
-      "date": "2026-10-05T23:43:12.730Z",
+      "date": "2026-10-07T18:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -518,12 +526,13 @@
           "mistakes": [],
           "correctedSentence": "Preserving communal educational spaces remains vital in our increasingly digitalized world."
         }
-      ]
+      ],
+      "earnedPoints": 8
     },
     {
       "id": 10,
       "text": "Volunteering at animal shelter gave me memorable and heartwarming experiences. Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment. Dedicated shelter staff work tirelessly despite limited resources and funding. Small acts of compassion make tangible difference in lives of vulnerable creatures.",
-      "date": "2026-10-06T20:43:12.730Z",
+      "date": "2026-10-08T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -568,23 +577,8 @@
           ],
           "correctedSentence": "Small acts of compassion make a tangible difference in the lives of vulnerable creatures."
         }
-      ]
-    }
-  ],
-  "progressEntries": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "points": 56
-    }
-  ],
-  "progressHistory": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "previousPointsValue": 50,
-      "newPointsValue": 56,
-      "date": "2026-10-06T20:43:12.730Z"
+      ],
+      "earnedPoints": 7
     }
   ]
 }

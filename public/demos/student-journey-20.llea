@@ -217,7 +217,7 @@
     {
       "id": 1,
       "text": "Hello! My name is Ivan and I from Moscow. Yesterday I go to supermarket for buy milk and bread. Weather was very cold and rain started. I come back home quick and drank hot tea with lemon. Today I want to learn more English words.",
-      "date": "2026-09-11T20:43:12.730Z",
+      "date": "2026-09-13T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -282,12 +282,13 @@
           "mistakes": [],
           "correctedSentence": "Today I want to learn more English words."
         }
-      ]
+      ],
+      "earnedPoints": 2
     },
     {
       "id": 2,
       "text": "I have one brother and two sisters. My brother work in hospital as doctor. He like his job because he help sick people every day. In weekend we often visit our grandmother in village. We eat delicious pies and talking about childhood.",
-      "date": "2026-09-13T20:43:12.730Z",
+      "date": "2026-09-15T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -352,12 +353,13 @@
           ],
           "correctedSentence": "We eat delicious pies and talk about our childhood."
         }
-      ]
+      ],
+      "earnedPoints": 3
     },
     {
       "id": 3,
       "text": "My hobby is playing guitar and listen music. I started play when I was fifteen years old. Music make me feel happy when I am sad. Sometimes I play for my friends on birthday party. They say that I play good.",
-      "date": "2026-09-15T20:43:12.730Z",
+      "date": "2026-09-17T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -423,12 +425,13 @@
           ],
           "correctedSentence": "They say that I play well."
         }
-      ]
+      ],
+      "earnedPoints": 2
     },
     {
       "id": 4,
       "text": "Last summer I traveled to sea with my family. We swimming in sea every morning before breakfast. The sun was shine bright and water was warm. In evening we walked along the beach and watched beautiful sunset. It was best vacation.",
-      "date": "2026-09-17T20:43:12.730Z",
+      "date": "2026-09-19T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -494,12 +497,13 @@
           ],
           "correctedSentence": "It was the best vacation."
         }
-      ]
+      ],
+      "earnedPoints": 2
     },
     {
       "id": 5,
       "text": "I like morning coffee because it wake me up. I always drink it without sugar with little milk. Then I go to work by bus and read book. Work day is usually busy but interesting. In evening I like cooking dinner for myself.",
-      "date": "2026-09-19T20:43:12.730Z",
+      "date": "2026-09-21T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -560,12 +564,13 @@
           "mistakes": [],
           "correctedSentence": "In the evening I like cooking dinner for myself."
         }
-      ]
+      ],
+      "earnedPoints": 5
     },
     {
       "id": 6,
       "text": "I want describe my hometown today. It is small town located near beautiful river and green forests. Many people work in local factories and small shops. On weekends families gather in central park for picnic. I really like quiet atmosphere of this place.",
-      "date": "2026-09-21T21:43:12.730Z",
+      "date": "2026-09-23T16:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -621,12 +626,13 @@
           "mistakes": [],
           "correctedSentence": "I really like the quiet atmosphere of this place."
         }
-      ]
+      ],
+      "earnedPoints": 3
     },
     {
       "id": 7,
       "text": "Coffee culture became very popular in our society recently. Young people meet in cozy cafeterias to drink cappuccino and discuss project ideas. Baristas make creative patterns with milk foam on top. In my opinion, good cup of coffee can improve whole morning.",
-      "date": "2026-09-23T21:43:12.730Z",
+      "date": "2026-09-25T16:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -671,12 +677,13 @@
           ],
           "correctedSentence": "In my opinion, a good cup of coffee can improve the whole morning."
         }
-      ]
+      ],
+      "earnedPoints": 3
     },
     {
       "id": 8,
       "text": "Yesterday I watched fascinating documentary movie about wildlife in Africa. Majestic lions were hunting across vast savannah during sunset. Elephant families walked slowly toward fresh waterhole to drink. Nature documentaries remind us how magnificent and fragile our planet is.",
-      "date": "2026-09-25T21:43:12.730Z",
+      "date": "2026-09-27T16:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -721,12 +728,13 @@
           "mistakes": [],
           "correctedSentence": "Nature documentaries remind us how magnificent and fragile our planet is."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 9,
       "text": "Cycling to work became my new daily routine since last month. Not only it helps me save money on public transport, but also keeps me fit. Morning air gives energy for whole working day ahead. Sometimes rain causes inconvenience, but waterproof jacket solves this problem.",
-      "date": "2026-09-27T21:43:12.730Z",
+      "date": "2026-09-29T16:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -771,12 +779,13 @@
           "mistakes": [],
           "correctedSentence": "Sometimes rain causes inconvenience, but a waterproof jacket solves this problem."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 10,
       "text": "Cooking healthy dinner after exhausting day is great way to relax. I usually slice fresh vegetables and roast chicken with rosemary in oven. Delicious aromas fill entire apartment while I listen relaxing jazz music. Home cooked food tastes significantly better than fast food.",
-      "date": "2026-09-29T21:43:12.730Z",
+      "date": "2026-10-01T16:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -821,12 +830,13 @@
           "mistakes": [],
           "correctedSentence": "Home-cooked food tastes significantly better than fast food."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 11,
       "text": "Visiting modern art galleries always provokes diverse emotional reactions. Contemporary installations challenge established perceptions through unusual materials and abstract forms. Although some exhibits appear confusing initially, reading artist statements clarifies their deeper intent. Art stimulates creative imagination and makes us question societal norms.",
-      "date": "2026-09-29T22:43:12.730Z",
+      "date": "2026-10-01T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -866,12 +876,13 @@
           "mistakes": [],
           "correctedSentence": "Art stimulates creative imagination and makes us question societal norms."
         }
-      ]
+      ],
+      "earnedPoints": 8
     },
     {
       "id": 12,
       "text": "Time management is essential skill for achieving balance between career and personal life. Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion. Using digital calendar helps keep track of upcoming deadlines and meetings. Taking regular breaks during work hours maintains high concentration levels.",
-      "date": "2026-09-30T22:43:12.730Z",
+      "date": "2026-10-02T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -916,12 +927,13 @@
           "mistakes": [],
           "correctedSentence": "Taking regular breaks during work hours maintains high concentration levels."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 13,
       "text": "Learning how to play chess taught me valuable strategic thinking principles. Each move requires calculating multiple potential counteractions from your opponent. Impulsive decisions often lead to quick defeat, whereas patience brings victory. The game exemplifies that foresight and adaptability are key attributes in any competition.",
-      "date": "2026-10-01T22:43:12.730Z",
+      "date": "2026-10-03T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -961,12 +973,13 @@
           "mistakes": [],
           "correctedSentence": "The game exemplifies that foresight and adaptability are key attributes in any competition."
         }
-      ]
+      ],
+      "earnedPoints": 4
     },
     {
       "id": 14,
       "text": "Public libraries are evolving into dynamic multimedia hubs for modern communities. Besides borrowing classic literature, visitors access online databases and attend public workshops. Quiet study rooms provide productive sanctuary away from noisy domestic environments. Preserving communal educational spaces remains vital in our increasingly digitalized world.",
-      "date": "2026-10-02T22:43:12.730Z",
+      "date": "2026-10-04T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -1006,12 +1019,13 @@
           "mistakes": [],
           "correctedSentence": "Preserving communal educational spaces remains vital in our increasingly digitalized world."
         }
-      ]
+      ],
+      "earnedPoints": 8
     },
     {
       "id": 15,
       "text": "Volunteering at animal shelter gave me memorable and heartwarming experiences. Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment. Dedicated shelter staff work tirelessly despite limited resources and funding. Small acts of compassion make tangible difference in lives of vulnerable creatures.",
-      "date": "2026-10-03T22:43:12.730Z",
+      "date": "2026-10-05T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -1056,12 +1070,13 @@
           ],
           "correctedSentence": "Small acts of compassion make a tangible difference in the lives of vulnerable creatures."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 16,
       "text": "Reading books has always been an essential pastime for me. Whenever I open an intriguing novel, I immerse myself completely into imaginary universes. Last month I finished reading a science fiction masterpiece about interstellar voyages. It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny.",
-      "date": "2026-10-05T00:43:12.730Z",
+      "date": "2026-10-06T19:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -1096,12 +1111,13 @@
           "mistakes": [],
           "correctedSentence": "It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 17,
       "text": "Starting the day with clarity sets the tone for subsequent productivity. I typically awaken at sunrise and dedicate fifteen minutes to gentle meditation. Following that, I prepare nutritious oatmeal topped with fresh blueberries and sliced almonds. A brisk walk in the crisp morning air clears my head before work.",
-      "date": "2026-10-04T19:43:12.730Z",
+      "date": "2026-10-06T14:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -1136,12 +1152,13 @@
           "mistakes": [],
           "correctedSentence": "A brisk walk in the crisp morning air clears my head before work."
         }
-      ]
+      ],
+      "earnedPoints": 9
     },
     {
       "id": 18,
       "text": "Hiking in alpine regions offers unparalleled serenity and physical rejuvenation. The breathtaking panoramas reward hours of strenuous ascending along rocky paths. Standing on a summit surrounded by clouds instills a profound sense of humility. Clean mountain air invigorates both body and mind after months in bustling cities.",
-      "date": "2026-10-04T14:43:12.730Z",
+      "date": "2026-10-06T09:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -1176,12 +1193,13 @@
           "mistakes": [],
           "correctedSentence": "Clean mountain air invigorates both body and mind after months in bustling cities."
         }
-      ]
+      ],
+      "earnedPoints": 9
     },
     {
       "id": 19,
       "text": "Mastering a foreign language requires consistent dedication and immense patience. Everyday practice helps memorize grammatical nuances and idiomatic colloquial expressions. Conversing with native speakers might feel intimidating initially, but it accelerates fluency exponentially. Each newly discovered word reveals fascinating cultural perspectives.",
-      "date": "2026-10-04T09:43:12.730Z",
+      "date": "2026-10-06T04:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -1216,12 +1234,13 @@
           "mistakes": [],
           "correctedSentence": "Each newly discovered word reveals fascinating cultural perspectives."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 20,
       "text": "Small daily routines yield monumental transformations over prolonged periods. By reading ten pages every evening, one finishes dozens of literary works annually. Similarly, regular physical exercise bolsters long-term health and emotional stability. Discipline eventually transforms strenuous efforts into effortless automatic habits.",
-      "date": "2026-10-04T04:43:12.730Z",
+      "date": "2026-10-05T23:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -1256,23 +1275,8 @@
           "mistakes": [],
           "correctedSentence": "Discipline eventually transforms strenuous efforts into effortless automatic habits."
         }
-      ]
-    }
-  ],
-  "progressEntries": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "points": 91
-    }
-  ],
-  "progressHistory": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "previousPointsValue": 82,
-      "newPointsValue": 91,
-      "date": "2026-10-04T04:43:12.730Z"
+      ],
+      "earnedPoints": 9
     }
   ]
 }

@@ -108,7 +108,7 @@
           {{
             formatRelativeDate(
               essay.date,
-              languagesStore.currentLanguage as SupportedLocale,
+              languageStore.currentLanguage as SupportedLocale,
             )
           }}
         </v-chip>
@@ -128,40 +128,15 @@
   </v-container>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import type { SupportedLocale } from "@/i18n";
-  import { watch } from "vue";
-  import { defineBasicLoader } from "vue-router/experimental";
-  import { essaysRepository } from "@/db";
-  import { useLanguagesStore } from "@/stores/languages";
-  import { useSystemStore } from "@/stores/system";
+  import { useEssays } from "@/composables/useEssays";
+  import { useLanguageStore } from "@/stores/language";
   import { getEstimationChipColor } from "@/utils/chip";
   import { formatRelativeDate } from "@/utils/date";
 
-  export const useEssaysData = defineBasicLoader("/essays/", async () => {
-    const languagesStore = useLanguagesStore();
-    return await essaysRepository.getByLanguagePair({
-      currentLanguage: languagesStore.currentLanguage,
-      targetLanguage: languagesStore.targetLanguage,
-    });
-  });
-</script>
-
-<script setup lang="ts">
-  const languagesStore = useLanguagesStore();
-  const systemStore = useSystemStore();
-  const { data: essays, reload } = useEssaysData();
-
-  watch(
-    [
-      () => languagesStore.currentLanguage,
-      () => languagesStore.targetLanguage,
-      () => systemStore.lastUpdateTimestamp,
-    ],
-    () => {
-      reload();
-    },
-  );
+  const languageStore = useLanguageStore();
+  const { essays } = useEssays();
 </script>
 
 <style scoped></style>

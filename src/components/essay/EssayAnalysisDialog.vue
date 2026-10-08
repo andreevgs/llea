@@ -67,9 +67,9 @@
               v-model="analyzedGrammar"
               :prompt="
                 getGrammaticalAnalysisPrompt(
-                  essaysStore.newEssay,
-                  languagesStore.currentLanguage,
-                  languagesStore.targetLanguage,
+                  draftStore.newEssay,
+                  languageStore.currentLanguage,
+                  languageStore.targetLanguage,
                 )
               "
             />
@@ -79,8 +79,8 @@
               v-model="essayEstimation"
               :prompt="
                 getGrammaticalEstimationPrompt(
-                  essaysStore.newEssay,
-                  languagesStore.currentLanguage,
+                  draftStore.newEssay,
+                  languageStore.currentLanguage,
                 )
               "
             />
@@ -90,9 +90,9 @@
               v-model="essayDictionary"
               :prompt="
                 getDictionaryCreationPrompt(
-                  essaysStore.newEssay,
-                  languagesStore.currentLanguage,
-                  languagesStore.targetLanguage,
+                  draftStore.newEssay,
+                  languageStore.currentLanguage,
+                  languageStore.targetLanguage,
                 )
               "
             />
@@ -148,30 +148,24 @@
 
 <script lang="ts" setup>
   import type {
-    AnalyzedEssay,
     AnalyzedSentence,
     DictionaryEntry,
     GrammarQuality,
   } from "@/db";
   import { computed, ref, watch } from "vue";
-  import EssayAnalysisStep from "@/components/EssayAnalysisStep.vue";
-  import {
-    dictionaryRepository,
-    essaysRepository,
-    progressEntriesRepository,
-    progressHistoryRepository,
-  } from "@/db";
-  import { useEssaysStore } from "@/stores/essays";
-  import { useLanguagesStore } from "@/stores/languages";
+  import EssayAnalysisStep from "./EssayAnalysisStep.vue";
+  import { useEssays } from "@/composables/useEssays";
+  import { useDraftStore } from "@/stores/draft";
+  import { useLanguageStore } from "@/stores/language";
   import {
     getDictionaryCreationPrompt,
     getGrammaticalAnalysisPrompt,
     getGrammaticalEstimationPrompt,
   } from "@/utils/prompts";
-  import { calculateEssayPoints } from "@/utils/progress";
 
-  const essaysStore = useEssaysStore();
-  const languagesStore = useLanguagesStore();
+  const draftStore = useDraftStore();
+  const languageStore = useLanguageStore();
+  const { saveAnalysisResult } = useEssays();
   const model = defineModel<boolean>({ default: false });
 
   const isSuccessSnackbarVisible = ref(false);
@@ -208,102 +202,36 @@
   };
 
   const handleEssayAnalysis = async () => {
+    if (!analyzedGrammar.value || !essayEstimation.value || !essayDictionary.value) return;
     isEssayAnalysisProcessing.value = true;
-    const newAnalyzedSentences = JSON.parse(
-      String(analyzedGrammar.value),
-    ) as AnalyzedSentence[];
-    const newEssayGrammarQuality = JSON.parse(
-      String(essayEstimation.value),
-    ) as GrammarQuality;
-    newEssayGrammarQuality.estimation = Number(
-      (newEssayGrammarQuality.estimation / 10).toFixed(1),
-    );
-    const numOfMistakes = newAnalyzedSentences.reduce(
-      (count, sentence) => {
-        return count + sentence.mistakes.length;
-      },
-      0,
-    );
-    const newAnalyzedEssay: AnalyzedEssay = {
-      text: essaysStore.newEssay,
-      date: new Date(),
-      grammarQuality: newEssayGrammarQuality,
-      isTranslatorUsed: essaysStore.isNewEssayTranslatorUsed,
-      currentLanguage: languagesStore.currentLanguage,
-      targetLanguage: languagesStore.targetLanguage,
-      numOfWords: essaysStore.newEssay.trim()
-        ? essaysStore.newEssay.trim().split(/\s+/).length
-        : 0,
-      numOfMistakes,
-      numOfSentencesWithMistakes: newAnalyzedSentences.reduce(
-        (count, sentence) => {
-          return sentence.mistakes.length > 0 ? count + 1 : count;
-        },
-        0,
-      ),
-      analyzedSentences: newAnalyzedSentences,
-    };
-    const newEssayDictionaryEntries = JSON.parse(
-      String(essayDictionary.value),
-    ) as Omit<DictionaryEntry, "currentLanguage" | "targetLanguage">[];
-    await essaysRepository.put(newAnalyzedEssay);
-    await dictionaryRepository.putMany(
-      newEssayDictionaryEntries.map(dictionaryEntry => ({
-        ...dictionaryEntry,
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      })),
-    );
-    const numOfSentencesWithoutMistakes
-      = newAnalyzedEssay.analyzedSentences.length
-        - newAnalyzedEssay.numOfSentencesWithMistakes;
-    const essayPoints = calculateEssayPoints({
-      totalSentences: newAnalyzedEssay.analyzedSentences.length,
-      sentencesWithoutMistakes: numOfSentencesWithoutMistakes,
-      grammarEstimation: newEssayGrammarQuality.estimation,
-      isTranslatorUsed: newAnalyzedEssay.isTranslatorUsed,
-    });
-    const progressEntriesForLanguagePair
-      = await progressEntriesRepository.getByLanguagePair(
-        {
-          currentLanguage: languagesStore.currentLanguage,
-          targetLanguage: languagesStore.targetLanguage,
-        },
-        { direction: "next" },
-      );
-    if (progressEntriesForLanguagePair.length > 0) {
-      const currentPoints = progressEntriesForLanguagePair[0].points;
-      const newPoints = Math.min(100, Math.max(0, currentPoints + essayPoints));
-      await progressEntriesRepository.put({
-        ...progressEntriesForLanguagePair[0],
-        points: newPoints,
+    try {
+      const newAnalyzedSentences = JSON.parse(
+        String(analyzedGrammar.value),
+      ) as AnalyzedSentence[];
+      const newEssayGrammarQuality = JSON.parse(
+        String(essayEstimation.value),
+      ) as GrammarQuality;
+      const newEssayDictionaryEntries = JSON.parse(
+        String(essayDictionary.value),
+      ) as Omit<DictionaryEntry, "currentLanguage" | "targetLanguage">[];
+
+      await saveAnalysisResult({
+        text: draftStore.newEssay,
+        isTranslatorUsed: draftStore.isNewEssayTranslatorUsed,
+        analyzedSentences: newAnalyzedSentences,
+        grammarEstimation: Number(
+          (newEssayGrammarQuality.estimation / 10).toFixed(1),
+        ),
+        dictionaryEntries: newEssayDictionaryEntries,
       });
-      await progressHistoryRepository.put({
-        previousPointsValue: currentPoints,
-        newPointsValue: newPoints,
-        date: new Date(),
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      });
-    } else {
-      const newPoints = Math.min(100, Math.max(0, essayPoints));
-      await progressEntriesRepository.put({
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-        points: newPoints,
-      });
-      await progressHistoryRepository.put({
-        previousPointsValue: 0,
-        newPointsValue: newPoints,
-        date: new Date(),
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      });
+
+      handleCloseDialog();
+      isSuccessSnackbarVisible.value = true;
+    } catch (error) {
+      console.error("Failed to save essay analysis:", error);
+    } finally {
+      isEssayAnalysisProcessing.value = false;
     }
-    handleCloseDialog();
-    isSuccessSnackbarVisible.value = true;
-    essaysStore.newEssay = "";
-    essaysStore.isNewEssayTranslatorUsed = false;
   };
 </script>
 

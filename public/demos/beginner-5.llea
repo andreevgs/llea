@@ -77,7 +77,7 @@
     {
       "id": 1,
       "text": "Hello! My name is Ivan and I from Moscow. Yesterday I go to supermarket for buy milk and bread. Weather was very cold and rain started. I come back home quick and drank hot tea with lemon. Today I want to learn more English words.",
-      "date": "2026-09-30T20:43:12.730Z",
+      "date": "2026-10-02T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -142,12 +142,13 @@
           "mistakes": [],
           "correctedSentence": "Today I want to learn more English words."
         }
-      ]
+      ],
+      "earnedPoints": 2
     },
     {
       "id": 2,
       "text": "I have one brother and two sisters. My brother work in hospital as doctor. He like his job because he help sick people every day. In weekend we often visit our grandmother in village. We eat delicious pies and talking about childhood.",
-      "date": "2026-10-01T22:43:12.730Z",
+      "date": "2026-10-03T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -212,12 +213,13 @@
           ],
           "correctedSentence": "We eat delicious pies and talk about our childhood."
         }
-      ]
+      ],
+      "earnedPoints": 3
     },
     {
       "id": 3,
       "text": "My hobby is playing guitar and listen music. I started play when I was fifteen years old. Music make me feel happy when I am sad. Sometimes I play for my friends on birthday party. They say that I play good.",
-      "date": "2026-10-03T16:43:12.730Z",
+      "date": "2026-10-05T11:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -283,12 +285,13 @@
           ],
           "correctedSentence": "They say that I play well."
         }
-      ]
+      ],
+      "earnedPoints": 2
     },
     {
       "id": 4,
       "text": "Last summer I traveled to sea with my family. We swimming in sea every morning before breakfast. The sun was shine bright and water was warm. In evening we walked along the beach and watched beautiful sunset. It was best vacation.",
-      "date": "2026-10-04T19:43:12.730Z",
+      "date": "2026-10-06T14:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -354,12 +357,13 @@
           ],
           "correctedSentence": "It was the best vacation."
         }
-      ]
+      ],
+      "earnedPoints": 2
     },
     {
       "id": 5,
       "text": "I like morning coffee because it wake me up. I always drink it without sugar with little milk. Then I go to work by bus and read book. Work day is usually busy but interesting. In evening I like cooking dinner for myself.",
-      "date": "2026-10-06T19:43:12.730Z",
+      "date": "2026-10-08T14:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -420,23 +424,8 @@
           "mistakes": [],
           "correctedSentence": "In the evening I like cooking dinner for myself."
         }
-      ]
-    }
-  ],
-  "progressEntries": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "points": 14
-    }
-  ],
-  "progressHistory": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "previousPointsValue": 11,
-      "newPointsValue": 14,
-      "date": "2026-10-06T19:43:12.730Z"
+      ],
+      "earnedPoints": 5
     }
   ]
 }

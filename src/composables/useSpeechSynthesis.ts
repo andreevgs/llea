@@ -1,10 +1,9 @@
-import { storeToRefs } from "pinia";
-import { useSystemStore } from "@/stores/system";
+import { ref } from "vue";
+
+const isTextPlaying = ref(false);
+const currentPlayingText = ref<string | null>(null);
 
 export function useSpeechSynthesis() {
-  const systemStore = useSystemStore();
-  const { isTextPlaying, currentPlayingText } = storeToRefs(systemStore);
-
   const speak = (text: string, lang?: string) => {
     if (!window.speechSynthesis) {
       console.warn("SpeechSynthesis API is not supported in this browser.");
