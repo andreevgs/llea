@@ -1,8 +1,10 @@
 import { ref } from "vue";
-import { dictionaryEntriesService } from "@/services/dictionaryEntriesService";
-import { essaysService } from "@/services/essaysService";
-import { progressEntriesService } from "@/services/progressEntriesService";
-import { progressHistoryService } from "@/services/progressHistoryService";
+import {
+  dictionaryRepository,
+  essaysRepository,
+  progressEntriesRepository,
+  progressHistoryRepository,
+} from "@/db";
 import { useEssaysStore } from "@/stores/essays";
 import { useLanguagesStore } from "@/stores/languages";
 import { useSystemStore } from "@/stores/system";
@@ -19,10 +21,10 @@ export function useDataManagement() {
     isExporting.value = true;
     try {
       const data = {
-        dictionaryEntries: await dictionaryEntriesService.getAll(),
-        essays: await essaysService.getAll(),
-        progressEntries: await progressEntriesService.getAll(),
-        progressHistory: await progressHistoryService.getAll(),
+        dictionaryEntries: await dictionaryRepository.getAll(),
+        essays: await essaysRepository.getAll(),
+        progressEntries: await progressEntriesRepository.getAll(),
+        progressHistory: await progressHistoryRepository.getAll(),
         currentLanguage: languagesStore.currentLanguage,
         targetLanguage: languagesStore.targetLanguage,
       };
@@ -47,31 +49,27 @@ export function useDataManagement() {
       const result = await file.text();
       const data = JSON.parse(result);
 
-      if (data.dictionaryEntries) {
-        for (const entry of data.dictionaryEntries) {
-          await dictionaryEntriesService.put(entry);
-        }
+      if (data.dictionaryEntries?.length) {
+        await dictionaryRepository.putMany(data.dictionaryEntries);
       }
-      if (data.essays) {
-        for (const entry of data.essays) {
-          await essaysService.put({
+      if (data.essays?.length) {
+        await essaysRepository.putMany(
+          data.essays.map((entry: any) => ({
             ...entry,
             date: new Date(entry.date),
-          });
-        }
+          })),
+        );
       }
-      if (data.progressEntries) {
-        for (const entry of data.progressEntries) {
-          await progressEntriesService.put(entry);
-        }
+      if (data.progressEntries?.length) {
+        await progressEntriesRepository.putMany(data.progressEntries);
       }
-      if (data.progressHistory) {
-        for (const entry of data.progressHistory) {
-          await progressHistoryService.put({
+      if (data.progressHistory?.length) {
+        await progressHistoryRepository.putMany(
+          data.progressHistory.map((entry: any) => ({
             ...entry,
             date: new Date(entry.date),
-          });
-        }
+          })),
+        );
       }
 
       if (data.currentLanguage) {
@@ -91,10 +89,10 @@ export function useDataManagement() {
 
   const clearAllData = async () => {
     try {
-      await dictionaryEntriesService.clear();
-      await essaysService.clear();
-      await progressEntriesService.clear();
-      await progressHistoryService.clear();
+      await dictionaryRepository.clear();
+      await essaysRepository.clear();
+      await progressEntriesRepository.clear();
+      await progressHistoryRepository.clear();
 
       essaysStore.newEssay = "";
       essaysStore.isNewEssayTranslatorUsed = false;

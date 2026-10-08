@@ -45,29 +45,24 @@
   import { computed, ref, watch } from "vue";
   import { useI18n } from "vue-i18n";
   import { defineBasicLoader } from "vue-router/experimental";
-  import { dictionaryEntriesService } from "@/services/dictionaryEntriesService";
+  import { dictionaryRepository } from "@/db";
   import { useLanguagesStore } from "@/stores/languages";
   import { useSystemStore } from "@/stores/system";
-
-  const languagesStore = useLanguagesStore();
 
   export const useDictionaryData = defineBasicLoader(
     "/dictionary",
     async () => {
-      return await dictionaryEntriesService.getAllByIndex(
-        "languagePair",
-        {
-          currentLanguage: languagesStore.currentLanguage,
-          targetLanguage: languagesStore.targetLanguage,
-        },
-        "prev",
-      );
+      const languagesStore = useLanguagesStore();
+      return await dictionaryRepository.getByLanguagePair({
+        currentLanguage: languagesStore.currentLanguage,
+        targetLanguage: languagesStore.targetLanguage,
+      });
     },
   );
 </script>
 
 <script setup lang="ts">
-
+  const languagesStore = useLanguagesStore();
   const { t } = useI18n();
   const systemStore = useSystemStore();
   const { data: dictionary, reload } = useDictionaryData();

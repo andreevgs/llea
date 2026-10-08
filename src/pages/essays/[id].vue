@@ -124,7 +124,7 @@
   import type { SupportedLocale } from "@/i18n";
   import { defineBasicLoader } from "vue-router/experimental";
   import { useSpeechSynthesis } from "@/composables/useSpeechSynthesis";
-  import { essaysService as essaysRepository } from "@/services/essaysService";
+  import { essaysRepository } from "@/db";
   import { useLanguagesStore } from "@/stores/languages";
   import { getEstimationChipColor } from "@/utils/chip";
   import { formatRelativeDate } from "@/utils/date";

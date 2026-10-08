@@ -132,28 +132,23 @@
   import type { SupportedLocale } from "@/i18n";
   import { watch } from "vue";
   import { defineBasicLoader } from "vue-router/experimental";
-  import { essaysService as essaysRepository } from "@/services/essaysService";
+  import { essaysRepository } from "@/db";
   import { useLanguagesStore } from "@/stores/languages";
   import { useSystemStore } from "@/stores/system";
   import { getEstimationChipColor } from "@/utils/chip";
   import { formatRelativeDate } from "@/utils/date";
 
-  const languagesStore = useLanguagesStore();
-
   export const useEssaysData = defineBasicLoader("/essays/", async () => {
-    const essays = await essaysRepository.getAllByIndex(
-      "languagePair",
-      {
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      },
-      "prev",
-    );
-    return essays;
+    const languagesStore = useLanguagesStore();
+    return await essaysRepository.getByLanguagePair({
+      currentLanguage: languagesStore.currentLanguage,
+      targetLanguage: languagesStore.targetLanguage,
+    });
   });
 </script>
 
 <script setup lang="ts">
+  const languagesStore = useLanguagesStore();
   const systemStore = useSystemStore();
   const { data: essays, reload } = useEssaysData();
 

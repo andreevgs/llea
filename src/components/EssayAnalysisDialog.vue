@@ -147,18 +147,20 @@
 </template>
 
 <script lang="ts" setup>
-  import type { DictionaryEntry } from "@/services/dictionaryEntriesService";
   import type {
     AnalyzedEssay,
     AnalyzedSentence,
+    DictionaryEntry,
     GrammarQuality,
-  } from "@/services/essaysService";
+  } from "@/db";
   import { computed, ref, watch } from "vue";
   import EssayAnalysisStep from "@/components/EssayAnalysisStep.vue";
-  import { dictionaryEntriesService as dictionaryEntriesRepository } from "@/services/dictionaryEntriesService";
-  import { essaysService as essaysRepository } from "@/services/essaysService";
-  import { progressEntriesService } from "@/services/progressEntriesService";
-  import { progressHistoryService } from "@/services/progressHistoryService";
+  import {
+    dictionaryRepository,
+    essaysRepository,
+    progressEntriesRepository,
+    progressHistoryRepository,
+  } from "@/db";
   import { useEssaysStore } from "@/stores/essays";
   import { useLanguagesStore } from "@/stores/languages";
   import {
@@ -245,13 +247,13 @@
       String(essayDictionary.value),
     ) as Omit<DictionaryEntry, "currentLanguage" | "targetLanguage">[];
     await essaysRepository.put(newAnalyzedEssay);
-    for (const dictionaryEntry of newEssayDictionaryEntries) {
-      await dictionaryEntriesRepository.put({
+    await dictionaryRepository.putMany(
+      newEssayDictionaryEntries.map(dictionaryEntry => ({
         ...dictionaryEntry,
         currentLanguage: languagesStore.currentLanguage,
         targetLanguage: languagesStore.targetLanguage,
-      });
-    }
+      })),
+    );
     const numOfSentencesWithoutMistakes
       = newAnalyzedEssay.analyzedSentences.length
         - newAnalyzedEssay.numOfSentencesWithMistakes;
@@ -262,22 +264,21 @@
       isTranslatorUsed: newAnalyzedEssay.isTranslatorUsed,
     });
     const progressEntriesForLanguagePair
-      = await progressEntriesService.getAllByIndex(
-        "languagePair",
+      = await progressEntriesRepository.getByLanguagePair(
         {
           currentLanguage: languagesStore.currentLanguage,
           targetLanguage: languagesStore.targetLanguage,
         },
-        "next",
+        { direction: "next" },
       );
     if (progressEntriesForLanguagePair.length > 0) {
       const currentPoints = progressEntriesForLanguagePair[0].points;
       const newPoints = Math.min(100, Math.max(0, currentPoints + essayPoints));
-      await progressEntriesService.put({
+      await progressEntriesRepository.put({
         ...progressEntriesForLanguagePair[0],
         points: newPoints,
       });
-      await progressHistoryService.put({
+      await progressHistoryRepository.put({
         previousPointsValue: currentPoints,
         newPointsValue: newPoints,
         date: new Date(),
@@ -286,12 +287,12 @@
       });
     } else {
       const newPoints = Math.min(100, Math.max(0, essayPoints));
-      await progressEntriesService.put({
+      await progressEntriesRepository.put({
         currentLanguage: languagesStore.currentLanguage,
         targetLanguage: languagesStore.targetLanguage,
         points: newPoints,
       });
-      await progressHistoryService.put({
+      await progressHistoryRepository.put({
         previousPointsValue: 0,
         newPointsValue: newPoints,
         date: new Date(),

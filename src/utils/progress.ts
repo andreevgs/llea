@@ -1,11 +1,21 @@
 import i18n from "@/i18n";
 
+export interface CountResult {
+  count: number;
+  totalCount: number;
+}
+
+export const getDefaultCountResult = (): CountResult => ({
+  count: 0,
+  totalCount: 0,
+});
+
 export const getProgressColor = (
   progress: number,
 ): "success" | "warning" | "error" => {
   if (progress <= 30) return "error";
-  else if (progress >= 31 && progress <= 60) return "warning";
-  else return "success";
+  if (progress <= 60) return "warning";
+  return "success";
 };
 
 export const getCleanSentencesProgressRecommendation = (
@@ -13,12 +23,11 @@ export const getCleanSentencesProgressRecommendation = (
 ): string => {
   if (progress <= 30)
     return i18n.global.t("progress.recommendations.sentences.low");
-  else if (progress >= 31 && progress <= 60)
+  if (progress <= 60)
     return i18n.global.t("progress.recommendations.sentences.medium");
-  else if (progress >= 61 && progress <= 90)
+  if (progress <= 90)
     return i18n.global.t("progress.recommendations.sentences.high");
-  else
-    return i18n.global.t("progress.recommendations.sentences.perfect");
+  return i18n.global.t("progress.recommendations.sentences.perfect");
 };
 
 export const getTranslatorProgressRecommendation = (
@@ -26,12 +35,11 @@ export const getTranslatorProgressRecommendation = (
 ): string => {
   if (progress <= 30)
     return i18n.global.t("progress.recommendations.translator.low");
-  else if (progress >= 31 && progress <= 60)
+  if (progress <= 60)
     return i18n.global.t("progress.recommendations.translator.medium");
-  else if (progress >= 61 && progress <= 90)
+  if (progress <= 90)
     return i18n.global.t("progress.recommendations.translator.high");
-  else
-    return i18n.global.t("progress.recommendations.translator.perfect");
+  return i18n.global.t("progress.recommendations.translator.perfect");
 };
 
 export const getAverageGrammarEstimationProgressRecommendation = (
@@ -39,12 +47,11 @@ export const getAverageGrammarEstimationProgressRecommendation = (
 ): string => {
   if (progress <= 30)
     return i18n.global.t("progress.recommendations.grammar.low");
-  else if (progress >= 31 && progress <= 60)
+  if (progress <= 60)
     return i18n.global.t("progress.recommendations.grammar.medium");
-  else if (progress >= 61 && progress <= 90)
+  if (progress <= 90)
     return i18n.global.t("progress.recommendations.grammar.high");
-  else
-    return i18n.global.t("progress.recommendations.grammar.perfect");
+  return i18n.global.t("progress.recommendations.grammar.perfect");
 };
 
 export interface EssayPointsInput {

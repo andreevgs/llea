@@ -161,21 +161,22 @@
 
 <script lang="ts">
   import type { SupportedLocale } from "@/i18n";
-  import type { ProgressEntry } from "@/services/progressEntriesService";
-  import type { ProgressHistory } from "@/services/progressHistoryService";
-  import type { CountResult } from "@/utils/db";
+  import type { ProgressEntry, ProgressHistory } from "@/db";
   import { computed, watch } from "vue";
   import { defineBasicLoader } from "vue-router/experimental";
-  import { essaysService } from "@/services/essaysService";
-  import { progressEntriesService } from "@/services/progressEntriesService";
-  import { progressHistoryService } from "@/services/progressHistoryService";
+  import {
+    essaysRepository,
+    progressEntriesRepository,
+    progressHistoryRepository,
+  } from "@/db";
   import { useLanguagesStore } from "@/stores/languages";
   import { useSystemStore } from "@/stores/system";
   import { formatRelativeDate } from "@/utils/date";
-  import { getDefaultCountResult } from "@/utils/db";
   import {
+    type CountResult,
     getAverageGrammarEstimationProgressRecommendation,
     getCleanSentencesProgressRecommendation,
+    getDefaultCountResult,
     getProgressColor,
     getTranslatorProgressRecommendation,
   } from "@/utils/progress";
@@ -187,9 +188,14 @@
     essaysWithoutTranslator: CountResult;
     averageGrammarEstimation: number;
   }
-  const languagesStore = useLanguagesStore();
 
   export const useProgressData = defineBasicLoader("/progress", async () => {
+    const languagesStore = useLanguagesStore();
+    const languagePair = {
+      currentLanguage: languagesStore.currentLanguage,
+      targetLanguage: languagesStore.targetLanguage,
+    };
+
     const progressData: ProgressData = {
       progressEntry: null,
       progressHistory: null,
@@ -197,35 +203,14 @@
       essaysWithoutTranslator: getDefaultCountResult(),
       averageGrammarEstimation: 0,
     };
-    const progressEntries = await progressEntriesService.getAllByIndex(
-      "languagePair",
-      {
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      },
-      "prev",
-    );
+
+    const progressEntries = await progressEntriesRepository.getByLanguagePair(languagePair);
     if (progressEntries.length > 0) progressData.progressEntry = progressEntries[0];
-    const progressHistory = await progressHistoryService.getAllByIndex(
-      "languagePair",
-      {
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      },
-      "prev",
-    );
+
+    const progressHistory = await progressHistoryRepository.getByLanguagePair(languagePair);
     if (progressHistory.length > 0) progressData.progressHistory = progressHistory[0];
 
-    const recentEssays = await essaysService.getAllByIndex(
-      "languagePair",
-      {
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      },
-      "prev",
-      undefined,
-      10,
-    );
+    const recentEssays = await essaysRepository.getByLanguagePair(languagePair, { limit: 10 });
 
     if (recentEssays.length > 0) {
       let totalSentences = 0;
@@ -259,7 +244,7 @@
   });
 </script>
 <script setup lang="ts">
-
+  const languagesStore = useLanguagesStore();
   const systemStore = useSystemStore();
   const { data: progressData, reload: reloadProgressData } = useProgressData();
 
