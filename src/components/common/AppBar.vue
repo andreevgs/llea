@@ -4,7 +4,7 @@
     flat
   >
     <template #prepend>
-      <v-app-bar-title class="ps-2 ps-md-5"> LLEA </v-app-bar-title>
+      <v-app-bar-title class="ps-2 ps-md-5">LLEA</v-app-bar-title>
     </template>
     <template #append>
       <v-btn
@@ -70,7 +70,7 @@
           size="x-small"
           variant="flat"
         >
-          {{ languagesStore.currentLanguage }}
+          {{ languageStore.currentLanguage }}
         </v-chip>
         <v-divider
           class="mx-2 border-opacity-50"
@@ -83,7 +83,7 @@
           size="x-small"
           variant="flat"
         >
-          {{ languagesStore.targetLanguage }}
+          {{ languageStore.targetLanguage }}
         </v-chip>
         <v-tooltip
           activator="parent"
@@ -114,15 +114,16 @@
   import { computed, ref } from "vue";
   import { useI18n } from "vue-i18n";
   import { useTheme } from "vuetify";
-  import ChangeLanguagesDialog from "@/components/ChangeLanguagesDialog.vue";
-  import SettingsDialog from "@/components/SettingsDialog.vue";
-  import { useLanguagesStore } from "@/stores/languages";
+  import ChangeLanguagesDialog from "./ChangeLanguagesDialog.vue";
+  import SettingsDialog from "./SettingsDialog.vue";
+  import { useLanguageStore } from "@/stores/language";
+
   const isChangeLanguagesModalOpen = ref(false);
   const isSettingsModalOpen = ref(false);
 
   const theme = useTheme();
   const { t } = useI18n();
-  const languagesStore = useLanguagesStore();
+  const languageStore = useLanguageStore();
 
   const toggleTheme = () => {
     theme.global.name.value = theme.global.current.value.dark

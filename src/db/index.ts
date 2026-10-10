@@ -2,21 +2,17 @@ import type {
   AnalyzedEssay,
   DictionaryEntry,
   LanguagePair,
-  ProgressEntry,
-  ProgressHistory,
   QueryOptions,
 } from "./types";
 
 export * from "./types";
 
 export const DB_NAME = "llea";
-export const DB_VERSION = 7;
+export const DB_VERSION = 8;
 
 const STORES = [
   "essays",
   "dictionary-entries",
-  "progress-entries",
-  "progress-history",
 ] as const;
 
 let dbPromise: Promise<IDBDatabase> | null = null;
@@ -151,5 +147,3 @@ const createStore = <T>(storeName: string) => ({
 
 export const essaysRepository = createStore<AnalyzedEssay>("essays");
 export const dictionaryRepository = createStore<DictionaryEntry>("dictionary-entries");
-export const progressEntriesRepository = createStore<ProgressEntry>("progress-entries");
-export const progressHistoryRepository = createStore<ProgressHistory>("progress-history");

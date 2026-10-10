@@ -2,17 +2,17 @@ import { ref } from "vue";
 import {
   dictionaryRepository,
   essaysRepository,
-  progressEntriesRepository,
-  progressHistoryRepository,
 } from "@/db";
-import { useEssaysStore } from "@/stores/essays";
-import { useLanguagesStore } from "@/stores/languages";
-import { useSystemStore } from "@/stores/system";
+import { useDictionary } from "@/composables/useDictionary";
+import { useEssays } from "@/composables/useEssays";
+import { useDraftStore } from "@/stores/draft";
+import { useLanguageStore } from "@/stores/language";
 
 export function useDataManagement() {
-  const languagesStore = useLanguagesStore();
-  const systemStore = useSystemStore();
-  const essaysStore = useEssaysStore();
+  const languageStore = useLanguageStore();
+  const draftStore = useDraftStore();
+  const { reload: reloadEssays } = useEssays();
+  const { reload: reloadDictionary } = useDictionary();
 
   const isExporting = ref(false);
 
@@ -23,10 +23,8 @@ export function useDataManagement() {
       const data = {
         dictionaryEntries: await dictionaryRepository.getAll(),
         essays: await essaysRepository.getAll(),
-        progressEntries: await progressEntriesRepository.getAll(),
-        progressHistory: await progressHistoryRepository.getAll(),
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
+        currentLanguage: languageStore.currentLanguage,
+        targetLanguage: languageStore.targetLanguage,
       };
       const blob = new Blob([JSON.stringify(data)], { type: "application/json" });
       const url = URL.createObjectURL(blob);
@@ -57,29 +55,20 @@ export function useDataManagement() {
           data.essays.map((entry: any) => ({
             ...entry,
             date: new Date(entry.date),
-          })),
-        );
-      }
-      if (data.progressEntries?.length) {
-        await progressEntriesRepository.putMany(data.progressEntries);
-      }
-      if (data.progressHistory?.length) {
-        await progressHistoryRepository.putMany(
-          data.progressHistory.map((entry: any) => ({
-            ...entry,
-            date: new Date(entry.date),
+            earnedPoints: entry.earnedPoints ?? 0,
           })),
         );
       }
 
       if (data.currentLanguage) {
-        languagesStore.setCurrentLanguage(data.currentLanguage);
+        languageStore.setCurrentLanguage(data.currentLanguage);
       }
       if (data.targetLanguage) {
-        languagesStore.setTargetLanguage(data.targetLanguage);
+        languageStore.setTargetLanguage(data.targetLanguage);
       }
 
-      systemStore.triggerUpdate();
+      await reloadEssays();
+      await reloadDictionary();
       return true;
     } catch (error) {
       console.error(error);
@@ -91,13 +80,11 @@ export function useDataManagement() {
     try {
       await dictionaryRepository.clear();
       await essaysRepository.clear();
-      await progressEntriesRepository.clear();
-      await progressHistoryRepository.clear();
 
-      essaysStore.newEssay = "";
-      essaysStore.isNewEssayTranslatorUsed = false;
+      draftStore.resetDraft();
 
-      systemStore.triggerUpdate();
+      await reloadEssays();
+      await reloadDictionary();
       return true;
     } catch (error) {
       console.error(error);

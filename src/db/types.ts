@@ -36,6 +36,7 @@ export interface AnalyzedEssay {
   numOfSentencesWithMistakes: number;
   numOfWords: number;
   analyzedSentences: AnalyzedSentence[];
+  earnedPoints: number;
 }
 
 export interface DictionaryEntry {
@@ -43,22 +44,6 @@ export interface DictionaryEntry {
   word: string;
   pronunciation: string;
   translate: string;
-  currentLanguage: string;
-  targetLanguage: string;
-}
-
-export interface ProgressEntry {
-  id?: number;
-  points: number;
-  currentLanguage: string;
-  targetLanguage: string;
-}
-
-export interface ProgressHistory {
-  id?: number;
-  previousPointsValue: number;
-  newPointsValue: number;
-  date: Date;
   currentLanguage: string;
   targetLanguage: string;
 }

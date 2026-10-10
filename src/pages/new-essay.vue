@@ -101,7 +101,7 @@
       </div>
     </div>
     <v-textarea
-      v-model="essaysStore.newEssay"
+      v-model="draftStore.newEssay"
       auto-grow
       :label="$t('new_essay.textarea_placeholder')"
       rows="4"
@@ -109,7 +109,7 @@
     <div class="d-flex align-center justify-start mt-2 mb-2">
       <v-checkbox-btn
         id="translator-used-checkbox"
-        v-model="essaysStore.isNewEssayTranslatorUsed"
+        v-model="draftStore.isNewEssayTranslatorUsed"
         class="pe-2 flex-grow-0 cursor-pointer"
       />
       <label class="cursor-pointer" for="translator-used-checkbox">{{ $t("new_essay.checkbox_label") }}</label>
@@ -128,12 +128,13 @@
 
 <script setup lang="ts">
   import { computed, ref } from "vue";
-  import EssayAnalysisDialog from "@/components/EssayAnalysisDialog.vue";
+  import EssayAnalysisDialog from "@/components/essay/EssayAnalysisDialog.vue";
   import { ESSAY_MIN_LETTERS } from "@/const/essays";
-  import { useEssaysStore } from "@/stores/essays";
+  import { useDraftStore } from "@/stores/draft";
   import { getRandomEssayIdea, getRandomEssayIdeaWithDelay } from "@/utils/essays";
+  import { countLetters, countSentences, countWords } from "@/utils/text";
 
-  const essaysStore = useEssaysStore();
+  const draftStore = useDraftStore();
   const isGrammaticalAnalysisDialogOpen = ref(false);
   const currentEssayIdea = ref(getRandomEssayIdea());
   const isLoadingEssayIdea = ref(false);
@@ -145,7 +146,7 @@
   };
 
   const letterCount = computed(() => {
-    return essaysStore.newEssay.replace(/[^\p{L}\p{N}]/gu, "").length;
+    return countLetters(draftStore.newEssay);
   });
 
   const lettersRemaining = computed(() => {
@@ -157,13 +158,11 @@
   });
 
   const sentencesCount = computed(() => {
-    return essaysStore.newEssay.split(/[.!?]+/).filter(s => s.trim().length > 0).length;
+    return countSentences(draftStore.newEssay);
   });
 
   const wordsCount = computed(() => {
-    const text = essaysStore.newEssay.trim();
-    if (!text) return 0;
-    return text.split(/\s+/).length;
+    return countWords(draftStore.newEssay);
   });
 </script>
 <style scoped>

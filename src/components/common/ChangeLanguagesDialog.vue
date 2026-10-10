@@ -117,16 +117,16 @@
 <script lang="ts" setup>
   import { computed, ref } from "vue";
   import { useI18n } from "vue-i18n";
-  import { useLanguagesStore } from "@/stores/languages";
+  import { useLanguageStore } from "@/stores/language";
 
   const model = defineModel<boolean>();
 
-  const languagesStore = useLanguagesStore();
+  const languageStore = useLanguageStore();
 
   const { locale, availableLocales, t } = useI18n();
 
-  const newCurrentLang = ref<string>(languagesStore.currentLanguage);
-  const newTargetLang = ref<string>(languagesStore.targetLanguage);
+  const newCurrentLang = ref<string>(languageStore.currentLanguage);
+  const newTargetLang = ref<string>(languageStore.targetLanguage);
 
   const langsList = computed(() => {
     return availableLocales.map(code => ({
@@ -135,15 +135,15 @@
     }));
   });
   const handleChangeLanguages = () => {
-    languagesStore.setCurrentLanguage(newCurrentLang.value);
-    languagesStore.setTargetLanguage(newTargetLang.value);
+    languageStore.setCurrentLanguage(newCurrentLang.value);
+    languageStore.setTargetLanguage(newTargetLang.value);
     locale.value = newCurrentLang.value;
   };
 
   const handleCancel = () => {
     model.value = false;
-    newCurrentLang.value = languagesStore.currentLanguage;
-    newTargetLang.value = languagesStore.targetLanguage;
+    newCurrentLang.value = languageStore.currentLanguage;
+    newTargetLang.value = languageStore.targetLanguage;
   };
 </script>
 

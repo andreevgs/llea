@@ -189,7 +189,7 @@
     {
       "id": 1,
       "text": "Visiting modern art galleries always provokes diverse emotional reactions. Contemporary installations challenge established perceptions through unusual materials and abstract forms. Although some exhibits appear confusing initially, reading artist statements clarifies their deeper intent. Art stimulates creative imagination and makes us question societal norms.",
-      "date": "2026-09-16T22:43:12.730Z",
+      "date": "2026-09-18T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -229,12 +229,13 @@
           "mistakes": [],
           "correctedSentence": "Art stimulates creative imagination and makes us question societal norms."
         }
-      ]
+      ],
+      "earnedPoints": 8
     },
     {
       "id": 2,
       "text": "Time management is essential skill for achieving balance between career and personal life. Prioritizing tasks according to urgency prevents unnecessary stress and mental exhaustion. Using digital calendar helps keep track of upcoming deadlines and meetings. Taking regular breaks during work hours maintains high concentration levels.",
-      "date": "2026-09-17T22:43:12.730Z",
+      "date": "2026-09-19T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -279,12 +280,13 @@
           "mistakes": [],
           "correctedSentence": "Taking regular breaks during work hours maintains high concentration levels."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 3,
       "text": "Learning how to play chess taught me valuable strategic thinking principles. Each move requires calculating multiple potential counteractions from your opponent. Impulsive decisions often lead to quick defeat, whereas patience brings victory. The game exemplifies that foresight and adaptability are key attributes in any competition.",
-      "date": "2026-09-18T22:43:12.730Z",
+      "date": "2026-09-20T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -324,12 +326,13 @@
           "mistakes": [],
           "correctedSentence": "The game exemplifies that foresight and adaptability are key attributes in any competition."
         }
-      ]
+      ],
+      "earnedPoints": 4
     },
     {
       "id": 4,
       "text": "Public libraries are evolving into dynamic multimedia hubs for modern communities. Besides borrowing classic literature, visitors access online databases and attend public workshops. Quiet study rooms provide productive sanctuary away from noisy domestic environments. Preserving communal educational spaces remains vital in our increasingly digitalized world.",
-      "date": "2026-09-19T22:43:12.730Z",
+      "date": "2026-09-21T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -369,12 +372,13 @@
           "mistakes": [],
           "correctedSentence": "Preserving communal educational spaces remains vital in our increasingly digitalized world."
         }
-      ]
+      ],
+      "earnedPoints": 8
     },
     {
       "id": 5,
       "text": "Volunteering at animal shelter gave me memorable and heartwarming experiences. Walking energetic dogs and socializing shy rescued cats brings immense emotional fulfillment. Dedicated shelter staff work tirelessly despite limited resources and funding. Small acts of compassion make tangible difference in lives of vulnerable creatures.",
-      "date": "2026-09-20T22:43:12.730Z",
+      "date": "2026-09-22T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -419,12 +423,13 @@
           ],
           "correctedSentence": "Small acts of compassion make a tangible difference in the lives of vulnerable creatures."
         }
-      ]
+      ],
+      "earnedPoints": 7
     },
     {
       "id": 6,
       "text": "Reading books has always been an essential pastime for me. Whenever I open an intriguing novel, I immerse myself completely into imaginary universes. Last month I finished reading a science fiction masterpiece about interstellar voyages. It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny.",
-      "date": "2026-09-21T22:43:12.730Z",
+      "date": "2026-09-23T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -464,12 +469,13 @@
           "mistakes": [],
           "correctedSentence": "It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny."
         }
-      ]
+      ],
+      "earnedPoints": 9
     },
     {
       "id": 7,
       "text": "Starting the day with clarity sets the tone for subsequent productivity. I typically awaken at sunrise and dedicate fifteen minutes to gentle meditation. Following that, I prepare nutritious oatmeal topped with fresh blueberries and sliced almonds. A brisk walk in the crisp morning air clears my head before work.",
-      "date": "2026-09-22T22:43:12.730Z",
+      "date": "2026-09-24T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": true,
@@ -504,12 +510,13 @@
           "mistakes": [],
           "correctedSentence": "A brisk walk in the crisp morning air clears my head before work."
         }
-      ]
+      ],
+      "earnedPoints": 5
     },
     {
       "id": 8,
       "text": "Hiking in alpine regions offers unparalleled serenity and physical rejuvenation. The breathtaking panoramas reward hours of strenuous ascending along rocky paths. Standing on a summit surrounded by clouds instills a profound sense of humility. Clean mountain air invigorates both body and mind after months in bustling cities.",
-      "date": "2026-09-23T22:43:12.730Z",
+      "date": "2026-09-25T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -544,12 +551,13 @@
           "mistakes": [],
           "correctedSentence": "Clean mountain air invigorates both body and mind after months in bustling cities."
         }
-      ]
+      ],
+      "earnedPoints": 9
     },
     {
       "id": 9,
       "text": "Mastering a foreign language requires consistent dedication and immense patience. Everyday practice helps memorize grammatical nuances and idiomatic colloquial expressions. Conversing with native speakers might feel intimidating initially, but it accelerates fluency exponentially. Each newly discovered word reveals fascinating cultural perspectives.",
-      "date": "2026-09-24T22:43:12.730Z",
+      "date": "2026-09-26T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -589,12 +597,13 @@
           "mistakes": [],
           "correctedSentence": "Each newly discovered word reveals fascinating cultural perspectives."
         }
-      ]
+      ],
+      "earnedPoints": 9
     },
     {
       "id": 10,
       "text": "Small daily routines yield monumental transformations over prolonged periods. By reading ten pages every evening, one finishes dozens of literary works annually. Similarly, regular physical exercise bolsters long-term health and emotional stability. Discipline eventually transforms strenuous efforts into effortless automatic habits.",
-      "date": "2026-09-25T22:43:12.730Z",
+      "date": "2026-09-27T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -629,12 +638,13 @@
           "mistakes": [],
           "correctedSentence": "Discipline eventually transforms strenuous efforts into effortless automatic habits."
         }
-      ]
+      ],
+      "earnedPoints": 9
     },
     {
       "id": 11,
       "text": "Reading books has always been an essential pastime for me. Whenever I open an intriguing novel, I immerse myself completely into imaginary universes. Last month I finished reading a science fiction masterpiece about interstellar voyages. It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny.",
-      "date": "2026-09-28T00:43:12.730Z",
+      "date": "2026-09-29T19:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -669,12 +679,13 @@
           "mistakes": [],
           "correctedSentence": "It provoked deep thoughts regarding our place in the cosmos and humanity's shared destiny."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 12,
       "text": "Starting the day with clarity sets the tone for subsequent productivity. I typically awaken at sunrise and dedicate fifteen minutes to gentle meditation. Following that, I prepare nutritious oatmeal topped with fresh blueberries and sliced almonds. A brisk walk in the crisp morning air clears my head before work.",
-      "date": "2026-09-27T22:43:12.730Z",
+      "date": "2026-09-29T17:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -709,12 +720,13 @@
           "mistakes": [],
           "correctedSentence": "A brisk walk in the crisp morning air clears my head before work."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 13,
       "text": "Hiking in alpine regions offers unparalleled serenity and physical rejuvenation. The breathtaking panoramas reward hours of strenuous ascending along rocky paths. Standing on a summit surrounded by clouds instills a profound sense of humility. Clean mountain air invigorates both body and mind after months in bustling cities.",
-      "date": "2026-09-28T20:43:12.730Z",
+      "date": "2026-09-30T15:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -749,12 +761,13 @@
           "mistakes": [],
           "correctedSentence": "Clean mountain air invigorates both body and mind after months in bustling cities."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 14,
       "text": "Mastering a foreign language requires consistent dedication and immense patience. Everyday practice helps memorize grammatical nuances and idiomatic colloquial expressions. Conversing with native speakers might feel intimidating initially, but it accelerates fluency exponentially. Each newly discovered word reveals fascinating cultural perspectives.",
-      "date": "2026-09-29T18:43:12.730Z",
+      "date": "2026-10-01T13:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -794,12 +807,13 @@
           "mistakes": [],
           "correctedSentence": "Each newly discovered word reveals fascinating cultural perspectives."
         }
-      ]
+      ],
+      "earnedPoints": 9
     },
     {
       "id": 15,
       "text": "Small daily routines yield monumental transformations over prolonged periods. By reading ten pages every evening, one finishes dozens of literary works annually. Similarly, regular physical exercise bolsters long-term health and emotional stability. Discipline eventually transforms strenuous efforts into effortless automatic habits.",
-      "date": "2026-09-30T16:43:12.730Z",
+      "date": "2026-10-02T11:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -834,12 +848,13 @@
           "mistakes": [],
           "correctedSentence": "Discipline eventually transforms strenuous efforts into effortless automatic habits."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 16,
       "text": "Cooking allows creative experimentation with diverse culinary traditions from around the globe. Combining aromatic spices like turmeric, cumin, and cardamom transforms humble ingredients into culinary feasts. Sharing a freshly prepared meal with beloved friends fosters intimate heartfelt conversations. Food truly connects people across cultural boundaries.",
-      "date": "2026-10-01T14:43:12.730Z",
+      "date": "2026-10-03T09:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -874,12 +889,13 @@
           "mistakes": [],
           "correctedSentence": "Food truly connects people across cultural boundaries."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 17,
       "text": "Modern metropolitan skylines reflect architectural innovation and engineering prowess. Towering skyscrapers built from reinforced glass and steel dominate contemporary urban centers. However, historical districts with cobblestone lanes retain timeless romantic charm. Balancing modern development with architectural preservation is crucial for future generations.",
-      "date": "2026-10-02T12:43:12.730Z",
+      "date": "2026-10-04T07:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -914,12 +930,13 @@
           "mistakes": [],
           "correctedSentence": "Balancing modern development with architectural preservation is crucial for future generations."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 18,
       "text": "Capturing transient fleeting moments through camera lenses teaches mindfulness and keen observation. Natural lighting plays a decisive role in defining emotional atmosphere and depth. Photographers often wander through quiet streets seeking authentic human expressions and geometric patterns. A single well-composed snapshot can evoke poignant memories for decades.",
-      "date": "2026-10-03T10:43:12.730Z",
+      "date": "2026-10-05T05:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -954,12 +971,13 @@
           "mistakes": [],
           "correctedSentence": "A single well-composed snapshot can evoke poignant memories for decades."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 19,
       "text": "Protecting natural ecosystems requires collective responsibility and conscious individual choices. Reducing single-use plastic waste significantly alleviates environmental degradation in our oceans. Conserving water resources and supporting localized organic farming also contribute meaningfully. Sustainable living is not merely a modern trend, but an absolute necessity.",
-      "date": "2026-10-04T08:43:12.730Z",
+      "date": "2026-10-06T03:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -994,12 +1012,13 @@
           "mistakes": [],
           "correctedSentence": "Sustainable living is not merely a modern trend, but an absolute necessity."
         }
-      ]
+      ],
+      "earnedPoints": 10
     },
     {
       "id": 20,
       "text": "Listening to orchestral symphonies evokes profound feelings beyond verbal communication. Harmonic interplay between string sections and resonant brass creates majestic auditory tapestries. Whether studying complex equations or relaxing after exhaustion, music provides emotional refuge. Artistic melodies possess universal resonance that transcends geographic divisions.",
-      "date": "2026-10-05T06:43:12.730Z",
+      "date": "2026-10-07T01:23:35.734Z",
       "currentLanguage": "ru",
       "targetLanguage": "en",
       "isTranslatorUsed": false,
@@ -1034,23 +1053,8 @@
           "mistakes": [],
           "correctedSentence": "Artistic melodies possess universal resonance that transcends geographic divisions."
         }
-      ]
-    }
-  ],
-  "progressEntries": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "points": 100
-    }
-  ],
-  "progressHistory": [
-    {
-      "currentLanguage": "ru",
-      "targetLanguage": "en",
-      "previousPointsValue": 92,
-      "newPointsValue": 100,
-      "date": "2026-10-05T06:43:12.730Z"
+      ],
+      "earnedPoints": 10
     }
   ]
 }

@@ -1,5 +1,5 @@
 <template>
-  <v-container v-if="!progressData.progressEntry" class="fill-height">
+  <v-container v-if="!progressData.hasData" class="fill-height">
     <div class="h-100 d-flex flex-column justify-center flex-grow-1">
       <v-icon
         class="align-self-center mb-2"
@@ -22,11 +22,11 @@
   <v-container v-else class="pa-0">
     <div class="d-flex align-center ga-2 mb-3">
       <v-chip class="font-weight-medium text-uppercase" label rounded="lg">
-        {{ languagesStore.targetLanguage }}
+        {{ languageStore.targetLanguage }}
       </v-chip>
-      <span class="text-title-large">{{ $t(`change_langs_dialog.langs.${languagesStore.targetLanguage}`) }}</span>
+      <span class="text-title-large">{{ $t(`change_langs_dialog.langs.${languageStore.targetLanguage}`) }}</span>
       <v-spacer />
-      <div v-if="progressData.progressHistory && progressPointsDelta">
+      <div v-if="progressPointsDelta">
         <v-chip
           :color="progressPointsDelta > 0 ? 'success' : 'error'"
           label
@@ -50,7 +50,7 @@
       variant="tonal"
     >
       <template #title>
-        <span>{{ progressData.progressEntry.points }}/100 {{ $t('progress.points_label', progressData.progressEntry.points) }}</span>
+        <span>{{ progressData.points }}/100 {{ $t('progress.points_label', progressData.points) }}</span>
       </template>
       <template #text>
         <div class="mb-2">
@@ -60,7 +60,7 @@
         <v-progress-linear
           color="secondary"
           height="26"
-          :model-value="progressData.progressEntry.points"
+          :model-value="progressData.points"
           rounded="lg"
         />
       </template>
@@ -159,139 +159,34 @@
   </v-container>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import type { SupportedLocale } from "@/i18n";
-  import type { ProgressEntry, ProgressHistory } from "@/db";
-  import { computed, watch } from "vue";
-  import { defineBasicLoader } from "vue-router/experimental";
-  import {
-    essaysRepository,
-    progressEntriesRepository,
-    progressHistoryRepository,
-  } from "@/db";
-  import { useLanguagesStore } from "@/stores/languages";
-  import { useSystemStore } from "@/stores/system";
+  import { computed } from "vue";
+  import { useProgress } from "@/composables/useProgress";
+  import { useLanguageStore } from "@/stores/language";
   import { formatRelativeDate } from "@/utils/date";
   import {
-    type CountResult,
     getAverageGrammarEstimationProgressRecommendation,
     getCleanSentencesProgressRecommendation,
-    getDefaultCountResult,
     getProgressColor,
     getTranslatorProgressRecommendation,
   } from "@/utils/progress";
 
-  interface ProgressData {
-    progressEntry: ProgressEntry | null;
-    progressHistory: ProgressHistory | null;
-    essaysWithoutMistakes: CountResult;
-    essaysWithoutTranslator: CountResult;
-    averageGrammarEstimation: number;
-  }
-
-  export const useProgressData = defineBasicLoader("/progress", async () => {
-    const languagesStore = useLanguagesStore();
-    const languagePair = {
-      currentLanguage: languagesStore.currentLanguage,
-      targetLanguage: languagesStore.targetLanguage,
-    };
-
-    const progressData: ProgressData = {
-      progressEntry: null,
-      progressHistory: null,
-      essaysWithoutMistakes: getDefaultCountResult(),
-      essaysWithoutTranslator: getDefaultCountResult(),
-      averageGrammarEstimation: 0,
-    };
-
-    const progressEntries = await progressEntriesRepository.getByLanguagePair(languagePair);
-    if (progressEntries.length > 0) progressData.progressEntry = progressEntries[0];
-
-    const progressHistory = await progressHistoryRepository.getByLanguagePair(languagePair);
-    if (progressHistory.length > 0) progressData.progressHistory = progressHistory[0];
-
-    const recentEssays = await essaysRepository.getByLanguagePair(languagePair, { limit: 10 });
-
-    if (recentEssays.length > 0) {
-      let totalSentences = 0;
-      let cleanSentences = 0;
-      let withoutTranslatorCount = 0;
-      let totalGrammarScore = 0;
-
-      for (const essay of recentEssays) {
-        totalSentences += essay.analyzedSentences.length;
-        cleanSentences += (essay.analyzedSentences.length - essay.numOfSentencesWithMistakes);
-        if (!essay.isTranslatorUsed) {
-          withoutTranslatorCount++;
-        }
-        totalGrammarScore += (essay.grammarQuality?.estimation ?? 0);
-      }
-
-      progressData.essaysWithoutMistakes = {
-        count: cleanSentences,
-        totalCount: totalSentences,
-      };
-
-      progressData.essaysWithoutTranslator = {
-        count: withoutTranslatorCount,
-        totalCount: recentEssays.length,
-      };
-
-      progressData.averageGrammarEstimation = Number((totalGrammarScore / recentEssays.length).toFixed(1));
-    }
-
-    return progressData;
-  });
-</script>
-<script setup lang="ts">
-  const languagesStore = useLanguagesStore();
-  const systemStore = useSystemStore();
-  const { data: progressData, reload: reloadProgressData } = useProgressData();
-
-  const progressPointsDelta = computed(() => {
-    if (!progressData.value.progressHistory) return null;
-    return (
-      progressData.value.progressHistory.newPointsValue
-      - progressData.value.progressHistory.previousPointsValue
-    );
-  });
+  const languageStore = useLanguageStore();
+  const {
+    progressData,
+    progressPointsDelta,
+    essaysWithoutMistakesProgress,
+    essaysWithoutTranslatorProgress,
+  } = useProgress();
 
   const progressPointsDeltaUpdateDate = computed(() => {
-    if (!progressData.value.progressHistory) return null;
+    if (!progressData.value.latestEssay) return null;
     return formatRelativeDate(
-      progressData.value.progressHistory.date,
-      languagesStore.currentLanguage as SupportedLocale,
+      progressData.value.latestEssay.date,
+      languageStore.currentLanguage as SupportedLocale,
     );
   });
-
-  const essaysWithoutMistakesProgress = computed(() => {
-    if (!progressData.value.essaysWithoutMistakes.totalCount) return 0;
-    return (
-      (progressData.value.essaysWithoutMistakes.count
-        / progressData.value.essaysWithoutMistakes.totalCount)
-      * 100
-    );
-  });
-
-  const essaysWithoutTranslatorProgress = computed(() => {
-    if (!progressData.value.essaysWithoutTranslator.totalCount) return 0;
-    return (
-      (progressData.value.essaysWithoutTranslator.count
-        / progressData.value.essaysWithoutTranslator.totalCount)
-      * 100
-    );
-  });
-
-  watch(
-    [
-      () => languagesStore.currentLanguage,
-      () => languagesStore.targetLanguage,
-      () => systemStore.lastUpdateTimestamp,
-    ],
-    () => {
-      reloadProgressData();
-    },
-  );
 </script>
 
 <style scoped>

@@ -49,7 +49,7 @@
         {{
           formatRelativeDate(
             essay.date,
-            languagesStore.currentLanguage as SupportedLocale,
+            languageStore.currentLanguage as SupportedLocale,
           )
         }}
       </v-chip>
@@ -109,7 +109,7 @@
               :prepend-icon="isSentencePlaying(sentence.correctedSentence) ? 'mdi-stop' : 'mdi-volume-high'"
               rounded
               :variant="isSentencePlaying(sentence.correctedSentence) ? 'flat' : 'tonal'"
-              @click="speak(sentence.correctedSentence, languagesStore.targetLanguage)"
+              @click="speak(sentence.correctedSentence, languageStore.targetLanguage)"
             >
               {{ isSentencePlaying(sentence.correctedSentence) ? $t('essays.stop_button') : $t('essays.listen_button') }}
             </v-btn>
@@ -120,25 +120,34 @@
   </v-container>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import type { SupportedLocale } from "@/i18n";
-  import { defineBasicLoader } from "vue-router/experimental";
+  import type { AnalyzedEssay } from "@/db";
+  import { ref, watch } from "vue";
+  import { useRoute } from "vue-router";
+  import { useEssays } from "@/composables/useEssays";
   import { useSpeechSynthesis } from "@/composables/useSpeechSynthesis";
-  import { essaysRepository } from "@/db";
-  import { useLanguagesStore } from "@/stores/languages";
+  import { useLanguageStore } from "@/stores/language";
   import { getEstimationChipColor } from "@/utils/chip";
   import { formatRelativeDate } from "@/utils/date";
   import { highlightQuotedText } from "@/utils/strings";
 
-  export const useEssayData = defineBasicLoader("/essays/[id]", async (route) => {
-    return await essaysRepository.get(Number(route.params.id));
-  });
-</script>
-
-<script setup lang="ts">
-  const languagesStore = useLanguagesStore();
-  const { data: essay } = useEssayData();
+  const route = useRoute("/essays/[id]");
+  const languageStore = useLanguageStore();
+  const { getEssayById } = useEssays();
   const { speak, isTextPlaying, currentPlayingText } = useSpeechSynthesis();
+
+  const essay = ref<AnalyzedEssay | undefined>(undefined);
+
+  watch(
+    () => route.params.id,
+    async (id) => {
+      if (id) {
+        essay.value = await getEssayById(Number(id));
+      }
+    },
+    { immediate: true },
+  );
 
   const isSentencePlaying = (sentenceText: string) => {
     return isTextPlaying.value && currentPlayingText.value === sentenceText;

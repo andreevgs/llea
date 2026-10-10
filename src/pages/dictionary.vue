@@ -41,43 +41,15 @@
   </v-container>
 </template>
 
-<script lang="ts">
-  import { computed, ref, watch } from "vue";
-  import { useI18n } from "vue-i18n";
-  import { defineBasicLoader } from "vue-router/experimental";
-  import { dictionaryRepository } from "@/db";
-  import { useLanguagesStore } from "@/stores/languages";
-  import { useSystemStore } from "@/stores/system";
-
-  export const useDictionaryData = defineBasicLoader(
-    "/dictionary",
-    async () => {
-      const languagesStore = useLanguagesStore();
-      return await dictionaryRepository.getByLanguagePair({
-        currentLanguage: languagesStore.currentLanguage,
-        targetLanguage: languagesStore.targetLanguage,
-      });
-    },
-  );
-</script>
-
 <script setup lang="ts">
-  const languagesStore = useLanguagesStore();
-  const { t } = useI18n();
-  const systemStore = useSystemStore();
-  const { data: dictionary, reload } = useDictionaryData();
+  import { computed, ref } from "vue";
+  import { useI18n } from "vue-i18n";
+  import { useDictionary } from "@/composables/useDictionary";
 
-  watch(
-    [
-      () => languagesStore.currentLanguage,
-      () => languagesStore.targetLanguage,
-      () => systemStore.lastUpdateTimestamp,
-    ],
-    () => {
-      reload();
-    },
-  );
-  const tableHeaders = [
+  const { t } = useI18n();
+  const { dictionary } = useDictionary();
+
+  const tableHeaders = computed(() => [
     {
       title: t("dictionary.table.headers.word"),
       key: "word",
@@ -90,7 +62,7 @@
       title: t("dictionary.table.headers.translation"),
       key: "translate",
     },
-  ];
+  ]);
 
   const itemsPerPageOptions = [20, 40, 60, 100];
   const itemsPerPage = ref(itemsPerPageOptions[0]);

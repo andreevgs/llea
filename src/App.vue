@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-  import AppBar from "@/components/AppBar.vue";
+  import AppBar from "@/components/common/AppBar.vue";
 </script>
 <style>
 .container {
